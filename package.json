@@ -1,0 +1,20 @@
+{
+  "name": "Tauschrausch",
+  "requires": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philipp-moeller/Tauschrausch.git"
+  },
+  "lockfileVersion": 1,
+  "dependencies": {
+    "mysql": "^2.18.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "## Prerequisites",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Philipp Möller"
+}
