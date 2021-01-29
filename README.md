@@ -25,3 +25,6 @@ Erschaffen Sie die nötigen Datenbankstrukturen Ihres Systems durch Eingabe der 
 ## Server starten
 
 Starten Sie den Server, indem Sie die Konsole öffnen (`cmd`) und in das Verzeichnis des Projektes wechseln (`cd Tauschrausch`). Führen Sie dort den Befehl `node server.js` aus. Öffnen Sie nun in einem Browser die Seite https://localhost:9876. Tada!
+
+## Aufbau Server
+![Struktur des Servers](https://raw.githubusercontent.com/philipp-moeller/Tauschrausch/main/meta/diagram.png)
