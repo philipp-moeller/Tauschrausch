@@ -23,7 +23,7 @@ Erschaffen Sie die nötigen Datenbankstrukturen Ihres Systems durch Eingabe der 
 *Hier kommen Ihre Befehle zum Erstellen der Datenbank hin:*
 
 - z. B.: `\sql CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL DEFAULT '');`
-- z. B.: `\sql INSERT INTO users (name) VALUES ("Max"),("Martina");``
+- z. B.: `\sql INSERT INTO users (name) VALUES ("Max"),("Martina");`
 
 ## Server starten
 
