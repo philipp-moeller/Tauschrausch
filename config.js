@@ -1,7 +1,8 @@
 const mysql = require('mysql');
 const util = require('util');
 
-var localConfig = require('./data/local_config.js');
+// Diese Datei enthält die Zugangsdaten zu der Datenbank und stellt eine Methode
+// bereit, mit der Datenbankanfragen ausgführt werden können.
 
 var pool = mysql.createPool({
 	connectionLimit : 10,

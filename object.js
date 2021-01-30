@@ -10,7 +10,7 @@ function date2str(date,format='Y-m-d H:i:s') {
 	return format.replace('Y',y).replace('m',m).replace('d',d).replace('H',h).replace('i',i).replace('s',s);
 }
 
-class dbObject {
+module.exports = class {
 	constructor(table,id=0) {
 		this.id = isNaN(id) ? 0 : id;
 		this.dbData = {
@@ -200,5 +200,3 @@ class dbObject {
 	}
 
 }
-
-module.exports = dbObject;
