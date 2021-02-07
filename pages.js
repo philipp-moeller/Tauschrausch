@@ -10,11 +10,9 @@ module.exports = async function(method,path,query,cookies) {
 	switch (path.shift()) {
 		case '':
 			if (path.length==0) {
-				// GET "/"
-				html = 'Tada!'
-			}
-			else {
-				status = 404;
+				// GET "/login"
+				var build = require('./pages/home.js')
+				html = await build(/* Hier können Daten übergeben werden. */)
 			}
 			break;
 		case 'login':

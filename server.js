@@ -1,10 +1,15 @@
 // THIS BRANCH IS A EXPERIMENTAL VERSION OF THE MAIN PROJECT
 
-console.log('\x1b[32mStarte Server auf http://localhost:9876\x1b[0m');
-
 const http = require('http');
 const querystring = require('querystring');
 const fs = require('fs');
+
+const port = process.env.PORT || 8000; // ! change port, when Error occurred (process.env.PORT -> choose enviromental standart port)
+
+// put local IP-Adress for server out
+const dns = require('dns').lookup(require('os').hostname(), function (err, add, fam) {
+    console.log('Access server at: ' + add + ':' + port + '/' );
+});
 
 http.createServer(async function (req, res) {
 
@@ -106,4 +111,4 @@ http.createServer(async function (req, res) {
 	  res.end();
 	});
 
-}).listen(9876);
+}).listen(port);
