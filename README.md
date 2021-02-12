@@ -4,7 +4,7 @@
 
 ### Programme installieren
 
-Installieren Sie die Software **Git** von der Seite https://git-scm.com/download/win. Starten Sie die Konsole (`Win+R` -> `cmd`) und klonen Sie dieses Repository mit dem folgenden Befehl: `git clone https://github.com/philipp-moeller/Tauschrausch.git`. Geben Sie ihre Zugangsdaten ein, wenn Sie dazu aufgefordert werden.
+Installieren Sie die Software **Git** von der Seite https://git-scm.com/download/win. Starten Sie die Konsole (`Win+R` -> `cmd`) und klonen Sie dieses Repository mit dem folgenden Befehl: `git clone https://github.com/Tauschrausch-Team/Tauschrausch.git`. Geben Sie ihre Zugangsdaten ein, wenn Sie dazu aufgefordert werden.
 
 Installieren Sie **NodeJS** von der Seite https://nodejs.org/en/download/. Öffnen Sie die Konsole (`Win+R` -> `cmd`) und navigieren Sie in das Verzeichnis des Projektes indem Sie in der Konsole den Befehl `cd Tauschrausch` eingeben. Installieren Sie notwendige Zusatzmodule mit dem Befehl `npm install`.
 
