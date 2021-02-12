@@ -14,7 +14,7 @@ Laden Sie den **MySQL Installer** von der Seite https://dev.mysql.com/downloads/
 
 ![Installation](https://raw.githubusercontent.com/philipp-moeller/Tauschrausch/main/meta/db-install.png)
 
-Starten Sie den **MySQL Installer** erneut und klicken Sie in der Zeile **MySQL-Server** auf *Reconfigure*. Wählen Sie die *Legacy Authentification Method* und vergeben Sie ein beliebiges Passwort. Im letzten Schritt wird Ihnen bestätigt, dass Windows den Server ab sofort bei jedem Neustart startet. Der Server muss also auch zukünftig nicht manuell gestartet werden.
+Starten Sie den **MySQL Installer** erneut und klicken Sie in der Zeile **MySQL-Server** auf *Reconfigure*. Wählen Sie die *Legacy Authentification Method* und vergeben Sie ein beliebiges Passwort. Im letzten Schritt wird Ihnen bestätigt, dass Windows den Server ab sofort bei jedem Neustart startet. Der Datenbankserver muss also auch zukünftig nicht manuell gestartet werden.
 
 ![Setup](https://raw.githubusercontent.com/philipp-moeller/Tauschrausch/main/meta/db-setup.png)
 
