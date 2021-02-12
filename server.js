@@ -58,7 +58,7 @@ http.createServer(async function (req, res) {
 				// dem Ordner "/script" beantwortet
 				if (method=='GET' && fs.existsSync('./'+path.join('/'))) {
 					httpHeaders['Content-Type'] = 'application/javascript';
-					httpContent = fs.readFileSync('.'+path.join('/'));
+					httpContent = fs.readFileSync('./'+path.join('/'));
 				}
 				else { httpStatus = 404; }
 				break;
@@ -67,7 +67,7 @@ http.createServer(async function (req, res) {
 				// dem Ordner "/css" beantwortet
 				if (method=='GET' && fs.existsSync('./'+path.join('/'))) {
 					httpHeaders['Content-Type'] = 'text/css';
-					httpContent = fs.readFileSync('.'+path.join('/'));
+					httpContent = fs.readFileSync('./'+path.join('/'));
 				}
 				else { httpStatus = 404; }
 				break;
