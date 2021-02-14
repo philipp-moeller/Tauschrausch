@@ -5,7 +5,7 @@ const Template = require('../template.js');
 // Beispiel:
 // const User = require('../db/user.js');
 
-module.exports = async function() {
+module.exports = async function(username, password) {
 
 	// Hier können Daten aus der Datenbank gelesen und / oder verarbeitet werden.
 	//
@@ -13,8 +13,13 @@ module.exports = async function() {
 	// var user = new User(1);
 	// await user.init();
 
-	var html = new Template('./html/login.html',{
+	// why now undefined??
+	console.log(username);
+	console.log(password);
+
+	var html = new Template('./html/menu.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
+		// username: username
 	});
 	return await html.parse();
 }
