@@ -22,6 +22,13 @@ module.exports = async function(method,path,query,cookies) {
 				html = await build()
 			}
 			break;
+		case 'christian':
+			if (path.length==0) {
+				// GET "/login"
+				var build = require('./pages/christian.js')
+				html = await build()
+			}
+				break;
 		case 'menu':
 				if (path.length==0) {
 					// POST "/"
