@@ -13,13 +13,12 @@ module.exports = async function(username, password) {
 	// var user = new User(1);
 	// await user.init();
 
-	// why now undefined??
+	// add username to html
 	console.log(username);
 	console.log(password);
 
 	var html = new Template('./html/menu.html',{
-		// Hier können Daten an das HTML-Dokument übergeben werden.
-		// username: username
+		username: username
 	});
 	return await html.parse();
 }

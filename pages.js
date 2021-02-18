@@ -33,11 +33,6 @@ module.exports = async function(method,path,query,cookies) {
 				if (path.length==0) {
 					// POST "/"
 					var build = require('./pages/menu.js')
-
-					// why now undefined??
-					console.log(query.username);
-					console.log(query.password);
-
 					html = await build(username = query.username, password = query.password)
 				}
 				break;
