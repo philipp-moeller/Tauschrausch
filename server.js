@@ -28,7 +28,7 @@ http.createServer(async function (req, res) {
 	var cookies = {};
 	if (typeof(req.headers.cookie)!='undefined') {
 		var rawCookies = req.headers.cookie.split('; ');
-		for (cookie of rawCookies) {
+		for (var cookie of rawCookies) {
 			var cookieData = cookie.split('=');
 			cookies[cookieData[0]] = cookieData[1];
 		}

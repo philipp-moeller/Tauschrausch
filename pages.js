@@ -7,33 +7,34 @@ module.exports = async function(method,path,query,cookies) {
 
 	// In diesem Programmteil werden die Pfade ausgelesen und mit Unterprogrammen
 	// verknüpft. Die Unterprogramme liefern jeweils HTML-Quelltext zurück.
+	var build;
 	switch (path.shift()) {
 		case '':
 			if (path.length==0) {
 				// GET "/"
-				var build = require('./pages/home.js')
+				build = require('./pages/home.js')
 				html = await build(/* Hier können Daten übergeben werden. */)
 			}
 			break;
 		case 'login':
 			if (path.length==0) {
 				// GET "/login"
-				var build = require('./pages/login.js')
+				build = require('./pages/login.js')
 				html = await build()
 			}
 			break;
 		case 'christian':
 			if (path.length==0) {
 				// GET "/login"
-				var build = require('./pages/christian.js')
+				build = require('./pages/christian.js')
 				html = await build()
 			}
 				break;
 		case 'menu':
 				if (path.length==0) {
-					// POST "/"
-					var build = require('./pages/menu.js')
-					html = await build(username = query.username, password = query.password)
+					// GET "/menu"
+					build = require('./pages/menu.js')
+					html = await build(query.username, query.password)
 				}
 				break;
 		default:

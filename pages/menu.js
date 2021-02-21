@@ -1,4 +1,5 @@
 const Template = require('../template.js');
+const User = require('../db/user.js');
 
 // Hier können Module geladen werden.
 //
