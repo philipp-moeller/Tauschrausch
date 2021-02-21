@@ -34,7 +34,7 @@ module.exports = async function(method,path,query,cookies) {
 				if (path.length==0) {
 					// GET "/menu"
 					build = require('./pages/menu.js')
-					html = await build(query.username, query.password)
+					html = await build(query.username, query.password) // watch menu.js!
 				}
 				break;
 		default:
