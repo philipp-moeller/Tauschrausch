@@ -12,9 +12,14 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 	// Beispiel:
 	// var user = new User(1);
 	// await user.init();
+	
+	var x = 12+19;
+	var y = "sehr" + "gut";
 
 	var html = new Template('./html/philip.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
+		note: y,
+		punkte: x
 	});
 	return await html.parse();
 }
