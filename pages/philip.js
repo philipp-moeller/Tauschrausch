@@ -13,7 +13,7 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 	// var user = new User(1);
 	// await user.init();
 
-	var html = new Template('./html/Philip.html',{
+	var html = new Template('./html/philip.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
 	});
 	return await html.parse();
