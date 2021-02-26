@@ -17,9 +17,29 @@ const db = mysql.createConnection({
     } else {
         console.log("MYSQL connected...");
     };
+  });
+  // does not work
+  // pool.getConnection( req, res) {
+  //   if(err){
+  //     res.send("Error occured")
+  //   }else {
+  //     pool.query('SELECT * from name limit 10', function (err2, records, fields){
+  //       if(!err2) {
+  //         res.send(records)
+  //       }
+  //       conn.release(); // release used pool connection again
+  //     })
+  //   }
+  // }
+  
 
     // editTable();
-  });
+    // var user = new User(1);  // erzeugt Nutzer mit `id=1`
+    // await user.init();   // lädt die Daten aus Datenbank
+    // console.log(user.name);  // gibt den Namen des Nutzers aus
+    //user.name = "Martin";  // setzt eine Eigenschaft des Nutzers
+    // await user.save();   // speichert den Nutzer in Datenbank
+  
 
 //   function get_info(data, promise){
 
