@@ -8,9 +8,15 @@ h1, h2 {
     color: darkorange;
 }
 
-a, p {
+h3, h4, h5 {
+    text-align: left;
+    color: darkorange;
+}
+
+a, p, ul {
     text-align: left;
     color: lightsalmon;
+    font-size: 110%
 }
 
 input[type=text] {
