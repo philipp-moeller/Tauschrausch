@@ -15,6 +15,8 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 
 	var html = new Template('./html/philip.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
+		note: "sehr gut",
+		punkte: 17
 	});
 	return await html.parse();
 }
