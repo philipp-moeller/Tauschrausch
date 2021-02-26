@@ -10,7 +10,7 @@ var pool = mysql.createPool({
   host: 'localhost', // ip-Adress of the server
   user: 'root',
   password: 'eWDPQFwAgpLkykgn',
-  database: 'tauschrausch-database' // name of the database
+  database: 'tauschrausch' // name of the database
 });
 
 exports.pool = pool;
