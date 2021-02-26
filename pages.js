@@ -31,12 +31,19 @@ module.exports = async function(method,path,query,cookies) {
 			}
 				break;
 		case 'menu':
-				if (path.length==0) {
-					// GET "/menu"
-					build = require('./pages/menu.js')
-					html = await build(query.username, query.password) // watch menu.js!
-				}
-				break;
+			if (path.length==0) {
+				// GET "/menu"
+				build = require('./pages/menu.js')
+				html = await build(query.username, query.password) // watch menu.js!
+			}
+			break;
+		case 'articles':
+			if (path.length==0) {
+				// GET "/articles"
+				build = require('./pages/articles.js')
+				html = await build() // pass through db-table/rows
+			}
+			break;
 		default:
 			html = 'Fehler 404'
 			status = 404;
