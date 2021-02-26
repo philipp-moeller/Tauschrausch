@@ -25,11 +25,18 @@ module.exports = async function(method,path,query,cookies) {
 			break;
 		case 'christian':
 			if (path.length==0) {
-				// GET "/login"
+				// GET "/christian"
 				build = require('./pages/christian.js')
 				html = await build()
 			}
-				break;
+			break;
+		case 'frechheit':
+			if (path.length==0) {
+				// GET "/frechheit"
+				build = require('./pages/philip.js')
+				html = await build()
+			}
+			break;
 		case 'menu':
 			if (path.length==0) {
 				// GET "/menu"
