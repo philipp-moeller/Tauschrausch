@@ -5,12 +5,24 @@ body {
 
 h1, h2 {
     text-align: center;
-    color: darkorange;
+    color: darkorange
 }
 
 h3, h4, h5 {
     text-align: left;
     color: darkorange;
+}
+
+h3 {
+    font-size: 130%
+}
+
+h4 {
+    font-size: 120%
+}
+
+h5 {
+    font-size: 110%
 }
 
 a, p, ul {
