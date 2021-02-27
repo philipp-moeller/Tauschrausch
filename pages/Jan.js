@@ -15,7 +15,7 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 
 	var html = new Template('./html/Jan.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
-		alter: 18,
+		alter: 17,
 		ort: "Kiel",
 		fach: "Informatik",
 		dino: "Longisquama"
