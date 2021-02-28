@@ -32,3 +32,24 @@ input[type=button], input[type=submit] {
     box-sizing: border-box;
     border-radius: 4px;
 }
+
+table, td, th {
+    border: 1px solid rgba(255, 191, 54, 0.397);
+}
+  
+table {
+    width: 25%;
+    border-collapse: collapse;
+}
+td, th {
+    height: 25px;
+    padding: 15px;
+    text-align: left;
+}
+th {
+    background-color: #ff4f1934;
+    color: rgb(252, 121, 33);
+}
+tr:hover {background-color: #ff8c203d;}
+tr:nth-child(even) {background-color: #000000;}
+
