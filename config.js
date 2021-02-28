@@ -1,6 +1,5 @@
 const mysql = require('mysql');
 const util = require('util');
-const db = require('./db/connection.js'); // usefull to implement this file?
 
 // Diese Datei enthält die Zugangsdaten zu der Datenbank und stellt eine Methode
 // bereit, mit der Datenbankanfragen ausgführt werden können.
