@@ -1,4 +1,7 @@
 const Template = require('../template.js');
+const editTable = require('../db/editTable.js');
+const User = require('../db/user.js');
+
 
 // Hier können Module geladen werden.
 //
@@ -6,12 +9,6 @@ const Template = require('../template.js');
 // const User = require('../db/user.js');
 
 module.exports = async function() {
-
-	// Hier können Daten aus der Datenbank gelesen und / oder verarbeitet werden.
-	//
-	// Beispiel:
-	// var user = new User(1);
-	// await user.init();
 
 	var html = new Template('./html/login.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
