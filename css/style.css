@@ -5,12 +5,30 @@ body {
 
 h1, h2 {
     text-align: center;
+    color: darkorange
+}
+
+h3, h4, h5 {
+    text-align: left;
     color: darkorange;
 }
 
-a, p {
+h3 {
+    font-size: 130%
+}
+
+h4 {
+    font-size: 120%
+}
+
+h5 {
+    font-size: 110%
+}
+
+a, p, ul {
     text-align: left;
     color: lightsalmon;
+    font-size: 110%
 }
 
 input[type=text] {
@@ -32,6 +50,7 @@ input[type=button], input[type=submit] {
     box-sizing: border-box;
     border-radius: 4px;
 }
+<<<<<<< HEAD
 
 table, td, th {
     border: 1px solid rgba(255, 191, 54, 0.397);
@@ -53,3 +72,5 @@ th {
 tr:hover {background-color: #ff8c203d;}
 tr:nth-child(even) {background-color: #000000;}
 
+=======
+>>>>>>> b9517a98522ef46b641df617c8ae84bcddfb29d2
