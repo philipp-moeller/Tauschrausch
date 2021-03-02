@@ -13,8 +13,11 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 	// var user = new User(1);
 	// await user.init();
 
+	var iqwert = Math.floor(Math.random() * (90 - 50 + 1) + 50);
+
 	var html = new Template('./html/christian.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
+		iq: iqwert
 	});
 	return await html.parse();
 }
