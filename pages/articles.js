@@ -11,7 +11,7 @@ const util = require('util');
 module.exports = async function() {
 
 	// editTable
-    var user = new User(1);  // erzeugt Nutzer mit `id=1`
+    var user = new User();  // erzeugt Nutzer mit `id=1`
 
     await user.init();   // lädt die Daten aus Datenbank
 
@@ -19,7 +19,14 @@ module.exports = async function() {
     await user.save();   // speichert den Nutzer in Datenbank
 
     await user.init();   // lädt die Daten aus Datenbank
-	
+
+	// does not work yet
+	for (var i = userID; i > 0; i--){
+		await user.init(i);
+		console.log("User:");
+		console.log(user.id);
+	}
+
 	console.log("Users-Table: ");
 	var tableData = util.inspect(user, {showHidden: false, depth: null});
 	console.log(tableData);
