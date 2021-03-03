@@ -1,7 +1,8 @@
 const Template = require('../template.js');
 const User = require('../db/user.js');
+const Table = require('../db/editTable.js');
 
-module.exports = async function(username, password) {
+module.exports = async function(username, password, query) {
 
 	// editTable
     var user = new User(0);  // erzeugt Nutzer mit `id=0`
@@ -16,9 +17,8 @@ module.exports = async function(username, password) {
     console.log("Username after save:" + user.name);  // gibt den Namen des Nutzers aus
 
 	// add username to html
-	console.log("data:")
-	console.log(username);
-	console.log(password);
+	console.log("query data:")
+	console.log(query);
 
 	var html = new Template('./html/menu.html',{
 		username: username

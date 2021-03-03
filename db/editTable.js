@@ -6,7 +6,7 @@ module.export = async function (id, username){
     // editTable
     var user = new User(id);  // erzeugt Nutzer mit `id=1`
 
-    user.init(3);   // lädt die Daten aus Datenbank
+    user.init();   // lädt die Daten aus Datenbank
     console.log(user.name);  // gibt den Namen des Nutzers aus
 
     user.name = username;  // setzt eine Eigenschaft des Nutzers
