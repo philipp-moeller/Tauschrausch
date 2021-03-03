@@ -1,6 +1,7 @@
 const Template = require('../template.js');
 const User = require('../db/user.js');
 const util = require('util');
+const db = require('../config.js');
 
 
 // Hier können Module geladen werden.
@@ -33,6 +34,16 @@ module.exports = async function() {
 
 	var userID = user.id;
 	var userName = user.name;
+
+	// get user from db table
+	let dbTable = db.query("SELECT * FROM users");
+	dbTable.then(function(result) {
+		console.log(result);	// return whole array
+		// return every content alone
+		for(var i=result.length -1; i > -1; i--){
+			console.log(result[i]);
+		}
+	})
 
 	var html = new Template('./html/articles.html',{
         // pass through db-table/rows to html
