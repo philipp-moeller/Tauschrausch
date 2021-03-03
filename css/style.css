@@ -1,6 +1,7 @@
 body {
-    background-image: url("images/Website-Background-Images.jpg");
+    /*background-image: url("images/Website-Background-Images.jpg");*/
     background-color: lightgreen;
+    /*background-color: darkmagenta;*/
 }
 
 h1, h2 {
@@ -27,7 +28,7 @@ h5 {
 
 a, p, ul {
     text-align: left;
-    color: lightsalmon;
+    color: salmon;
     font-size: 110%
 }
 
@@ -54,7 +55,7 @@ input[type=button], input[type=submit] {
 table, td, th {
     border: 1px solid rgba(255, 191, 54, 0.397);
 }
-  
+
 table {
     width: 25%;
     border-collapse: collapse;
