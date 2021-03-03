@@ -1,7 +1,6 @@
 body {
-    /*background-image: url("images/Website-Background-Images.jpg");*/
+    background-image: url("images/Website-Background-Images.jpg");
     background-color: lightgreen;
-    /*background-color: darkmagenta;*/
 }
 
 h1, h2 {
