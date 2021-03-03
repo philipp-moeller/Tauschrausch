@@ -1,7 +1,7 @@
 body {
-    /*background-image: url("images/Website-Background-Images.jpg");
-    background-color: lightgreen;*/
-    background-color: darkmagenta;
+    /*background-image: url("images/Website-Background-Images.jpg");*/
+    background-color: lightgreen;
+    /*background-color: darkmagenta;*/
 }
 
 h1, h2 {
@@ -28,7 +28,7 @@ h5 {
 
 a, p, ul {
     text-align: left;
-    color: lightsalmon;
+    color: salmon;
     font-size: 110%
 }
 
