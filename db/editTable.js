@@ -2,18 +2,16 @@
 const User = require('../db/user.js');
 const db = require('../config.js');
 
-
-
 const existUser = (userName, userPassword) => {
     // get user from db table
-	let tableContent = await db.query("SELECT * FROM users");
+	let tableContent = db.query("SELECT * FROM users");
 	console.table(tableContent[1].id); // [index] from object table
 
     // compare each data of tableContent objects
     tableContent.array.forEach(element => {
         if ((element.name.equals(userName))) {
             console.log("YEEEEE!!")
-            break;
+            // break;
         }
     });
 }
@@ -22,10 +20,11 @@ const otherMethod = () => {
 
 }
 
-modules.exports = {
-    existUser,
-    otherMethod
-};
+// "ReferenceError: modules is not defined"
+// modules.exports = {
+//     existUser,
+//     otherMethod
+// };
 
     // // editTable
     // var user = new User(id);  // erzeugt Nutzer mit `id=1`
