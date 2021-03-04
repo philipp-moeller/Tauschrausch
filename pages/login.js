@@ -1,5 +1,4 @@
 const Template = require('../template.js');
-const editTable = require('../db/editTable.js');
 const User = require('../db/user.js');
 
 

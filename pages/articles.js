@@ -1,7 +1,9 @@
 const Template = require('../template.js');
 const User = require('../db/user.js');
-const util = require('util');
 const db = require('../config.js');
+const dbTable = require('../db/editTable.js');
+const util = require('util');
+const { table } = require('console');
 
 module.exports = async function() {
 
@@ -22,24 +24,19 @@ module.exports = async function() {
 	var userID; // = user.id;
 	var userName; // = user.name;
 
-	let tableContent = [];
 
 	// get user from db table
-	let dbTable = db.query("SELECT * FROM users");
-	dbTable.then(function(result) {
-		// return every content alone
-		for(var i=result.length -1; i > -1; i--){
-			console.log(result[i]);
-		}
-	})
+	let tableContent = await db.query("SELECT * FROM users");
+	console.table(tableContent); // tableContent[index].id -> [index] from object table
+	// .map anschauen
 
-	console.log(tableContent);
 
+	
 	var html = new Template('./html/articles.html',{
         // pass through db-table/rows to html
 		userID: userID,
 		userName: userName,
-		tableData: 0
+		tableContent: table
 	});
 	return await html.parse();
 }

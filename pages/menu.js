@@ -1,6 +1,5 @@
 const Template = require('../template.js');
 const User = require('../db/user.js');
-const Table = require('../db/editTable.js');
 
 module.exports = async function(username, password, query) {
 
