@@ -44,6 +44,13 @@ module.exports = async function(method,path,query,cookies) {
 				html = await build()
 			}
 			break;
+		case 'jan':
+			if (path.length==1) {
+				// GET "/jan/{irgendwas}"
+				build = require('./pages/Jan.js')
+				html = await build(path[0])
+			}
+			break;
 		case 'menu':
 			if (path.length==0) {
 				// GET "/menu"
