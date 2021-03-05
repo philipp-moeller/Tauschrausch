@@ -19,7 +19,7 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 	var a = 17+1;
 	var b = "im" + "Internet";
 
-	var html = new Template('./html/Mirko.html',{
+	var html = new Template('./html/christoph.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
 		tag: x,
 		ueberlegenestier: y,
