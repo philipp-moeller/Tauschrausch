@@ -15,8 +15,9 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 	
 	var x = 12+19;
 	var y = "sehr" + "gut";
-	var z = 1+1;
+	var z = 1;
 	var v = 3;
+	
 
 	var html = new Template('./html/philip.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
