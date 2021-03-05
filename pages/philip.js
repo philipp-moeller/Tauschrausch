@@ -15,13 +15,13 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 	
 	var x = 12+19;
 	var y = "sehr" + "gut";
-	var z = "in" + "Informatik"
+	var z = 1+1;
 
 	var html = new Template('./html/philip.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
 		note: y,
 		punkte: x,
-		kommentar: z
+		mathe: z
 		
 		
 	});
