@@ -31,10 +31,10 @@ module.exports = async function(method,path,query,cookies) {
 			}
 			break;
 		case 'frechheit':
-			if (path.length==1) {
+			if (path.length==2) {
 				// GET "/frechheit/{irgendwas}"
 				build = require('./pages/philip.js')
-				html = await build(path[0])
+				html = await build(path[0].path[1])
 			}
 			break;
 		case 'christoph':
