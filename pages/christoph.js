@@ -13,7 +13,7 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 	// var user = new User(1);
 	// await user.init();
 
-	var x = "neunten" + "März" + "2003";
+	var x = "neunten " + "März " + "2003";
 	var y = "Katzen";
 	var z = "Hunde";
 	var a = 17+1;
