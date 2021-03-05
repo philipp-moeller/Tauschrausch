@@ -15,11 +15,15 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 	
 	var x = 12+19;
 	var y = "sehr" + "gut";
+	var z = "in" + "Informatik"
 
 	var html = new Template('./html/philip.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
 		note: y,
-		punkte: x
+		punkte: x,
+		kommentar: z
+		
+		
 	});
 	return await html.parse();
 }
