@@ -27,7 +27,17 @@ module.exports = async function(method,path,query,cookies) {
 			if (path.length==0) {
 				// GET "/christian"
 				build = require('./pages/christian.js')
-				html = await build()
+				html = await build(100)
+			}
+			if (path.length==1) {
+				// GET "/christian/{irgendeineZahl}"
+				build = require('./pages/christian.js')
+				html = await build(path[0])
+			}
+			if (path.length>1) {
+				// GET "/christian/zu/viele/parameter"
+				build = require('./pages/christian.js')
+				html = await build(0)
 			}
 			break;
 		case 'frechheit':
