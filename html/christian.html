@@ -50,38 +50,2084 @@
 
 <h2>Formelsammlung für das Abitur Mathematik 2021</h2>
 
-<h3>I. Analysis</h3>
+<!-- BEGINN FORMELSAMMLUNG MATHEMATIK -->
 
-<h4>1 Grundlagen</h4>
+<h3 class="unnumbered" id="abkürzungsverzeichnis">Abkürzungsverzeichnis</h3>
+<div class="acronym">
 
-  <h5>1.1 Mengen und Intervalle</h5>
+</div>
+<h3 class="unnumbered" id="zeichenerklärung">Zeichenerklärung</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Zeichen</th>
+<th style="text-align: left;">Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\Leftrightarrow\)</span>, <span class="math inline">\(\leftrightarrow\)</span></td>
+<td style="text-align: left;">ist äquivalent zu</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\in\)</span></td>
+<td style="text-align: left;">ist Element von</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(:=\)</span></td>
+<td style="text-align: left;">ist definitionsgemäß gleich</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\mapsto\)</span></td>
+<td style="text-align: left;">bildet ab</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\to\)</span></td>
+<td style="text-align: left;">strebt gegen</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\infty\)</span></td>
+<td style="text-align: left;">unendlich</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\subseteq\)</span></td>
+<td style="text-align: left;">ist eine Teilmenge von oder gleich</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\cap\)</span></td>
+<td style="text-align: left;">vereinigt; und</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\cup\)</span></td>
+<td style="text-align: left;">geschnitten; oder</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\vert x \vert\)</span></td>
+<td style="text-align: left;">Betrag; Anzahl</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\sum\)</span></td>
+<td style="text-align: left;">Summe</td>
+</tr>
+</tbody>
+</table>
+<h3 class="unnumbered" id="anmerkungen">Anmerkungen</h3>
+<p>Inhalte, die im Folgenden aufgeführt sind, aber nicht für die schriftlichen Abiturprüfungen 2021 relevant sind, sind <span style="color: gray">grau</span> geschrieben. (Die Normalverteilung und das Schätzen von Wahrscheinlichkeiten (Konfidenzintervalle) sind weder für uns relevant noch im Folgenden aufgeführt.)</p>
+<p>Wichtige Informationen oder Inhalte, die häufig vergessen werden könnten, sind <span style="color: red">rot</span> geschrieben.</p>
+<h1 id="analysis">Analysis</h1>
+<h3 id="grundlagen">Grundlagen</h3>
+<h4 id="mengen-und-intervalle">Mengen und Intervalle</h4>
+<p>Unter einer <strong>Menge</strong> versteht man in der Mathematik jede Zusammenfassung von verschiedenen Objekten zu einer Gesamtheit. Die Objekte, die zu einer Menge gehören, nennt man die <strong>Elemente</strong> der Menge. Gehört ein Objekt <span class="math inline">\(x\)</span> zu einer Menge <span class="math inline">\(A\)</span>, schreibt man dafür <span class="math inline">\(x\in A\)</span>; für das Gegenteil schreibt man <span class="math inline">\(x\notin A\)</span>.</p>
+<p>Mengen können auf verschiedene Weisen angegeben werden (siehe <a href="#tab:mengenschreibweise" data-reference-type="ref+page" data-reference="tab:mengenschreibweise">[tab:mengenschreibweise]</a>)</p>
+<div class="sidewaystable">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Menge</th>
+<th style="text-align: left;">Zahlenbereich</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;" rowspan="2">aufzählende Mengenschreibweise</td>
+<td style="text-align: left;"><span class="math inline">\(\{ 1,2,3,4 \}\)</span></td>
+<td style="text-align: left;">die Zahlen <span class="math inline">\(1\)</span>, <span class="math inline">\(2\)</span>, <span class="math inline">\(3\)</span> und <span class="math inline">\(4\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\{ -5;\num{2,3};8 \}\)</span></td>
+<td style="text-align: left;">die Zahlen <span class="math inline">\(-5\)</span>, <span class="math inline">\(\num{2,3}\)</span> und <span class="math inline">\(8\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;" rowspan="2">beschreibende Mengenschreibweise</td>
+<td style="text-align: left;"><span class="math inline">\(\{ x \mid -1&lt;x&lt;3 \}\)</span></td>
+<td style="text-align: left;">alle Objekte <span class="math inline">\(x\)</span>, für welche die Bedingung <span class="math inline">\(-1&lt;x&lt;3\)</span> gilt</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\{\} = \emptyset\)</span></td>
+<td style="text-align: left;"><strong>leere Menge</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;" rowspan="6">Mengenverknüpfungen</td>
+<td style="text-align: left;"><span class="math inline">\(A\cup B\)</span></td>
+<td style="text-align: left;">alle Elemente, die in <span class="math inline">\(A\)</span> oder in <span class="math inline">\(B\)</span> enthalten sind (<strong>Vereinigungsmenge</strong>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(A\cap B\)</span></td>
+<td style="text-align: left;">alle Elemente, die in <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> enthalten sind (<strong>Schnittmenge</strong>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(A\setminus B\)</span></td>
+<td style="text-align: left;">alle Elemente, die in <span class="math inline">\(A\)</span>, aber nicht in <span class="math inline">\(B\)</span> enthalten sind (<strong>Differenzmenge</strong>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\([a,b] \Leftrightarrow a\leq x\leq b\)</span></td>
+<td style="text-align: left;">alle (reellen) Zahlen von einschließlich <span class="math inline">\(a\)</span> bis einschließlich <span class="math inline">\(b\)</span> (<strong>geschlossenes Intervall</strong>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\((a,b) \Leftrightarrow a&lt;x&lt;b\)</span></td>
+<td style="text-align: left;">alle (reellen) Zahlen von ausschließlich <span class="math inline">\(a\)</span> bis ausschließlich <span class="math inline">\(b\)</span> (<strong>offenes Intervall</strong>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\([a,b) \Leftrightarrow a\leq x&lt;b\)</span></td>
+<td style="text-align: left;">alle (reellen) Zahlen von einschließlich <span class="math inline">\(a\)</span> bis ausschließlich <span class="math inline">\(b\)</span> (<strong>halboffenes Intervall</strong>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\([a,\infty)\)</span></td>
+<td style="text-align: left;">alle (reellen) Zahlen ab <span class="math inline">\(a\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;" rowspan="7"><strong>Zahlenmengen</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\mathbb{N} = \{ 0,1,2,3,\dots \}\)</span></td>
+<td style="text-align: left;">alle <strong>natürlichen Zahlen</strong> (nach DIN-Norm 5473)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{N}^* = \mathbb{N}\setminus\{0\}\)</span></td>
+<td style="text-align: left;">alle natürlichen Zahlen ohne die Null (nach DIN-Norm 5473)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{Z} = \{ \dots,-2,-1,0,1,2,\dots \}\)</span></td>
+<td style="text-align: left;">alle <strong>ganzen Zahlen</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{R}\)</span></td>
+<td style="text-align: left;">alle <strong>reellen Zahlen</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{R}^+\)</span></td>
+<td style="text-align: left;">alle positiven reellen Zahlen</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{R}^+_0\)</span></td>
+<td style="text-align: left;">alle positiven reellen Zahlen einschließlich der Null (alle <strong>nichtnegativen</strong> reellen Zahlen)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(G_f\)</span></td>
+<td style="text-align: left;">alle Punkte auf dem Graphen der Funktion <span class="math inline">\(f\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span id="tab:mengenschreibweise" label="tab:mengenschreibweise">[tab:mengenschreibweise]</span></p>
+</div>
+<p>Ein <strong>Intervall</strong> ist eine abkürzende Schreibweise, um eine Teilmenge der reellen Zahlen auszudrücken.</p>
+<h4 id="sec:tangenten">Tangente, Normale und Sekante</h4>
+<p>Die <strong>Tangente</strong> einer Funktion <span class="math inline">\(f\)</span> an dem Punkt <span class="math inline">\(P(x_0\vert f(x_0))\)</span> ist einer Gerade durch <span class="math inline">\(P\)</span> mit der Steigung <span class="math display">\[m_t=f^\prime (x_0).\]</span> Sie wird durch die <strong>allgemeine Tangentengleichung</strong> bzw. <strong>Punkt-Steigungs-Form</strong> <span class="math display">\[t_{x_0} (x)=f^\prime (x_0)\cdot (x-x_0)+f(x_0)\]</span> beschrieben. Um eine Tangente durch den Punkt <span class="math inline">\(P\)</span> zu erhalten, können andernfalls der Punkt <span class="math inline">\(P\)</span> und die Steigung <span class="math inline">\(f^\prime (x_0)\)</span> im Punkt <span class="math inline">\(P\)</span> aber auch in die allgemeine Geradengleichung <span class="math display">\[y = m\cdot x + b \qquad\Leftrightarrow\qquad f(x_0)=f^\prime (x_0)\cdot x_0 + b\]</span> eingesetzt werden, sodass der y-Achsen-Abschnitt der Tangente einfach bestimmt werden kann.</p>
+<p>Die <strong>Normale</strong> verläuft orthogonal zu der Tangente durch den Punkt <span class="math inline">\(P\)</span>. Daher besitzt sie die Steigung <span class="math display">\[m_n=-\frac{1}{m_t}\]</span> und die Gleichung <span class="math display">\[n_{x_0} (x)=-\frac{1}{f^\prime (x_0)}\cdot (x-x_0)+f(x_0).\]</span></p>
+<p>Die <strong>Sekante</strong> schneidet eine Funktion <span class="math inline">\(f\)</span> in (mindestens) zwei Punkten.</p>
+<p>Es gilt für den <strong>Steigungswinkel</strong> (bzw. je nach Zusammenhang <strong>Neigungswinkel</strong>), wenn mit <span class="math inline">\(m\)</span> die Steigung bezeichnet wird, <span class="math display">\[\tan(\alpha)=m \qquad\textrm{bzw.}\qquad \alpha = \tan^{-1}{(m)} .\]</span></p>
+<h4 id="sec:methoden_loesen_gleichungen">Methoden zum Lösen von Gleichungen (<span data-acronym-label="HMF" data-acronym-form="singular+abbrv">HMF</span>)</h4>
+<p>Allgemein werden <strong>Äquivalenzumformung</strong> zum Lösen von Gleichungen (oder Ungleichungen) verwendet. Eine Äquivalenzumformung ist dabei eine Umformung einer Gleichung bzw. Ungleichung, die deren Wahrheitswert unverändert lässt. Für sie gilt, dass sie rückgängig machbar sein sowie die Lösungsmenge der (Un-)Gleichung nicht verändern sollen.</p>
+<p>Äquivalenzumformungen für Gleichungen sind:</p>
+<ul>
+<li><p>die Addition bzw. Subtraktion eines Terms</p></li>
+<li><p>die Multiplikation mit bzw. Division durch einen Term ungleich null<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
+<li><p>das Bilden des Kehrwerts beider Seiten</p></li>
+<li><p>das Quadrieren (wenn beide Seiten positiv sind)</p></li>
+</ul>
+<p>Bei Exponentialgleichungen ist zu beachten, dass Potenzen mit gleicher Basis gleich sind, wenn ihre Exponenten gleich sind.</p>
+<p>Bei Ungleichungen ist das <strong>Inversionsgesetz</strong> zu beachten, nach dem bei Multiplikation mit bzw. Division durch eine negative Zahl die Ordnungsrelation die Richtung ändert. Ist das Vorzeichen eines Terms unbekannt (z.B. bei <span class="math inline">\(x-2\)</span>), muss eine Fallunterscheidung für <span class="math inline">\(x-2&lt;0\)</span> bzw. <span class="math inline">\(x-2&gt;0\)</span> durchgeführt werden.</p>
+<h5 id="p-q-formel">p-q-Formel</h5>
+<p>Für quadratische Gleichungen der Form <span class="math inline">\(x^2+px+q=0\)</span> gilt <span class="math display">\[x_{1,2}=-\frac{p}{2}\pm\sqrt{\left(\frac{p}{2}\right)^2-q}.\]</span></p>
+<h5 id="substitution">Substitution</h5>
+<p>In <strong>biquadratischen Gleichungen</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> lässt sich <span class="math inline">\(u:=x^2\)</span> substituieren. So erhält man eine eine einfacher zu lösende Gleichung <span class="math inline">\(au^2+bu+c=0\)</span>. Später muss dann <span class="math inline">\(x=\pm\sqrt{u}\)</span> zurück-substituiert werden.</p>
+<h5 id="sec:linearfaktorzerlegung">Linearfaktorzerlegung</h5>
+<p>Ganzrationale Funktionen der Form <span class="math display">\[f(x)=ax^n+bx^{n-1}+cx^{n-2}+\dots\]</span> lassen sich mithilfe ihrer Nullstellen als Produkt ihrer <strong>Linearfaktoren</strong>, also in der Form <span class="math display">\[f(x)=(x-x_{N,1})(x-x_{N,2})\dots (x-x_{N,n})\]</span> schreiben.</p>
+<h5 id="sec:satz_nullprodukt">Satz vom Nullprodukt</h5>
+<p>Ein Produkt ist genau dann Null, wenn einer der Faktoren Null ist.</p>
+<p>Dieser Satz kann angewendet werden z.B. nach dem Ausklammern eines <span class="math inline">\(x\)</span>, eines Linearfaktors <span class="math inline">\((x-x_N)\)</span> (siehe <a href="#sec:linearfaktorzerlegung" data-reference-type="ref+page" data-reference="sec:linearfaktorzerlegung">[sec:linearfaktorzerlegung]</a>) oder natürlich, wenn schon ein Produkt (bspw. aus ganzrationaler und Exponentialfunktion) vorliegt.</p>
+<h5 id="polynomdivision">Polynomdivision</h5>
+<p>Bei der <strong>Polynomdivision</strong> (siehe <a href="#fig:polynomdivision" data-reference-type="ref+page" data-reference="fig:polynomdivision">[fig:polynomdivision]</a>) wird ein Polynom durch ein anderes geteilt.</p>
+<figure>
+<img src="beispiel_polynomdivision.jpg" id="fig:polynomdivision" style="width:50.0%" alt="Beispiel für Polynomdivision" /><figcaption aria-hidden="true">Beispiel für Polynomdivision</figcaption>
+</figure>
+<h5 id="sec:newton-verfahren">Newton-Verfahren</h5>
+<p>Bei dem <strong>Newton-Verfahren</strong> werden Nullstellen iterativ<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> durch die Annahme, dass sich die Nullstellen einer Tangente in der Nähe der Nullstellen der zugehörigen Funktion befinden, angenähert.</p>
+<p>Man startet dabei bei einem geeigneten Wert <span class="math inline">\(x_0\)</span> und führt die Rechnung <span class="math display">\[x_{n+1}=x_0-\frac{f(x_n)}{f^\prime(x_n)}\]</span> so oft durch, bis sich die beiden ersten Nachkommastellen nicht mehr ändern.</p>
+<p>Für die Herleitung der Formel wird die Tangentengleichung <span class="math inline">\(t_{x_0}(x)=0\)</span> gesetzt und nach <span class="math inline">\(x\)</span> aufgelöst (für Tangentengleichungen siehe <a href="#sec:tangenten" data-reference-type="ref+page" data-reference="sec:tangenten">[sec:tangenten]</a>).</p>
+<h4 id="sec:methoden_loesen_gleichungssysteme">Methoden zum Lösen von linearen Gleichungssystemen (<span data-acronym-label="HMF" data-acronym-form="singular+abbrv">HMF</span>)</h4>
+<p>Ein <strong><span data-acronym-label="LGS" data-acronym-form="singular+short">LGS</span></strong> besteht aus mehreren Gleichungen und mehreren Variablen.</p>
+<p>Zum Lösen von linearen Gleichungssystemen <em>von Hand</em> können jeweils mehrere Gleichungen so kombiniert (z.B. addiert, subtrahiert) werden, dass nacheinander jeweils alle Variablen bis auf eine wegfallen. Anschließend werden die gefundenen Werte wieder in eine ursprüngliche Gleichung eingesetzt, um den Wert der letzten Variable zu bestimmen.</p>
+<p>Ist die Lösung eines Gleichungssystems eindeutig bestimmt, dann hat es eine Lösung. Sind die Koeffizienten zweier Gleichungen jeweils Vielfache voneinander, dann hat das Gleichungssystem keine Lösung. Sind sogar zwei Gleichungen Vielfache voneinander, dann hat es unendlich viele Lösungen.</p>
+<h4 id="sec:potenz_logarithmus_rechengesetze">Potenz- und Logarithmus-Rechengesetze</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Potenzgesetz</th>
+<th style="text-align: left;">Logarithmusgesetz</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\displaystyle a^0=1\)</span> sowie <span class="math inline">\(\displaystyle a^1=a\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\log_b{1}=0\)</span> sowie <span class="math inline">\(\log_b{b}=1\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\displaystyle a^{\log_a{x}}=x\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\displaystyle \log_b{b^x}=x\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\displaystyle a^{-x}=\frac{1}{a^x}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\displaystyle \log_b{\left(\frac{1}{x}\right)}=-\log_b{x}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\displaystyle a^\frac{p}{q}=\sqrt[q]{a^p}=\left(\sqrt[q]{a}\right)^p\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\displaystyle a^{xy}=(a^x)^y\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\displaystyle \log_b{x^r}=r\cdot\log_b{x}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\displaystyle a^{x+y}=a^x\cdot a^y\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\displaystyle \log_b{xy}=\log_b{x}+\log_b{y}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\displaystyle a^{x-y}=\frac{a^x}{a^y}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\displaystyle \log_b{\left(\frac{x}{y}\right)}=\log_b{x}-\log_b{y}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\displaystyle a^x\cdot b^x=(ab)^x\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="funktionen">Funktionen</h3>
+<p>Eine <strong>Funktion <span class="math inline">\(f\)</span></strong> ist eine Zuordnung, die jedem Element <span class="math inline">\(x\)</span> aus der <strong>Definitionsmenge <span class="math inline">\(D\)</span></strong> genau ein <span class="math inline">\(y=f(x)\)</span> der <strong>Wertemenge <span class="math inline">\(W\)</span></strong> zuordnet. Eine Funktion bezeichnet man als <strong>stetig</strong>, wenn sie einen durchgehenden Graphen besitzt.</p>
+<p>Die <strong>Umkehrfunktion <span class="math inline">\(\overline{f}(x)\)</span> bzw. <span class="math inline">\(f^{-1}(x)\)</span> einer Funktion <span class="math inline">\(f(x)\)</span></strong> ist die Funktion, für die <span class="math display">\[f(f^{-1}(x))=x\]</span> gilt. Dabei gilt <span class="math inline">\(D_f=W_{f^{-1}}\)</span> und <span class="math inline">\(D_{f^{-1}}=W_f\)</span>. Der Funktionsgraph von <span class="math inline">\(f^{-1}\)</span> entspricht dabei dem an der ersten Winkelhalbierenden <span class="math inline">\(y=x\)</span> gespiegelten Graphen der Funktion <span class="math inline">\(f\)</span>. Der Funktionsterm der Umkehrfunktion von <span class="math inline">\(f^{-1}\)</span> wird ermittelt, indem der Term der Funktion <span class="math inline">\(f\)</span> nach <span class="math inline">\(x\)</span> aufgelöst wird und in der so entstehenden Gleichung <span class="math inline">\(x\)</span> und <span class="math inline">\(f(x)\)</span> vertauscht werden.</p>
+<p><span style="color: red">Im Abitur 2021 werden die Logarithmus-, Sinus- und Kosinusfunktionen nicht Kernelement der komplexen Analysis-Aufgaben sein. Die Ableitungen, Stammfunktionen sowie weitere Eigenschaften dieser Funktionen sollten dennoch bekannt sein.</span></p>
+<h4 id="funktionstypen">Funktionstypen</h4>
+<p>Für eine Übersicht der wichtigsten Funktionstypen siehe <a href="#tab:uebersicht_funktionen" data-reference-type="ref+page" data-reference="tab:uebersicht_funktionen">[tab:uebersicht_funktionen]</a>.</p>
+<div class="sidewaystable">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Funktionsterm</th>
+<th style="text-align: left;">Definitionsmenge</th>
+<th style="text-align: left;">Wertemenge</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">lineare Funktion</td>
+<td style="text-align: left;"><span class="math inline">\(mx+b\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(D=\mathbb{R}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(W=\mathbb{R}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">quadratische Funktion</td>
+<td style="text-align: left;"><span class="math inline">\(ax^2+bx+c\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(D=\mathbb{R}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(W=\begin{cases} \left[\frac{4ac-b^2}{4a},\infty\right) &amp; \textrm{für } a&gt;0 \\ \left(-\infty,\frac{4ac-b^2}{4a}\right] &amp; \textrm{für } a&lt;0 \end{cases}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">kubische Funktion</td>
+<td style="text-align: left;"><span class="math inline">\(ax^3+bx^2+cx+d\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(D=\mathbb{R}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(W=\mathbb{R}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Exponentialfunktion</td>
+<td style="text-align: left;"><span class="math inline">\(a^x\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(D=\mathbb{R}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(W=\mathbb{R}^+\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Logarithmusfunktion</td>
+<td style="text-align: left;"><span class="math inline">\(\log_b{x}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(D=\mathbb{R}^+\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(W=\mathbb{R}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wurzelfunktion</td>
+<td style="text-align: left;"><span class="math inline">\(\sqrt{x}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(D=\mathbb{R}^+_0\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(W=\mathbb{R}^+_0\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sinusfunktion</td>
+<td style="text-align: left;"><span class="math inline">\(\sin{x}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(D=\mathbb{R}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(W=[-1,1]\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kosinusfunktion</td>
+<td style="text-align: left;"><span class="math inline">\(\cos{x}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(D=\mathbb{R}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(W=[-1,1]\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tangensfunktion</td>
+<td style="text-align: left;"><span class="math inline">\(\tan{x}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(D=\mathbb{R}\setminus\{(2k+1)\frac{\pi}{2}\in\mathbb{Z}\}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(W=\mathbb{R}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span id="tab:uebersicht_funktionen" label="tab:uebersicht_funktionen">[tab:uebersicht_funktionen]</span></p>
+</div>
+<h5 id="ganzrationale-funktion">Ganzrationale Funktion</h5>
+<p>Eine <strong>ganzrationale Funktion <span class="math inline">\(n\)</span>-ten Grades</strong> (auch: <strong>Polynomfunktion</strong>) ist eine Funktion <span class="math display">\[f(x)=a_nx^n + a_{n-1}x^{n-1} + a_{n-2}x^{n-2} + \dots + a_2x^2 + a_1x + a_0 = \sum_{i=0}^n a_ix^i,\]</span> die als Summe von Potenzfunktionen mit natürlichen Exponenten beschrieben werden kann. Der Summand <span class="math inline">\(a_0\)</span> wird als <strong>Absolutglied</strong> bezeichnet. Als <strong>lineares Glied</strong> bezeichnet man den Summanden <span class="math inline">\(a_1x\)</span>, als <strong>quadratisches Glied</strong> den Summanden <span class="math inline">\(a_2x^2\)</span> usw.</p>
+<p>Der Graph einer ganzrationalen Funktion <span class="math inline">\(n\)</span>-ten Grades hat höchstens <span class="math inline">\(n\)</span> Nullstellen. Zwischen zwei aufeinanderfolgenden Nullstellen hat ihr Graph einen Extrempunkt. Zwischen zwei benachbarten Hoch- und Tiefpunkten ändert sich die Krümmung des Graphen; an dieser Stelle liegt ein Wendepunkt. Genaueres ist in <a href="#tab:funktionsuntersuchung" data-reference-type="ref+page" data-reference="tab:funktionsuntersuchung">[tab:funktionsuntersuchung]</a> dargestellt.</p>
+<p>Bekannte Spezialfälle sind z.B. die <strong>lineare Funktion</strong> mit <span class="math inline">\(n=1\)</span> oder die <strong>quadratische Funktion</strong> mit <span class="math inline">\(n=2\)</span>.</p>
+<h5 id="exponentialfunktion">Exponentialfunktion</h5>
+<p>Die <strong>(allgemeine) Exponentialfunktion</strong> ist definiert als <span class="math display">\[x\mapsto a^x \qquad\text{mit } a\in\mathbb{N}^+\setminus\{1\}.\]</span> Das Spiegeln der Funktion an der y-Achse erreicht man durch Austauschen der Basis <span class="math inline">\(a\)</span> mit ihrem Kehrwert <span class="math inline">\(\frac{1}{a}\)</span>. Die Definitionsmenge ist <span class="math inline">\(D=\mathbb{R}\)</span>, die Wertemenge ist <span class="math inline">\(W=\mathbb{R^+}\)</span>. Für jede Basis <span class="math inline">\(a\)</span> gilt <span class="math inline">\(f(0)=1\)</span> oder – anders formuliert – liegt der Punkt <span class="math inline">\(P(0\vert1)\)</span> auf jeder Exponentialfunktion. Der Graph der Exponentialfunktion besitzt die Asymptote <span class="math inline">\(y=0\)</span>. Für das Verhalten im Unendlichen gelten <span class="math display">\[\lim_{x\to\infty} f(x)=\begin{cases} 0 &amp; \text{für } 0&lt;a&lt;1 \\ \infty &amp; \text{für } 1&lt;a \end{cases} \qquad\textrm{und}\qquad \lim_{x\to -\infty} f(x)=\begin{cases} \infty &amp; \text{für } 0&lt;a&lt;1 \\ 0 &amp; \text{für } 1&lt;a \end{cases}.\]</span></p>
+<p>Auch bei transformierten Exponentialfunktionen <span class="math inline">\(f(x)=a\cdot b^x+c\)</span> lässt sich der Funktionsterm anhand des Graphen ablesen (siehe <a href="#fig:bestimmung_funktionsterm_exponentialfunktion" data-reference-type="ref+page" data-reference="fig:bestimmung_funktionsterm_exponentialfunktion">[fig:bestimmung_funktionsterm_exponentialfunktion]</a>):</p>
+<ol>
+<li><p>Zuerst wird die Lage der Asymptoten abgelesen; ihr y-Wert ist gleich des Absolutgliedes <span class="math inline">\(c\)</span>.</p></li>
+<li><p>Vom Funktionswert <span class="math inline">\(f(0)\)</span> wird der Wert von <span class="math inline">\(c\)</span> abgezogen. Da <span class="math inline">\(f(0)=a\cdot b^0+c=a+c\)</span> gilt, ist das Ergebnis der Wert der Streckung bzw. Stauchung <span class="math inline">\(a\)</span>. Dies entspricht dem Abstand der Asymptote zum Funktionswert <span class="math inline">\(f(0)\)</span>.</p></li>
+<li><p>Vom Funktionswert <span class="math inline">\(f(1)\)</span> wird der Wert von <span class="math inline">\(c\)</span> abgezogen; das Ergebnis wird durch den Wert des Parameters <span class="math inline">\(a\)</span> geteilt. Da <span class="math inline">\(f(1)=a\cdot b+c\)</span> gilt, ist das Ergebnis der Wert der Basis <span class="math inline">\(b\)</span>.</p></li>
+</ol>
+<figure>
+<embed src="bestimmung_funktionsterm_exponentialfunktion_graph.pdf" id="fig:bestimmung_funktionsterm_exponentialfunktion" /><figcaption aria-hidden="true">Bestimmung des Funktionsterms eines Exponentialfunktion anhand des Graphen</figcaption>
+</figure>
+<p>Die <strong>natürliche Exponentialfunktion</strong> bezeichnet den am häufigsten vorkommenden Fall <span class="math inline">\(a=\textrm{e}\)</span>.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> Da die natürliche Exponentialfunktion wenige mathematisch interessante Eigenschaften besitzt, kommt sie in Abituraufgaben häufig als Produkt mit einer ganzrationalen Funktion vor, wodurch ihre Eigenschaften stark verändert werden können.</p>
+<h5 id="logarithmusfunktion">Logarithmusfunktion</h5>
+<p>Die <strong>Logarithmusfunktion</strong> ist definiert als <span class="math display">\[x\mapsto\log_b{x}\]</span> und ist die Umkehrfunktion der Exponentialfunktion. Das Spiegeln der Funktion an der x-Achse erreicht man durch Austauschen der Basis <span class="math inline">\(b\)</span> mit ihrem Kehrwert <span class="math inline">\(\frac{1}{b}\)</span>. Die Definitionsmenge ist <span class="math inline">\(D=\mathbb{R}^+\)</span>, die Wertemenge ist <span class="math inline">\(W=\mathbb{R}\)</span>. Für jede Basis <span class="math inline">\(b\)</span> gilt <span class="math inline">\(f(1)=0\)</span> oder – anders formuliert – liegt der Punkt <span class="math inline">\(P(1\vert0)\)</span> auf jeder Exponentialfunktion. Der Graph der Exponentialfunktion besitzt die Asymptote <span class="math inline">\(x=0\)</span>. Für das Verhalten im Unendlichen gelten <span class="math display">\[\lim_{x\to\infty} f(x)=\begin{cases} -\infty &amp; \text{für } 0&lt;b&lt;1 \\ \infty &amp; \text{für } 1&lt;b \end{cases}.\]</span></p>
+<p>Die <strong>natürliche Logarithmusfunktion <span class="math inline">\(f(x)=\ln{(x)}\)</span></strong> (logarithmus naturalis) bezeichnet den Fall <span class="math inline">\(b=\textrm{e}\)</span>.</p>
+<h4 id="transformation-von-funktionen">Transformation von Funktionen</h4>
+<p>Durch die <strong>Transformation</strong> einer Funktion <span class="math inline">\(f\)</span> kann ihr Funktionsgraph verzerrt oder verschoben werden. Für den Graphen einer Funktion <span class="math display">\[g(x)=a\cdot f(b\cdot (x-c))+d\]</span> bewirken die Parameter <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span> und <span class="math inline">\(d\)</span> im Vergleich zum Graphen von <span class="math inline">\(f\)</span> folgendes:</p>
+<ul>
+<li><p><span class="math inline">\(a\)</span>: Verzerrung entlang der y-Achse um <span class="math inline">\(\vert a\vert\)</span>: <span class="math inline">\(\begin{cases} \textrm{Streckung} &amp; \textrm{für } \vert a\vert &gt;1 \\ \textrm{Stauchung} &amp; \textrm{für } \vert a\vert &lt;1 \end{cases}\)</span></p>
+<p>Bei <span class="math inline">\(a&lt;0\)</span> wird der Graph zusätzlich an der x-Achse gespiegelt.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p></li>
+<li><p><span class="math inline">\(b\)</span>: Verzerrung entlang der x-Achse um <span class="math inline">\(\vert b\vert\)</span>: <span class="math inline">\(\begin{cases} \textrm{Stauchung} &amp; \textrm{für } \vert b\vert &gt;1 \\ \textrm{Streckung} &amp; \textrm{für } \vert b\vert &lt;1 \end{cases}\)</span></p>
+<p>Bei <span class="math inline">\(b&lt;0\)</span> wird der Graph zusätzlich an der y-Achse gespiegelt.</p></li>
+<li><p><span class="math inline">\(c\)</span>: Verschiebung um <span class="math inline">\(\vert c\vert\)</span> in x-Achsenrichtung nach <span class="math inline">\(\begin{cases} \textrm{rechts} &amp; \textrm{für } c&gt;0 \\  \textrm{links} &amp; \textrm{für } c&lt;0 \end{cases}\)</span></p></li>
+<li><p><span class="math inline">\(d\)</span>: Verschiebung um <span class="math inline">\(\vert d\vert\)</span> in y-Achsenrichtung nach <span class="math inline">\(\begin{cases} \textrm{oben} &amp; \textrm{für } d&gt;0 \\  \textrm{unten} &amp; \textrm{für } d&lt;0 \end{cases}\)</span></p></li>
+</ul>
+<h4 id="kurvenscharen">Kurvenscharen</h4>
+<h5 id="definition">Definition</h5>
+<p>Eine <strong>Kurvenschar</strong> ist eine Menge verschiedener Kurven, deren Abbildungsvorschriften sich in (mindestens) einem Parameter unterscheiden, z.B. <span class="math inline">\(f_a(x):x\mapsto x^2+a\)</span>. Der Parameter wird als <strong>Scharparameter</strong> oder <strong>Formvariable</strong> bezeichnet und besitzt eine Definitionsmenge <span class="math inline">\(D\)</span>.</p>
+<h5 id="ortskurven">Ortskurven</h5>
+<p>Linien, auf denen bspw. alle Wendepunkte einer Kurvenschar liegen, bezeichnet man als <strong>Ortskurve</strong> aller Wendepunkte. Sie werden folgendermaßen bestimmt:</p>
+<ol>
+<li><p>Bestimme einen Zusammenhang zwischen den <span class="math inline">\(x\)</span>-Koordinaten und dem Scharparameter, indem du den Term für die allgemeine <span class="math inline">\(x\)</span>-Koordinate herleitest.</p></li>
+<li><p>Löse diesen Zusammenhang nach dem Scharparameter auf.</p></li>
+<li><p>Setze diese neue Darstellung für den Scharparameter in die Funktionsgleichung ein.</p></li>
+</ol>
+<p>Zur Kennzeichnung wird nun als Index der Funktion das Kürzel für den entsprechenden charakteristischen Punkt anstelle des Scharparameters geschrieben (z.B. <span class="math inline">\(f_E(x)\)</span> statt <span class="math inline">\(f_t(x)\)</span>).</p>
+<h3 id="ableitung">Ableitung</h3>
+<h4 id="bestimmung-der-steigung-bei-linearen-funktionen">Bestimmung der Steigung bei linearen Funktionen</h4>
+<p>Mithilfe eines <strong>Steigungsdreicks</strong> erhält man die Formel <span class="math display">\[m=\frac{\Delta y}{\Delta x}.\]</span></p>
+<h4 id="differenzenquotient-und-mittlere-änderungsrate">Differenzenquotient und mittlere Änderungsrate</h4>
+<p>Ist die Funktion <span class="math inline">\(f\)</span> auf dem Intervall <span class="math inline">\(I=[x_0,x_0+h]\)</span> definiert, dann heißt der Quotient <span class="math display">\[\frac{f(x_0+h)-f(x_0)}{h}\]</span> <strong>Differenzenquotient von <span class="math inline">\(f\)</span> im Intervall <span class="math inline">\(I\)</span></strong>. Da die Gerade, die durch die Punkte <span class="math inline">\(P(x_0\vert f(x_0))\)</span> und <span class="math inline">\(P(x_0+h\vert f(x_0+h))\)</span> verläuft, <strong>Sekante</strong> genannt wird, heißt der Differenzenquotient auch <strong>Sekantensteigung</strong>.</p>
+<p>In Sachzusammenhängen wird der Differenzen zusammen mit der zugehörigen Einheit auch als <strong>mittlere Änderungsrate</strong> bezeichnet.</p>
+<h4 id="tangentensteigung-und-momentane-änderungsrate">Tangentensteigung und momentane Änderungsrate</h4>
+<p>Soll die Steigung einer Funktion <span class="math inline">\(f\)</span> in einem Punkt <span class="math inline">\(P(x_0\vert f(x_0))\)</span> berechnet werden, benutzt man die <strong>Tangentensteigung <span class="math inline">\(m_t\)</span></strong>. Dazu lässt man im Differenzenquotienten <span class="math inline">\(h\to 0\)</span> konvergieren. Damit aber nicht durch null geteilt wird, wird der Limes des Differenzenquotienten <span class="math display">\[\lim_{h\to0} \frac{f(x_0+h)-f(x_0)}{h}:=f^\prime(x_0)\]</span> verwendet; er wird <strong>Differenzialquotient</strong> genant. Dieses Verfahren nennt man <strong>ableiten</strong> und <span class="math inline">\(f^\prime (x_0)\)</span> ist die <strong>Ableitung von <span class="math inline">\(f\)</span> an der Stelle <span class="math inline">\(x_0\)</span></strong>. Dabei nennt man <span class="math inline">\(f^\prime (x)\)</span> (f strich von x) ist die <strong>Ableitungsfunktion</strong>.</p>
+<p>In Sachzusammenhängen wird die Ableitung zusammen mit der zugehörigen Einheit auch als <strong>mittlere Änderungsrate</strong> bezeichnet.</p>
+<p>Für die Regeln zur Bestimmung der Ableitung siehe <a href="#tab:ableitungsregeln_integrationsregeln" data-reference-type="ref+page" data-reference="tab:ableitungsregeln_integrationsregeln">[tab:ableitungsregeln_integrationsregeln]</a>.</p>
+<div class="sidewaystable">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Regel</th>
+<th style="text-align: left;">Funktion</th>
+<th style="text-align: left;">Ableitungsfunktion</th>
+<th style="text-align: left;">Stammfunktion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Konstantenregel</td>
+<td style="text-align: left;"><span class="math inline">\(f(x)=a\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime (x)=0\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(F(x)=a\cdot x\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Faktorregel</td>
+<td style="text-align: left;"><span class="math inline">\(f(x)=a\cdot g(x)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime (x)=a\cdot g^\prime (x)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(F(x)=a\cdot G(x)\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Summenregel</td>
+<td style="text-align: left;"><span class="math inline">\(f(x)=g(x)+h(x)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime (x)=g^\prime (x)+h^\prime (x)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(F(x)=G(x)+H(x)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kettenregel</td>
+<td style="text-align: left;"><span class="math inline">\(f(x)=g(h(x))\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime (x)=h^\prime (x)\cdot g^\prime (h(x))\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span style="color: gray">lineare Substitution</span></td>
+<td style="text-align: left;"><span style="color: gray"></span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span style="color: gray"></span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Produktregel</td>
+<td style="text-align: left;"><span class="math inline">\(f(x)=g(x)\cdot h(x)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime (x)=g^\prime (x)\cdot h(x)+g(x)\cdot h^\prime (x)\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Quotientenregel</td>
+<td style="text-align: left;"><span class="math inline">\(f(x)=\frac{g(x)}{h(x)}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime (x)=\frac{g^\prime (x)\cdot h(x)-g(x)\cdot h^\prime (x)}{(h(x))^2}\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Potenzregel</td>
+<td style="text-align: left;"><span class="math inline">\(f(x)=x^n\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime (x)=n\cdot x^{n-1}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(F(x)=\frac{1}{n+1}x^{n+1}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(f(x)=\sin{(x)}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime (x)=\cos{(x)}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(F(x)=-\cos{(x)}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(f(x)=\cos{(x)}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime (x)=-\sin{(x)}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(F(x)=\sin{(x)}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(f(x)=e^x\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime (x)=e^x\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(F(x)=e^x\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(f(x)=\ln{(x)}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime (x)=\frac{1}{x}\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(f(x)=\frac{1}{x}\)</span></td>
+<td style="text-align: left;">(<span class="math inline">\(\rightarrow\)</span> Potenzregel)</td>
+<td style="text-align: left;"><span class="math inline">\(F(x)=\ln\vert x\vert\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span id="tab:ableitungsregeln_integrationsregeln" label="tab:ableitungsregeln_integrationsregeln">[tab:ableitungsregeln_integrationsregeln]</span></p>
+</div>
+<h4 id="extremwertprobleme">Extremwertprobleme</h4>
+<p>Bei <strong>Extremwertproblemen</strong> (auch <strong>Mini-Max-Aufgaben</strong>) soll ein Maximal- oder Minimalwert einer Funktion bestimmt werden. Beim Lösen von Extremwertproblemen wird folgendermaßen vorgegangen:</p>
+<ol>
+<li><p>Stelle eine <strong>Hauptbedingung</strong> auf, welche die zu maximierende/minimierende Funktion darstellt. Diese Funktion ist neben konstanten Parametern von zwei Variablen abhängig und beschreibt meistens eine Größe (z.B. den Umfang) einer Figur oder eines Körpers.</p></li>
+<li><p>Stelle eine <strong>Nebenbedingung</strong> auf, welche durch die Aufgabenstellung bestimmt wird und eine der Variablen der Hauptbedingung enthält.</p></li>
+<li><p>Löse die Nebenbedingung nach der entsprechenden Variable auf und setze den Term für diese in die Hauptbedingung ein, sodass die <strong>Zielfunktion</strong> entsteht, die nur noch eine Variable enthält und meistens eine quadratische Funktion ist.</p></li>
+<li><p>Bestimme das Extremum der Zielfunktion.</p></li>
+<li><p>Bestimme ggf. den entsprechenden Funktionswert der Zielfunktion oder durch Einsetzen in die Nebenbedingung den Wert der zweiten Variablen.</p></li>
+</ol>
+<h3 id="sec:funktionsuntersuchung">Funktionsuntersuchung (Kurvendiskussion)</h3>
+<p>Bei einer <strong>Funktionsuntersuchung</strong> müssen verschiedene Aspekte einer Funktion untersucht werden (siehe <a href="#tab:funktionsuntersuchung" data-reference-type="ref+page" data-reference="tab:funktionsuntersuchung">[tab:funktionsuntersuchung]</a>). Es ist aber unwahrscheinlich, dass im Abitur eine komplette Funktionsuntersuchung gefordert wird, eher werden die einzelnen Aspekte einzeln in Teilaufgaben abgefragt.</p>
+<div class="sidewaystable">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Aspekt</th>
+<th style="text-align: left;">(Allgemeine) Bedingung</th>
+<th style="text-align: left;"><p>Ganzrationale Funktion</p>
+<p>(<span class="math inline">\(n\)</span>-ten Grades)</p></th>
+<th style="text-align: left;">trigonometr. Funkt.</th>
+<th style="text-align: left;">Exponential-funktion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Funktionsterm</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(a_nx^n+a_{n-1}x^{n-1}+\dots+a_1x+a_0\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\sin{x}\)</span>, <span class="math inline">\(\cos{x}\)</span>, <span class="math inline">\(\tan{x}\)</span>, …</td>
+<td style="text-align: left;"><span class="math inline">\(a^x\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1. <strong>Definitionsmenge <span class="math inline">\(D\)</span></strong> (wenn nicht als Intervall <span class="math inline">\([a,b]\)</span> gegeben):</td>
+<td style="text-align: left;">Einschränkung evtl. bei Brüchen, Wurzeln oder Logarithmen</td>
+<td style="text-align: left;"><span class="math inline">\(D=\mathbb{R}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(D=\mathbb{R}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(D=\mathbb{R}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2. <strong>Symmetrie</strong> des Funktionsgraphen:</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">keine</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Achsensymmetrie zur y-Achse</td>
+<td style="text-align: left;"><span class="math inline">\(f(-x)=f(x)\)</span></td>
+<td style="text-align: left;">nur gerade Exponenten</td>
+<td style="text-align: left;"><span class="math inline">\(\cos{x}\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Punktsymmetrie zum Ursprung <span class="math inline">\(O(0\vert 0)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f(-x)=-f(x)\)</span></td>
+<td style="text-align: left;">nur ungerade Exponenten</td>
+<td style="text-align: left;"><span class="math inline">\(\sin{x}\)</span>, <span class="math inline">\(\tan{x}\)</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3. <strong>Verhalten von <span class="math inline">\(f\)</span> für betragsgroße <span class="math inline">\(x\)</span></strong>:</td>
+<td style="text-align: left;">Grenzwert (<strong>Limes</strong>) für <span class="math inline">\(x=\pm\infty\)</span> betrachten</td>
+<td style="text-align: left;"><span class="math inline">\(a_nx^n\)</span> (Summand mit höchstem Exponenten) betrachten</td>
+<td style="text-align: left;">kein Limes (periodisch)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">4. <strong>Schnittpunkt mit Koordinatenachsen</strong>:</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mit x-Achse (<strong>Nullstellen)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(f(x_N)\overset!= 0 \quad\Rightarrow N(x_N\vert 0)\)</span></td>
+<td style="text-align: left;">(maximal <span class="math inline">\(n\)</span> Nullstellen)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">keine</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mit y-Achse</td>
+<td style="text-align: left;"><span class="math inline">\(S_y(0\vert f(0))\)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(S_y(0\vert1)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">5. Extrempunkte (<strong>Extrema</strong>):</td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime (x_E)\overset!=0\)</span> (notwendig)</td>
+<td style="text-align: left;">(max. <span class="math inline">\((n-1)\)</span> Extrema)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">keine</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Hochpunkt (<strong>Maximum</strong>)</td>
+<td style="text-align: left;">hinreichend:</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(\bullet\)</span> <span class="math inline">\(f^\prime (x_E)\overset!=0\)</span> und <span class="math inline">\(f^{\prime\prime}(x_H)&lt;0\)</span> <em>oder</em></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(\bullet\)</span> <span class="math inline">\(f^\prime (x_E)\overset!=0\)</span> und (<span class="math inline">\(+\)</span>/<span class="math inline">\(-\)</span>)"=<span data-acronym-label="VZW" data-acronym-form="singular+abbrv">VZW</span> von <span class="math inline">\(f^\prime\)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tiefpunkt (<strong>Minimum</strong>)</td>
+<td style="text-align: left;">hinreichend:</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(\bullet\)</span> <span class="math inline">\(f^\prime (x_E)\overset!=0\)</span> und <span class="math inline">\(f^{\prime\prime}(x_T)&gt;0\)</span> <em>oder</em></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(\bullet\)</span> <span class="math inline">\(f^\prime (x_E)\overset!=0\)</span> und (<span class="math inline">\(-\)</span>/<span class="math inline">\(+\)</span>)"=<span data-acronym-label="VZW" data-acronym-form="singular+abbrv">VZW</span> von <span class="math inline">\(f^\prime\)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>absolutes</strong>/<strong>globales Extremum</strong></td>
+<td style="text-align: left;">extremstes Extremum für ganz <span class="math inline">\(D\)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>lokales Extremum</strong></td>
+<td style="text-align: left;">beliebiges Extremum</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Randextremum</strong> (nur prüfen, wenn <span class="math inline">\(D\)</span> als Intervall <span class="math inline">\([a,b]\)</span> gegeben)</td>
+<td style="text-align: left;"><span style="color: red">ggf. Punkt bzw. (vergleiche mit absoluten Extrema)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">6. <strong>Wendepunkte</strong>:</td>
+<td style="text-align: left;"><span class="math inline">\(f^{\prime\prime}(x_W)\overset!=0\)</span> (notwendig)</td>
+<td style="text-align: left;">(max. <span class="math inline">\((n-2)\)</span> Wendepunkte)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">keine</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">hinreichend:</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(\bullet\)</span> <span class="math inline">\(f^{\prime\prime}(x_W)\overset!=0\)</span> und <span class="math inline">\(f^{\prime\prime\prime}(x_W)\neq 0\)</span> <em>oder</em></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(\bullet\)</span> <span class="math inline">\(f^{\prime\prime}(x_W)\overset!=0\)</span> und <span data-acronym-label="VZW" data-acronym-form="singular+abbrv">VZW</span> von <span class="math inline">\(f^{\prime\prime}\)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span style="color: red">(ggf. auch Randpunkte von prüfen)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sattelpunkt</strong> (zusätzliche Prüfung nötig)</td>
+<td style="text-align: left;">zusätzlich <span class="math inline">\(f^{\prime}(x_W)=0\)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">7. <strong>Wertemenge</strong>:</td>
+<td style="text-align: left;"><span class="math inline">\(\rightarrow\)</span> (absolute) Extrema und Verhalten für betragsgroße <span class="math inline">\(x\)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(\sin{x}\)</span>, <span class="math inline">\(\cos{x}\)</span>: <span class="math inline">\(W=[-1,1]\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(W=\mathbb{R}^+\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">8. Graph:</td>
+<td style="text-align: left;">ermittelte <strong>charakteristische Punkte</strong> eintragen (ggf. unterstützt durch <strong>Wendetangenten</strong>), ggf. weitere Funktionswerte bestimmen</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><span id="tab:funktionsuntersuchung" label="tab:funktionsuntersuchung">[tab:funktionsuntersuchung]</span></p>
+</div>
+<h3 id="integrieren">Integrieren</h3>
+<h4 id="integrale">Integrale</h4>
+<p>Die Funktion <span class="math inline">\(f\)</span> sei auf dem Intervall <span class="math inline">\(I=[a,b]\)</span> stetig und <span class="math display">\[A_n=[f(x_1)+f(x_2)+\dots+f(x_n)]\cdot\Delta x\]</span> sei eine beliebige <strong>Rechteckssumme zu <span class="math inline">\(f\)</span> über das Intervall <span class="math inline">\(I\)</span></strong>. Dann heißt der Grenzwert <span class="math display">\[\lim_{n\to\infty} A_n\]</span> <strong>Integral der Funktion <span class="math inline">\(f\)</span> zwischen <span class="math inline">\(a\)</span> und <span class="math inline">\(b\)</span></strong>. Man schreibt dafür <span class="math display">\[\int_a^b f(x) \,\mathrm{d}x \qquad\textrm{(sprich: \glqq Integral von f von x in den Grenzen von a bis b\grqq{})}.\]</span></p>
+<p>Es gelten für Integrale folgende Rechenregeln:</p>
+<ul>
+<li><p><span class="math display">\[\int_a^b f(x)\,\mathrm{d}x + \int_b^c f(x)\,\mathrm{d}x = \int_a^c f(x)\,\mathrm{d}x\]</span></p></li>
+<li><p><strong>Faktorregel</strong>: <span class="math display">\[\int_a^b [c\cdot f(x)]\,\mathrm{d}x=c\cdot \int_a^b f(x) \,\mathrm{d}x\]</span></p></li>
+<li><p><strong>Summenregel</strong>: <span class="math display">\[\int_a^b [g(x)+h(x)]\,\mathrm{d}x = \int_a^b g(x) \,\mathrm{d}x + \int_a^b h(x) \,\mathrm{d}x\]</span></p></li>
+</ul>
+<h4 id="stammfunkion">Stammfunkion</h4>
+<p>Eine Funktion <span class="math inline">\(F(x)\)</span> heißt <strong>Stammfunktion</strong> zu einer Funktion <span class="math inline">\(f(x)\)</span> auf dem Intervall <span class="math inline">\(I\)</span>, wenn für alle <span class="math inline">\(x\in I\)</span> der Zusammenhang <span class="math display">\[F^\prime (x)=f(x)\]</span> gilt. Sind <span class="math inline">\(F\)</span> und <span class="math inline">\(G\)</span> Stammfunktionen von <span class="math inline">\(f\)</span> auf einem Intervall <span class="math inline">\(I\)</span>, dann gibt es eine Konstante <span class="math inline">\(c\)</span>, sodass für alle <span class="math inline">\(x\in I\)</span> der Zusammenhang <span class="math display">\[F(x)=G(x)+c\]</span> gilt.</p>
+<p>Für die Regeln zur Bestimmung der Stammfunktion siehe <a href="#tab:ableitungsregeln_integrationsregeln" data-reference-type="ref+page" data-reference="tab:ableitungsregeln_integrationsregeln">[tab:ableitungsregeln_integrationsregeln]</a>.</p>
+<h4 id="hauptsatz-der-differential--und-integralrechnung">Hauptsatz der Differential- und Integralrechnung</h4>
+<p>Die Funktion <span class="math inline">\(f\)</span> sei stetig auf dem Intervall <span class="math inline">\(I=[a,b]\)</span>. Dann gilt für eine beliebige Stammfunktion <span class="math inline">\(F\)</span> von <span class="math inline">\(f\)</span> auf <span class="math inline">\(I\)</span> der Zusammenhang <span class="math display">\[\int_a^b f(x)\,\mathrm{d}x = [F(x)]_a^b = F(b)-F(a).\]</span></p>
+<h4 id="lineare-substitution"><span style="color: gray">Lineare Substitution</span></h4>
+<p>Für die Berechnung von Integralen mit einer verketteten linearen Funktion <span class="math inline">\(z(x)=mx+n\)</span> als innerer Funktion im Integranden gilt <span class="math display">\[\int_a^b f(mx+n)\,\mathrm{d}x = \frac1m\cdot\int_{z(a)}^{z(b)} f(z)\,\mathrm{d}z.\]</span></p>
+<h4 id="partielle-integration-produktintegration"><span style="color: gray">Partielle Integration (Produktintegration)</span></h4>
+<p>Ein Produkt zweier Funktionen <span class="math inline">\(u\)</span> und <span class="math inline">\(v^\prime\)</span> lässt sich oft durch <span class="math display">\[\int_a^b u(x)\cdot v^\prime(x)\,\mathrm{d}x = [u(x)\cdot v(x)]_a^b - \int_a^b u^\prime(x)\cdot v(x)\,\mathrm{d}x\]</span> integrieren. Dabei sind <span class="math inline">\(u\)</span> und <span class="math inline">\(v^\prime\)</span> geschickt zu wählen, sodass das neue Integral leichter berechnet werden kann.</p>
+<h4 id="integralfunktion">Integralfunktion</h4>
+<p>Indem eine der beiden Integrationsgrenzen variabel ist, lassen sich <strong>Integralfunktionen</strong> <span class="math inline">\(I^b(x)\)</span> bzw. <span class="math inline">\(I_a(x)\)</span> definieren. Dabei wird die Integrationsvariable umbenannt (z.B. in <span class="math inline">\(t\)</span>).</p>
+<h4 id="fläche-zwischen-zwei-kurven">Fläche zwischen zwei Kurven</h4>
+<p>Die Fläche, die auf dem Intervall <span class="math inline">\(I=[a,b]\)</span> von dem Graphen der Funktionen <span class="math inline">\(f\)</span> und <span class="math inline">\(g\)</span> eingeschlossen wird, beträgt <span class="math display">\[A=\int_a^b \left\vert f(x)-g(x) \right\vert\,\mathrm{d}x.\]</span></p>
+<p>Ist die Funktion <span class="math inline">\(g\)</span> identisch mit der x-Achse, lässt sich die von dem Graphen der Funktion <span class="math inline">\(f\)</span> eingeschlossene Fläche im Intervall <span class="math inline">\(I=[a,b]\)</span> durch die Gleichung <span class="math display">\[A=\int_a^b \left\vert f(x)\right\vert\,\mathrm{d}x\]</span> berechnen.</p>
+<p>Soll die Fläche unterhalb der Funktion <span class="math inline">\(g\)</span> bzw. unterhalb der x-Achse tatsächlich von der oberhalb liegenden Fläche abgezogen werden, sind die Betragsstriche nicht nötig.</p>
+<h4 id="uneigentliche-integrale">Uneigentliche Integrale</h4>
+<p>Bei der Untersuchung von <strong>unbegrenzten Flächen</strong> auf einen Inhalt untersucht man Integrale mit einer variablen und einer festen Grenze wie <span class="math inline">\(\int_a^z f(x)\,\mathrm{d}x\)</span> oder <span class="math inline">\(\int_z^3 f(x)\,\mathrm{d}x\)</span> auf einen Grenzwert für <span class="math inline">\(z\to\pm\infty\)</span> bzw. <span class="math inline">\(z\to c\)</span>. Dieses Integrale, die sich durch einen Grenzwert ergeben, nennt man <strong>uneigentliche Integrale</strong>, z.B. <span class="math display">\[\lim_{z\to\infty} \int_1^z \frac{2}{x^2}\,\mathrm{d}x = \lim_{z\to\infty} \left[-\frac{2}{x}\right]_1^z = \lim_{z\to\infty} \left(-\frac{2}{z}+2\right)=2 .\]</span></p>
+<h4 id="rotationsvolumen">Rotationsvolumen</h4>
+<p>Bei Drehung einer auf dem Intervall <span class="math inline">\(I=[a,b]\)</span> stetigen Funktion <span class="math inline">\(f\)</span> um die <span class="math inline">\(x\)</span>-Achse entsteht ein <strong>Rotationskörper</strong> mit dem Volumen <span class="math inline">\(V\)</span>. Sein Volumen, das <strong>Rotationsvolumen</strong>, kann durch die Formel <span class="math display">\[V = \pi\cdot\int^b_a [f(x)]^2 \,\textrm{d}x\]</span> berechnet werden.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<h3 id="häufige-anwendungen">Häufige Anwendungen</h3>
+<p>Im Folgenden sind stets nur Beispiele angegeben, sowohl bei der Aufgabenstellung als auch bei der Musterlösung bzw. Vorgehensweise.</p>
+<h4 id="rekonstruktion-des-funktionsterms-ganzrationaler-funktionen-gegebenen-grades">Rekonstruktion des Funktionsterms ganzrationaler Funktionen gegebenen Grades</h4>
+<div class="recipe">
+<p><strong>Vorgehensweise 1</strong>. </p>
+<ol>
+<li><p>Stelle eine allgemeine Funktionsgleichung auf (z.B. <span class="math inline">\(f(x)=ax^2+bx+c\)</span>) und bestimme ggf. ihre ersten Ableitungen.</p></li>
+<li><p>Finde in der Aufgabenstellung so viele Bestimmungsgleichungen, wie es Unbekannte in der Funktionsgleichung gibt (z.B. <span class="math inline">\(f(3)=2\)</span> oder <span class="math inline">\(f^\prime (2)=0\)</span>).<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p></li>
+<li><p>Setze die Bestimmungsgleichungen in die Funktionsgleichung ein und löse das Gleichungssystem.</p></li>
+<li><p>Setze die Lösungen der Unbekannten in die Funktionsgleichung ein.</p></li>
+</ol>
+</div>
+<h4 id="untersuchung-des-übergangs-der-graphen-zweier-funktionen">Untersuchung des Übergangs der Graphen zweier Funktionen</h4>
+<div class="exercise">
+<p><strong>Aufgabe 1</strong>.  Gegeben sind die Funktionen <span class="math inline">\(f\)</span> mit <span class="math inline">\(D_f=[a,b]\)</span> und <span class="math inline">\(g\)</span> mit <span class="math inline">\(D_g=[b,c]\)</span>. Untersuchen Sie den Übergang der Graphen der Funktionen <span class="math inline">\(f\)</span> und <span class="math inline">\(g\)</span> an der Stelle <span class="math inline">\(x=b\)</span> und interpretieren Sie das Ergebnis.</p>
+</div>
+<div class="recipe">
+<p><strong>Vorgehensweise 2</strong>. </p>
+<ol>
+<li><p>Vergleiche je nach Sachzusammenhang <span class="math inline">\(f(b)\)</span> mit <span class="math inline">\(g(b)\)</span> bzw. <span class="math inline">\(f^\prime (b)\)</span> mit <span class="math inline">\(g^\prime (b)\)</span>. Normalerweise sollten <span class="math inline">\(f(b)=g(b)\)</span> bzw. <span class="math inline">\(f^\prime (b) = g^\prime (b)\)</span> für einen Übergang ohne Knick gelten.</p></li>
+<li><p>Bringe deine Ergebnisse in den entsprechenden Sachzusammenhang der Aufgabe.</p></li>
+</ol>
+</div>
+<h4 id="angabe-der-anzahl-von-wendepunkten-einer-funktion-hmf">Angabe der Anzahl von Wendepunkten einer Funktion (<span data-acronym-label="HMF" data-acronym-form="singular+abbrv">HMF</span>)</h4>
+<div class="exercise">
+<p><strong>Aufgabe 2</strong>.  Gegeben ist die Funktion <span class="math inline">\(f\)</span> mit <span class="math inline">\(f(x) = 2x^4 - 12x^2 + 3\)</span> und <span class="math inline">\(x\in\mathbb{R}\)</span>. Ein Wendepunkt <span class="math inline">\(W\)</span> des Graphen von <span class="math inline">\(f\)</span> hat die Koordinaten <span class="math inline">\((1 \mid -7)\)</span>. Begründen Sie ohne weitere Rechnung, dass der Graph von <span class="math inline">\(f\)</span> genau zwei Wendepunkte hat.</p>
+</div>
+<div class="solution">
+<p><strong>Musterlösung 1</strong>.  Aufgrund der Achsensymmetrie zur y-Achse hat der Graph von <span class="math inline">\(f\)</span> mindestens einen weiteren Wendepunkt. Graphen ganzrationaler Funktionen vierten Grades haben höchstens zwei Wendepunkte. Somit hat der Graph von <span class="math inline">\(f\)</span> genau zwei Wendepunkte.</p>
+</div>
+<h1 id="analytische-geometrie">Analytische Geometrie</h1>
+<h3 id="grundlagen-1">Grundlagen</h3>
+<h4 id="winkel">Winkel</h4>
+<p>Schneiden sich zwei Geraden <span class="math inline">\(g\)</span> und <span class="math inline">\(h\)</span>, so werden als <strong>Nebenwinkel</strong> die Winkel bezeichnet, die jeweils nebeneinander, also auf der gleichen Seite einer Geraden liegen. Es gilt für zwei Nebenwinkel <span class="math inline">\(\alpha\)</span> und <span class="math inline">\(\beta\)</span> immer <span class="math display">\[\alpha + \beta = \SI{180}{\degree} .\]</span></p>
+<p>Schneiden sich zwei Geraden <span class="math inline">\(g\)</span> und <span class="math inline">\(h\)</span>, so werden als <strong>Scheitelwinkel</strong> die Winkel bezeichnet, die jeweils gegenüber liegen. Scheitelwinkel sind immer gleich groß.</p>
+<p>Schneidet eine Gerade <span class="math inline">\(g\)</span> zwei parallele Geraden <span class="math inline">\(h\)</span> und <span class="math inline">\(i\)</span>, so werden als <strong>Stufenwinkel</strong> die Winkel bezeichnet, die jeweils auf der gleichen Seite der Geraden <span class="math inline">\(g\)</span> und auf der gleichen Seite der Geraden <span class="math inline">\(h\)</span> bzw. <span class="math inline">\(i\)</span> liegen. Stufenwinkel an geschnittenen Parallelen sind immer gleich groß.</p>
+<p>Schneidet eine Gerade <span class="math inline">\(g\)</span> zwei parallele Geraden <span class="math inline">\(h\)</span> und <span class="math inline">\(i\)</span>, so werden als <strong>Wechselwinkel</strong> die Winkel bezeichnet, die sich jeweils auf <span class="math inline">\(h\)</span> und <span class="math inline">\(i\)</span> gegenüberliegen. Wechselwinkel an geschnittenen Parallelen sind immer gleich groß.</p>
+<p>Die <strong>Summe der Innenwinkel</strong> in einem Dreieck ist immer <span class="math inline">\(\SI{180}{\degree}\)</span>; die Summe der Innenwinkel in einem <span class="math inline">\(n\)</span>-Eck ist immer <span class="math inline">\((n-2)\cdot\SI{180}{\degree}\)</span>.</p>
+<h4 id="geometrische-figuren-und-körper-und-ihre-größen">Geometrische Figuren und Körper und ihre Größen</h4>
+<p><strong>Figuren</strong> sind zweidimensionale, <strong>Körper</strong> sind dreidimensionale geometrische Objekte.</p>
+<p>Für den Flächeninhalt von Kreisen gilt <span class="math display">\[A_\text{Kreis} = \pi\cdot r^2 ,\]</span> für den Flächeninhalt von Dreiecken gilt <span class="math display">\[A_\text{Dreick} = \frac{1}{2}g\cdot h ,\]</span> für den Flächeninhalt von Trapezen gilt <span class="math display">\[A_\text{Trapez} = \frac12 (a+c)\cdot h\]</span> und für den Flächeninhalt Parallelogrammen<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> gilt <span class="math display">\[A_\text{Parallelogramm} = g\cdot h .\footnote{siehe auch Abschnitt~\ref{sec:flächeninhalt_zwei_vektoren} \glqq\nameref{sec:flächeninhalt_zwei_vektoren}\grqq \ auf Seite \pageref{sec:flächeninhalt_zwei_vektoren}}\]</span></p>
+<p>Für das Volumen spitzer Körper wie Pyramide und Kegel gilt <span class="math display">\[V_{\text{spitz}} = \frac13\cdot G\cdot h ,\]</span> für Kugeln gilt <span class="math display">\[V_{\text{Kugel}} = \frac{4}{3}\pi\cdot r^3\]</span> und für die anderen Körper gilt <span class="math display">\[V = G\cdot h ,\]</span> wobei <span class="math inline">\(G\)</span> die Grundfläche bezeichnet.</p>
+<h4 id="dreidimensionales-koordinatensystem">Dreidimensionales Koordinatensystem</h4>
+<p>Im <strong>dreidimensionalen Koordinatensystem</strong> (siehe <a href="#fig:dreidimensionales_koordinatensystem" data-reference-type="ref+page" data-reference="fig:dreidimensionales_koordinatensystem">[fig:dreidimensionales_koordinatensystem]</a>) wird das zweidimensionale um die Tiefe ergänzt. Sie bildet die <span class="math inline">\(x_1\)</span>-Achse (bzw. <span class="math inline">\(x\)</span>-Achse). Die Breite bildet die <span class="math inline">\(x_2\)</span>-Achse (bzw. <span class="math inline">\(y\)</span>-Achse) und die Höhe wird durch die <span class="math inline">\(x_3\)</span>-Achse (bzw. <span class="math inline">\(z\)</span>-Achse) beschrieben.</p>
+<figure>
+<img src="dreidimensionales_koordinatensystem.jpg" id="fig:dreidimensionales_koordinatensystem" style="width:50.0%" alt="Punkte im dreidimensionalen Koordinatensystem" /><figcaption aria-hidden="true">Punkte im dreidimensionalen Koordinatensystem</figcaption>
+</figure>
+<p>Die <strong>Grundebenen</strong> (siehe <a href="#sec:grundebenen" data-reference-type="ref+page" data-reference="sec:grundebenen">[sec:grundebenen]</a>) sind die Ebenen, in denen jeweils zwei der drei Koordinatenachsen liegen.</p>
+<h4 id="vektoren">Vektoren</h4>
+<p><strong>Vektoren</strong> können als Pfeile veranschaulicht werden, da sie eine Richtung und eine Länge besitzen. Ihre Koordinaten werden untereinander geschrieben und mit runden Klammern umrahmt.</p>
+<p>Man unterscheidet – je nach Funktion – zwei Arten von Vektoren:</p>
+<ul>
+<li><p><strong>Ortsvektoren</strong>: Sie beginnen immer im Koordinaten-Ursprung und zeigen von dort auf einen Punkt. Die Koordinaten von diesem stimmen daher mit denen des Ortsvektors überein. Sie werden mit dem kleinen Buchstaben benannt, wie der entsprechende Punkt heißt, oder als Richtungsvektor, wobei der erste Punkt der Ursprung ist (z.B. der Ortsvektor zum Punkt <span class="math inline">\(P\)</span> ist <span class="math inline">\(\vv{p}\)</span> bzw. <span class="math inline">\(\vv{OP}\)</span>).</p></li>
+<li><p><strong>Richtungsvektoren</strong>: Sie geben eine Richtung an – häufig zwischen zwei Punkten. Daher ist ihre Länge meistens nicht relevant und ihre Koordinaten können durch gemeinsame Teiler dividiert werden, um sie zu vereinfachen. Sie werden mit einem kleinen Buchstaben (z.B. <span class="math inline">\(\vv{u}\)</span>) oder, wenn sie zwei Punkte verbinden, mit deren Namen (z.B. <span class="math inline">\(\vv{AB}\)</span>) bezeichnet.</p></li>
+</ul>
+<p>Der <strong>Betrag</strong> <span class="math inline">\(\vert\vv{x}\vert\)</span> (anschaulich die Länge) eines Vektors <span class="math inline">\(\vv{x}=\begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}\)</span> wird durch <span class="math display">\[\vert\vv{x}\vert =\sqrt{x_1^2+x_2^2+x_3^2}\]</span> berechnet.</p>
+<p>Ein <strong>Einheitsvektor</strong> ist ein Vektor <span class="math inline">\(\vv{x_0}\)</span> mit dem Betrag <span class="math inline">\(\vert\vv{x_0}\vert = 1\)</span>. Für den Einheitsvektor in der Richtung des Vektors <span class="math inline">\(\vv{x}\)</span> (mit einem Betrag <span class="math inline">\(\vert\vv{x}\vert \neq0\)</span>) gilt <span class="math display">\[\vv{x_0} = \frac{\vv{x}}{\vert\vv{x}\vert} .\]</span></p>
+<p>Der <strong>Nullvektor</strong> <span class="math display">\[\vv{o} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}\]</span> ist der Vektor mit dem Betrag <span class="math inline">\(0\)</span>. Er ist der Ortsvektor des <strong>Koordinatenursprungs</strong> <span class="math display">\[O(0\vert0\vert0) .\]</span></p>
+<h4 id="sec:punkte">Punkte im dreidimensionalen Koordinatensystem</h4>
+<p>Die Koordinaten von Punkten werden in der Reihenfolge der Koordinatenachsen-Nummerierung angegeben: <span class="math display">\[P(p_1\vert p_2\vert p_3)\]</span> Da Punkte im Koordinatensystem und ihre Ortsvektoren eindeutig zugeordnet sind, können Punkte auch durch ihr Ortsvektoren beschrieben werden (z.B. der Punkt <span class="math inline">\(P\)</span> durch seinen Ortsvektor <span class="math inline">\(\vv{p}\)</span>).</p>
+<h3 id="vektorrechnung">Vektorrechnung</h3>
+<h4 id="addition">Addition</h4>
+<p><span class="math display">\[\vv{a}+\vv{b}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}+\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}=\begin{pmatrix} a_1+b_1 \\ a_2+b_2 \\ a_3+b_3 \end{pmatrix}\]</span></p>
+<h4 id="subtraktion">Subtraktion</h4>
+<p><span class="math display">\[\vv{a}-\vv{b}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}-\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}=\begin{pmatrix} a_1-b_1 \\ a_2-b_2 \\ a_3-b_3 \end{pmatrix}\]</span></p>
+<h4 id="multiplikation-eines-vektors-mit-einem-skalar-s-multiplikation">Multiplikation eines Vektors mit einem Skalar (S-Multiplikation)</h4>
+<p><span class="math display">\[k\cdot\vv{a}=k\cdot\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}=\begin{pmatrix} k\cdot a_1 \\ k\cdot a_2 \\ k\cdot a_3 \end{pmatrix}\]</span></p>
+<h4 id="skalarprodukt">Skalarprodukt</h4>
+<p><span class="math display">\[\vv{a}\cdot\vv{b} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}\cdot\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix} = a_1b_1+a_2b_2+a_3b_3\]</span></p>
+<p>Gilt <span class="math inline">\(\vv{a}\cdot\vv{b}=0\)</span>, dann stehen die Vektoren <span class="math inline">\(\vv{a}\)</span> und <span class="math inline">\(\vv{b}\)</span> orthogonal zueinander.</p>
+<p>Es gelten die Zusammenhänge <span class="math display">\[\vv{a}\cdot\vv{b} = \vert\vv{a}\vert\cdot\vert\vv{b}\vert\cdot\cos{(\alpha)},\]</span> wobei <span class="math inline">\(\alpha\)</span> der von <span class="math inline">\(\vv{a}\)</span> und <span class="math inline">\(\vv{b}\)</span> eingeschlossene Winkel ist, und <span class="math display">\[\vv{a}\cdot\vv{a} = a_1^2+a_2^2+a_3^2 = \vert\vv{a}\vert^2 .\]</span></p>
+<p>Um der Verwechslung mit der normalen Multiplikation vorzubeugen, wird auch häufig das Zeichen <span class="math inline">\(\circ\)</span> für das Skalarprodukt verwendet (z.B. <span class="math inline">\(\vv{a}\circ\vv{b}\)</span> anstelle von <span class="math inline">\(\vv{a}\cdot\vv{b}\)</span>).</p>
+<p>Ist ein Vektor <span class="math inline">\(\vv{b}\)</span>, der senkrecht zu einem Vektor <span class="math inline">\(\vv{a}\)</span> steht, gesucht, dann muss folglich die Gleichung <span class="math inline">\(\vv{a}\cdot\vv{b} = 0\)</span> bzw. <span class="math inline">\(a_1b_1+a_2b_2+a_3b_3 = 0\)</span> gelöst werden. Ist eine Koordinate von <span class="math inline">\(\vv{a}\)</span> oder <span class="math inline">\(\vv{b}\)</span> null (im folgenden Beispiel ist <span class="math inline">\(b_3=0\)</span>), dann vereinfacht sich die Rechnung. Denn dann muss <span class="math inline">\(a_1b_1+a_2b_2+0\cdot b_3 = 0\)</span> bzw.<span class="math inline">\(a_1b_1+a_2b_2= 0\)</span> gelten. Dies ist z.B. der Fall, wenn <span class="math inline">\(b_1 = a_2\)</span> und <span class="math inline">\(b_1 = -a_1\)</span> sind, denn es gilt <span class="math inline">\(\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}\cdot\begin{pmatrix} a_2 \\ -a_1 \\ 0 \end{pmatrix} = 0\)</span>.</p>
+<h4 id="kreuzprodukt-vektorprodukt">Kreuzprodukt (Vektorprodukt)</h4>
+<p><span class="math display">\[\vv{a}\times\vv{b} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}\times\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix} = \begin{pmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{pmatrix}\]</span></p>
+<p>Das Ergebnis von <span class="math inline">\(\vv{a}\times\vv{b}\)</span> ist ein Vektor, der sowohl zu <span class="math inline">\(\vv{a}\)</span> als auch zu <span class="math inline">\(\vv{b}\)</span> orthogonal steht. Der Vektor <span class="math inline">\(\vv{a}\times\vv{b}\)</span> wird (in bestimmten Zusammenhängen, z.B. bei Ebenen) als <strong>Normalenvektor <span class="math inline">\(\vv{n}\)</span></strong> bezeichnet.</p>
+<p>Es gilt der Zusammenhang <span class="math display">\[\vert\vv{a}\times\vv{b}\vert=\vert\vv{a}\vert\cdot\vert\vv{b}\vert\cdot\sin{(\alpha)},\]</span> wobei <span class="math inline">\(\alpha\)</span> der von <span class="math inline">\(\vv{a}\)</span> und <span class="math inline">\(\vv{b}\)</span> eingeschlossene Winkel ist.</p>
+<h4 id="spatprodukt">Spatprodukt</h4>
+<p>Das <strong>Spatprodukt</strong> <span class="math display">\[(\vv{a}\times\vv{b})\cdot\vv{c}\]</span> dreier Vektoren ergibt eine reelle Zahl.</p>
+<h4 id="linearkombinationen-von-vektoren-lineare-abhängigkeit">Linearkombinationen von Vektoren: Lineare Abhängigkeit</h4>
+<p>Mehrere Vektoren sind genau dann <strong>linear abhängig</strong>, wenn sie sich als Vielfache voneinander darstellen lassen. Andernfalls sind sie <strong>linear unabhängig</strong>. Für zwei bzw. drei Vektoren bedeutet das:</p>
+<p>Zwei Vektoren <span class="math inline">\(\vv{a}\)</span> und <span class="math inline">\(\vv{b}\)</span> sind genau dann linear abhängig bzw. <strong>kollinear</strong>, wenn sie parallel sind (also wenn sie bei gleichem Aufpunkt bzw. Ortsvektor auf einer Geraden liegen): <span class="math display">\[\vv{a} = r \cdot \vv{b} \text{ mit } r\in\mathbb{R}\]</span></p>
+<p>Drei Vektoren <span class="math inline">\(\vv{a}\)</span>, <span class="math inline">\(\vv{b}\)</span> und <span class="math inline">\(\vv{c}\)</span> sind genau dann linear abhängig bzw. <strong>komplanar</strong>, wenn sie (bei gleichem Aufpunkt bzw. Ortsvektor) in einer Ebenen liegen: <span class="math display">\[\vv{a} = r \cdot \vv{b} + s\cdot\vv{c} \text{ mit } r,s\in\mathbb{R}\]</span></p>
+<p>Der Nullvektor <span class="math inline">\(\vv{o}\)</span> ist zu jedem Vektor und zu jeder Ebene parallel.</p>
+<h3 id="vektorielle-berechnung-von-punkten-und-größen">Vektorielle Berechnung von Punkten und Größen</h3>
+<h4 id="mittelpunkt-einer-strecke">Mittelpunkt einer Strecke</h4>
+<p>Für den Mittelpunkt <span class="math inline">\(M\)</span> (bzw. seinen Ortsvektor <span class="math inline">\(\vv{m}\)</span>) der Strecke <span class="math inline">\(\overline{PQ}\)</span> zwischen den Punkten <span class="math inline">\(P\)</span> (mit dem Ortsvektor <span class="math inline">\(\vv{p}\)</span>) und <span class="math inline">\(Q\)</span> (mit dem Ortsvektor <span class="math inline">\(\vv{q}\)</span>) gilt <span class="math display">\[M\left(\frac{p_1+q_1}{2}\left\vert\frac{p_1+q_1}{2}\right\vert\frac{p_3+q_3}{2}\right) \qquad\textrm{bzw.}\qquad \vv{m} = \frac{\vv{p}+\vv{q}}{2} .\]</span></p>
+<h4 id="winkelberechnung">Winkelberechnung</h4>
+<p>Aus <span class="math display">\[\cos{(\alpha)} = \frac{\vv{a}\cdot\vv{b}}{\vert\vv{a}\vert\cdot\vert\vv{b}\vert} \qquad\textrm{oder}\qquad \sin{(\alpha)} =\frac{\vert\vv{a}\times\vv{b}\vert}{\vert\vv{a}\vert\cdot\vert\vv{b}\vert}\]</span> lässt sich der von zwei Vektoren <span class="math inline">\(\vv{a}\)</span> und <span class="math inline">\(\vv{b}\)</span> eingeschlossene Winkel berechnen. Für die je nach Anwendung verwendeten Vektoren siehe <a href="#tab:anwendungsfaelle_winkelberechnung" data-reference-type="ref+page" data-reference="tab:anwendungsfaelle_winkelberechnung">[tab:anwendungsfaelle_winkelberechnung]</a>. Die untersuchten Objekte dürfen dabei nicht parallel sein.</p>
+<div id="tab:anwendungsfaelle_winkelberechnung">
+<table>
+<caption>Anwendungsfälle bei Winkelberechnung</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Anwendungsfall</th>
+<th style="text-align: left;">zu verwendende Vektoren</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">zwei Vektoren</td>
+<td style="text-align: left;">gegebene Vektoren</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">zwei Geraden</td>
+<td style="text-align: left;">Richtungsvektoren</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Gerade, Ebene</td>
+<td style="text-align: left;">Richtungsvektor, Normalenvektor</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">zwei Ebenen</td>
+<td style="text-align: left;">Normalenvektoren</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span id="tab:anwendungsfaelle_winkelberechnung" label="tab:anwendungsfaelle_winkelberechnung">[tab:anwendungsfaelle_winkelberechnung]</span></p>
+<p>Abschließend muss in jedem Fall mittels Logik überprüft werden, ob der Ergebniswinkel oder sein Nebenwinkel der gesuchte ist, da dies durch die Reihenfolge der Winkel in der Formel bestimmt wird.</p>
+<p>Da im Fall Gerade-Ebene ein zum Objekt paralleler Vektor und ein zum anderen Objekt senkrechter Vektor verwendet wird, muss abschließend der Nebenwinkel berechnet werden: <span class="math inline">\(\beta = \SI{180}{\degree} - \alpha\)</span></p>
+<h4 id="sec:flächeninhalt_zwei_vektoren">Flächeninhalt einer von zwei Vektoren aufgespannten Figur</h4>
+<p>Die Fläche des Parallelogramms<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>, welches durch die Vektoren <span class="math inline">\(\vv{a}\)</span> und <span class="math inline">\(\vv{b}\)</span> aufgespannt wird, lässt dich durch <span class="math display">\[A=\vert\vv{a}\times\vv{b}\vert = \vert\vv{a}\vert\cdot\vert\vv{b}\vert\cdot\sin{(\alpha)}\]</span> berechnen.</p>
+<p>Daraus lässt sich auch die Fläche eines von den Vektoren <span class="math inline">\(\vv{a}\)</span> und <span class="math inline">\(\vv{b}\)</span> aufgespannten Dreiecks berechnen.</p>
+<h4 id="volumen-eines-von-drei-vektoren-aufgespannten-spats">Volumen eines von drei Vektoren aufgespannten Spats</h4>
+<p>Das Volumen des <strong>Spats</strong> (schiefen Quaders), welcher durch die Vektoren <span class="math inline">\(\vv{a}\)</span>, <span class="math inline">\(\vv{b}\)</span> und <span class="math inline">\(\vv{c}\)</span> aufgespannt wird, lässt sich durch das Spatprodukt <span class="math display">\[V = \vert (\vv{a}\times\vv{b})\cdot\vv{c} \vert\]</span> berechnen.</p>
+<h3 id="geometrische-objekte-im-dreidimensionalen-raum">Geometrische Objekte im dreidimensionalen Raum</h3>
+<p>Für Punkte siehe <a href="#sec:punkte" data-reference-type="ref+page" data-reference="sec:punkte">[sec:punkte]</a>.</p>
+<h4 id="geraden">Geraden</h4>
+<h5 id="schreibweise">Schreibweise</h5>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Parameterform (3-Punkte-Form)</strong>:</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{x}=\vv{p}+r\cdot\vv{u}\)</span></td>
+<td style="text-align: left;">mit Aufpunkt <span class="math inline">\(P\)</span> bzw. Stützvektor <span class="math inline">\(\vv{p}\)</span>, Richtungsvektor <span class="math inline">\(\vv{u}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h5 id="spurpunkte">Spurpunkte</h5>
+<p>Als <strong>Spurpunkte</strong> einer Geraden mit einer Grundebene bezeichnet man deren Schnittpunkt. Für die Koordinaten der Spurpunkte gilt:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Spurpunkt mit der <span class="math inline">\(x_1\)</span>-<span class="math inline">\(x_2\)</span>-Ebene:</td>
+<td style="text-align: left;"><span class="math inline">\(S_{1,2}(x_1 \vert x_2 \vert 0)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Spurpunkt mit der <span class="math inline">\(x_2\)</span>-<span class="math inline">\(x_3\)</span>-Ebene:</td>
+<td style="text-align: left;"><span class="math inline">\(S_{2,3}(0 \vert x_2 \vert x_3)\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Spurpunkt mit der <span class="math inline">\(x_1\)</span>-<span class="math inline">\(x_3\)</span>-Ebene:</td>
+<td style="text-align: left;"><span class="math inline">\(S_{1,3}(x_1 \vert 0 \vert x_3)\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="ebenen">Ebenen</h4>
+<h5 id="schreibweise-1">Schreibweise</h5>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1. <strong>Parameterform</strong>:</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3-Punkte-Form:</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{x}=\vv{a}+r\cdot(\vv{b}-\vv{a})+s\cdot(\vv{c}-\vv{a})\)</span></td>
+<td style="text-align: left;">mit Ortsvektoren <span class="math inline">\(\vv{a}\)</span>, <span class="math inline">\(\vv{b}\)</span>, <span class="math inline">\(\vv{c}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Punkt-Richtungs-Form:</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{x}=\vv{p}+r\cdot\vv{u}+s\cdot\vv{v}\)</span></td>
+<td style="text-align: left;">mit Aufpunkt <span class="math inline">\(P\)</span> bzw. Stützvektor <span class="math inline">\(\vv{p}\)</span>, Richtungsvektoren <span class="math inline">\(\vv{u}\)</span>, <span class="math inline">\(\vv{v}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2. <strong>Normalenform</strong>:</td>
+<td style="text-align: left;"><span class="math inline">\((\vv{x}-\vv{p})\cdot\vv{n}=0\)</span></td>
+<td style="text-align: left;">mit Normalenvektor <span class="math inline">\(\vv{n}=\vv{u}\times\vv{v}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Hesseform:</td>
+<td style="text-align: left;"><span class="math inline">\((\vv{x}-\vv{p})\cdot\vv{n_0}=0\)</span></td>
+<td style="text-align: left;">mit <span class="math inline">\(\vv{n_0}=\frac{\vv{n}}{\vert\vv{n}\vert}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3. <strong>Koordinatenform</strong>:</td>
+<td style="text-align: left;"><span class="math inline">\(n_1x_1+n_2x_2+n_3x_3=k\)</span></td>
+<td style="text-align: left;">mit <span class="math inline">\(k=\vv{p}\cdot\vv{n}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Koordinaten-Einheitsform:</td>
+<td style="text-align: left;"><span class="math inline">\(n_{0,1}x_1+n_{0,2}x_2+n_{0,3}x_3=k_0\)</span></td>
+<td style="text-align: left;">mit <span class="math inline">\(k_0 = \frac{k}{\vert\vv{n}\vert}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h5 id="sec:grundebenen">Grundebenen</h5>
+<p>Die Grundebenen können wie in <a href="#tab:grundebenen" data-reference-type="ref+page" data-reference="tab:grundebenen">[tab:grundebenen]</a> angegeben beschrieben werden.</p>
+<div id="tab:grundebenen">
+<table>
+<caption>Darstellung der Grundebenen</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Grundebene</th>
+<th style="text-align: center;" colspan="3">Parameterform, Normalenform, Koordinatenform</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(x_1\)</span>-<span class="math inline">\(x_2\)</span>-Ebene (<strong>Grundriss</strong>):</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{x}=r\cdot\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}+s\cdot\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\vv{x}\cdot\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}=0\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(x_3=0\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(x_2\)</span>-<span class="math inline">\(x_3\)</span>-Ebene (<strong>Aufriss</strong>):</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{x}=r\cdot\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}+s\cdot\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\vv{x}\cdot\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}=0\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(x_1=0\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(x_1\)</span>-<span class="math inline">\(x_3\)</span>-Ebene (<strong>Seitenriss</strong>):</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{x}=r\cdot\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}+s\cdot\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\vv{x}\cdot\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}=0\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(x_2=0\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span id="tab:grundebenen" label="tab:grundebenen">[tab:grundebenen]</span></p>
+<h5 id="spurpunkte-1">Spurpunkte</h5>
+<p>Als <strong>Spurpunkte</strong> einer Ebene mit einer Koordinatenachse bezeichnet man deren Schnittpunkt. Für die Koordinaten gilt:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Spurpunkt mit der <span class="math inline">\(x_1\)</span>-Achse:</td>
+<td style="text-align: left;"><span class="math inline">\(S_1(x_1 \vert 0\vert 0)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Spurpunkt mit der <span class="math inline">\(x_2\)</span>-Achse:</td>
+<td style="text-align: left;"><span class="math inline">\(S_2(0 \vert x_2 \vert 0)\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Spurpunkt mit der <span class="math inline">\(x_3\)</span>-Achse:</td>
+<td style="text-align: left;"><span class="math inline">\(S_3(0\vert 0 \vert x_3)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Ist die Ebene in der Koordinatenform <span class="math inline">\(n_1x_1+n_2x_2+n_3x_3=k\)</span> gegeben, dann gilt für <span class="math inline">\(x_n\)</span>-Koordinate des Spurpunktes mit der <span class="math inline">\(x_n\)</span>-Ebene <span class="math display">\[x_n = \frac{k}{n_n} .\]</span> Der Wert der anderen beiden Koordinaten ist <span class="math inline">\(x=0\)</span>.</p>
+<h5 id="spurgeraden">Spurgeraden</h5>
+<p>Als <strong>Spurgeraden</strong> einer Ebene mit einer Grundebene bezeichnet man deren Schnittgerade. Für die Koordinaten der Punkte auf der Spurgeraden gilt:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Spurgerade mit der <span class="math inline">\(x_1\)</span>-<span class="math inline">\(x_2\)</span>-Ebene:</td>
+<td style="text-align: left;"><span class="math inline">\(g_{1,2}:\vv{x}=\begin{pmatrix} p_1 \\ p_2 \\ 0 \end{pmatrix}+r\cdot\begin{pmatrix} u_1 \\ u_2 \\ 0 \end{pmatrix}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Spurgerade mit der <span class="math inline">\(x_2\)</span>-<span class="math inline">\(x_3\)</span>-Ebene:</td>
+<td style="text-align: left;"><span class="math inline">\(g_{2,3}:\vv{x}=\begin{pmatrix} 0 \\ p_2 \\ p_3 \end{pmatrix}+r\cdot\begin{pmatrix} 0 \\ u_2 \\ u_3 \end{pmatrix}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Spurgerade mit der <span class="math inline">\(x_1\)</span>-<span class="math inline">\(x_3\)</span>-Ebene:</td>
+<td style="text-align: left;"><span class="math inline">\(g_{1,3}:\vv{x}=\begin{pmatrix} p_1 \\ 0 \\ p_3 \end{pmatrix}+r\cdot\begin{pmatrix} u_1 \\ 0 \\ u_3 \end{pmatrix}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="kugel"><span style="color: gray">Kugel</span></h4>
+<p>Mittelpunkt-Ortsvektor <span class="math inline">\(\vv{m}\)</span>, Radius <span class="math inline">\(r\)</span></p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Vektorform:</td>
+<td style="text-align: left;"><span class="math inline">\((\vv{x}-\vv{m})^2=r^2\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Koordinatenform:</td>
+<td style="text-align: left;"><span class="math inline">\((x_1-m_1)^2+(x_2-m_1)^2+(x_3-m_3)^2=r^2\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="inzidenzprobleme-lagebeziehungen">Inzidenzprobleme (Lagebeziehungen)</h3>
+<h4 id="punktprobe">Punktprobe</h4>
+<p>Mithilfe der <strong>Punktprobe</strong> wird geprüft, ob ein Punkt <span class="math inline">\(P\)</span> Element eines anderen geometrischen Objekts (z.B. Gerade oder Ebene) ist. Dazu wird der Ortsvektor <span class="math inline">\(\vv{p}\)</span> des Punktes in die Bestimmungsgleichung des Objekts für den allgemeinen Vektor <span class="math inline">\(\vv{x}\)</span> eingesetzt. Ist die resultierende Gleichung wahr, ist der Punkt Element des anderen Objekts; andernfalls nicht.</p>
+<h4 id="lage-gerade-gerade">Lage Gerade-Gerade</h4>
+<p>Sind die Richtungsvektoren der beiden Geraden parallel (kollinear abhängig)?</p>
+<ul>
+<li><p>Ja: Die Geraden sind parallel. Ist der Aufpunkt der einen Gerade Element der anderen Gerade (Punktprobe)?</p>
+<ul>
+<li><p>Ja: Die Geraden sind identisch.</p></li>
+<li><p>Nein: Die Geraden sind echt parallel.</p></li>
+</ul></li>
+<li><p>Nein: Existiert ein Schnittpunkt (Geradengleichungen gleichsetzen, <span data-acronym-label="ÜzK" data-acronym-form="singular+short">ÜzK</span> <span class="math inline">\(\rightarrow\)</span> Existiert eine Lösung für das Gleichungssystem)?</p>
+<ul>
+<li><p>Ja: Die Geraden schneiden sich in einem Schnittpunkt <span class="math inline">\(S\)</span>.</p></li>
+<li><p>Nein: Die Geraden sind windschief zueinander.</p></li>
+</ul></li>
+</ul>
+<h4 id="lage-gerade-ebene">Lage Gerade-Ebene</h4>
+<p>Setze die allgemeinen Koordinaten der Geraden in die Koordinatenform der Ebene ein und löse nach dem Parameter der Geraden auf. Was ist das Ergebnis?</p>
+<ul>
+<li><p>ein Wert für den Parameter (z.B. <span class="math inline">\(r=4\)</span>): Die Gerade und die Ebene schneiden sich in einem Schnittpunkt <span class="math inline">\(S\)</span></p>
+<p>Berechnung von <span class="math inline">\(S\)</span>: den Wert des Parameters in die Geradengleichung einsetzen</p></li>
+<li><p>eine wahre Aussage (z.B. <span class="math inline">\(4=4\)</span>): Die Gerade und die Ebene sind identisch.</p></li>
+<li><p>eine falsche Aussage (z.B. <span class="math inline">\(3=4\)</span>): Die Gerade und die Ebene sind (echt) parallel.</p></li>
+</ul>
+<h4 id="lage-ebene-ebene">Lage Ebene-Ebene</h4>
+<p>Sind die Ebenen parallel (die Spannvektoren der beiden Ebenen komplanar abhängig)?</p>
+<ul>
+<li><p>Ja: Die Ebenen sind parallel. Ist der Aufpunkt einer Ebene Element der anderen Ebene?</p>
+<ul>
+<li><p>Ja: Die Ebenen sind identisch.</p></li>
+<li><p>Nein: Die Ebenen sind echt parallel.</p></li>
+</ul></li>
+<li><p>Nein: Die Ebenen schneiden sich in Schnittgerade <span class="math inline">\(g\)</span>:</p>
+<ol>
+<li><p>Ebenengleichungen in Koordinatenform bringen</p></li>
+<li><p><span data-acronym-label="LGS" data-acronym-form="singular+abbrv">LGS</span> mit beiden Ebenengleichungen (und den drei Unbekannten <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span>, <span class="math inline">\(x_3\)</span>) in Stufenform bringen</p></li>
+<li><p><span class="math inline">\(x_3=r\)</span> (Parameter der Schnittgeraden) setzen</p></li>
+<li><p><span class="math inline">\(x_2\)</span> und <span class="math inline">\(x_1\)</span> in Anhängigkeit von <span class="math inline">\(r\)</span> bestimmen</p></li>
+<li><p>Koordinaten <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> und <span class="math inline">\(x_3\)</span> in allgemeinen Vektor <span class="math inline">\(\vv{x}\)</span> einsetzen</p></li>
+<li><p>Mithilfe von Rechengesetzen konstante und von <span class="math inline">\(r\)</span> abhängige Summanden extrahieren <span class="math inline">\(\rightarrow\)</span> Parameterform</p></li>
+</ol></li>
+</ul>
+<h4 id="lage-gerade-kugel"><span style="color: gray">Lage Gerade-Kugel</span></h4>
+<p>Setze die allgemeinen Koordinaten der Geraden <span class="math inline">\(g:\vv{x}=\vv{p}+t\cdot\vv{v}\)</span> in die Kugelgleichung <span class="math inline">\(K:(\vv{x}-\vv{m})=r^2\)</span> ein und löse die entstehende Gleichung nach dem Parameter der Geraden auf.</p>
+<ul>
+<li><p>keine Lösung: Die Gerade und die Kugel berühren sich nicht.</p></li>
+<li><p>eine Lösung: Die Gerade und die Kugel berühren sich im Berührpunkt <span class="math inline">\(B\)</span>.</p></li>
+<li><p>zwei Lösungen: Die Gerade und die Kugel schneiden sich in den Schnittpunkten <span class="math inline">\(S_1\)</span> und <span class="math inline">\(S_2\)</span>.</p></li>
+</ul>
+<h4 id="lage-ebene-kugel"><span style="color: gray">Lage Ebene-Kugel</span></h4>
+<p>Vergleiche den Abstand <span class="math inline">\(d(M,E)\)</span> der Ebene <span class="math inline">\(E:(\vv{x}-\vv{p})\cdot\vv{n}=0\)</span> zum Mittelpunkt der Kugel <span class="math inline">\(K:(\vv{x}-\vv{m})^2=r^2\)</span> mit <span class="math inline">\(r\)</span>:</p>
+<ul>
+<li><p><span class="math inline">\(d(M,E)&gt;r\)</span>: Die Ebene <span class="math inline">\(E\)</span> und die Kugel <span class="math inline">\(K\)</span> berühren sich nicht.</p></li>
+<li><p><span class="math inline">\(d(M,E)=r\)</span>: Die Ebene <span class="math inline">\(E\)</span> und die Kugel <span class="math inline">\(K\)</span> berühren sich im Berührpunkt <span class="math inline">\(B\)</span>.<br />
+<strong>Tangentialebene</strong>: <span class="math inline">\((\vv{x}-\vv{b})\cdot (\vv{b}-\vv{m})=0\)</span> bzw. <span class="math inline">\((\vv{x}-\vv{m})\cdot (\vv{b}-\vv{m})=r^2\)</span></p></li>
+<li><p><span class="math inline">\(d(M,E)&lt;r\)</span>: Die Ebene <span class="math inline">\(E\)</span> und die Kugel schneiden sich in einem <strong>Schnittkreis</strong> <span class="math inline">\(k\)</span> mit Mittelpunkt <span class="math inline">\(M^\prime\)</span> und Radius <span class="math inline">\(r^\prime\)</span>.<br />
+<span class="math inline">\(M^\prime = \textrm{Schnittpunkt von $E$ mit Lotgerade } g:\vv{m}+r\cdot\vv{n}\)</span><br />
+<span class="math inline">\(r^\prime = \sqrt{r^2-d(M,E)^2} = \sqrt{r^2-\left\vert\vv{MM^\prime}\right\vert^2}\)</span></p></li>
+</ul>
+<h3 id="sec:metrik">Metrik (Abstandsberechnungen)</h3>
+<p>Unter dem Begriff <strong>Abstand</strong> versteht man allgemein die kürzeste Verbindungsstrecke zweier Objekte.</p>
+<h4 id="sec:abstand_punkt_punkt">Abstand Punkt-Punkt</h4>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Punkt <span class="math inline">\(P(p_1\vert p_2\vert p_3)\)</span>, Punkt <span class="math inline">\(Q(q_1\vert q_2\vert q_3)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;">Bestimme den Verbindungs- bzw. Differenzvektor der beiden Punkte.</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{PQ}=\vv{q}-\vv{p}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2.</td>
+<td style="text-align: left;">Berechne den Betrag des eben aufgestellten Vektors.</td>
+<td style="text-align: left;"><span class="math inline">\(\left\vert\vv{PQ}\right\vert=\sqrt{(q_1-p_1)^2+(q_2-p_2)^2+(q_3-p_3)^2}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(d(P,Q)=\sqrt{(q_1-p_1)^2+(q_2-p_2)^2+(q_3-p_3)^2}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="sec:abstand_punkt_gerade">Abstand Punkt-Gerade</h4>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Punkt <span class="math inline">\(P(p_1\vert p_2\vert p_3)\)</span>, Gerade <span class="math inline">\(g: \vv{x}=\vv{s}+r\cdot\vv{u}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;">Bestimme die Hilfsebene, die durch den Punkt und orthogonal zu der Geraden verläuft.</td>
+<td style="text-align: left;"><span class="math inline">\(E_H: (\vv{x}-\vv{p})\cdot\vv{u}=0\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2.</td>
+<td style="text-align: left;">Bestimme die Koordinaten des Lotfußpunktes, des Schnittpunkt der Gerade mit der Hilfsebene.</td>
+<td style="text-align: left;"><span class="math inline">\(L: g \cap a\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">a)</td>
+<td style="text-align: left;">Setze die Koordinaten der Gerade in Abhängigkeit von ihrem Parameter in die Ebenengleichung der Hilfsebene ein.</td>
+<td style="text-align: left;"><span class="math inline">\([(\vv{s}+r\cdot\vv{u})-\vv{p}]\cdot\vv{u}=0\)</span> (Normalenform) oder <span class="math inline">\((s_1+r\cdot u_1)\cdot u_1+(s_2+r\cdot u_2)\cdot u_2+(s_3+r\cdot u_3)\cdot u_3=\vv{p}\cdot\vv{u}\)</span> (Koordinatenform)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">b)</td>
+<td style="text-align: left;">Löse die entstandene Gleichung nach dem Parameter der Geraden auf.</td>
+<td style="text-align: left;"><span class="math inline">\(r=\frac{(\vv{p}-\vv{s})\cdot\vv{u}}{\vv{u}\cdot\vv{u}}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">c)</td>
+<td style="text-align: left;">Setze den Wert des Parameters in die Gleichung der Geraden ein.</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{l}=\vv{s}+\frac{(\vv{p}-\vv{s})\cdot\vv{u}}{\vv{u}\cdot\vv{u}} \cdot\vv{u}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3.</td>
+<td style="text-align: left;">Bestimme den Abstand von dem Punkt zum Lotfußpunkt.</td>
+<td style="text-align: left;">siehe <a href="#sec:abstand_punkt_punkt" data-reference-type="ref+page" data-reference="sec:abstand_punkt_punkt">[sec:abstand_punkt_punkt]</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(d(P,g)=\left\vert(\vv{p}-\vv{s})\times\vv{u_0}\right\vert\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="sec:abstand_punkt_ebene">Abstand Punkt-Ebene</h4>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Punkt <span class="math inline">\(P(p_1\vert p_2\vert p_3)\)</span>, Ebene <span class="math inline">\(E:(\vv{x}-\vv{s})\cdot\vv{n}=0\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Setze den Punkt in die <u>Hesse-Form</u> der Ebene ein.</td>
+<td style="text-align: left;"><span class="math inline">\(d(P,E)=\left\vert(\vv{p}-\vv{s})\cdot\vv{n_0}\right\vert\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>oder:</em> Setze den Punkt in die <u>Koordinateneinheitsform</u> ein.</td>
+<td style="text-align: left;"><span class="math inline">\(d(P,E)=\vert n_{0,1}\cdot p_1+n_{0,2}\cdot p_2+n_{0,3}\cdot p_3-\vv{s}\cdot\vv{n_0}\vert\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="abstand-gerade-gerade-parallel">Abstand Gerade-Gerade (parallel)</h4>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Gerade <span class="math inline">\(g:\vv{x}=\vv{p}+r\cdot\vv{u}\)</span>, Gerade <span class="math inline">\(h:\vv{x}=\vv{q}+s\cdot\vv{v}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;">Bestimme den Abstand vom Aufpunkt einer Geraden zur anderen Geraden.</td>
+<td style="text-align: left;"><span class="math inline">\(d(g,h)=d(P,h)\)</span>, siehe <a href="#sec:abstand_punkt_gerade" data-reference-type="ref+page" data-reference="sec:abstand_punkt_gerade">[sec:abstand_punkt_gerade]</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(d(g,h)=\left\vert(\vv{p}-\vv{q})\times\vv{v_0}\right\vert\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="abstand-gerade-gerade-nicht-parallel">Abstand Gerade-Gerade (nicht parallel)</h4>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Gerade <span class="math inline">\(g:\vv{x}=\vv{p}+r\cdot\vv{u}\)</span>, Gerade <span class="math inline">\(h:\vv{x}=\vv{q}+s\cdot\vv{v}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;">Bestimme den die Gleichung der Hilfsebene, die parallel zu einer und durch die andere Gerade verläuft.</td>
+<td style="text-align: left;"><span class="math inline">\(E_H:\vv{x}=\vv{p}+t_1\cdot\vv{u}+t_2\cdot\vv{v}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2.</td>
+<td style="text-align: left;">Bestimme den Abstand von der Hilfsebene zu dem Aufpunkt der Geraden, durch die jene Ebene <em>nicht</em> verläuft.</td>
+<td style="text-align: left;">siehe <a href="#sec:abstand_punkt_gerade" data-reference-type="ref+page" data-reference="sec:abstand_punkt_gerade">[sec:abstand_punkt_gerade]</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(d(g,h)=\left\vert(\vv{q}-\vv{p})\cdot(\vv{u}\times\vv{v})_0\right\vert\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="abstand-gerade-ebene-parallel">Abstand Gerade-Ebene (parallel)</h4>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Gerade <span class="math inline">\(g:\vv{x}=\vv{p}+r\cdot\vv{u}\)</span>, Ebene <span class="math inline">\(E:\vv{x}=\vv{q}+s\cdot\vv{v}+t\cdot\vv{w}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;">Bestimme den Abstand vom Aufpunkt der Gerade zur Ebene.</td>
+<td style="text-align: left;"><span class="math inline">\(d(g,E)=d(P,E)\)</span>, siehe <a href="#sec:abstand_punkt_ebene" data-reference-type="ref+page" data-reference="sec:abstand_punkt_ebene">[sec:abstand_punkt_ebene]</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(d(g,E)=\left\vert(\vv{p}-\vv{q})\cdot(\vv{v}\times\vv{w})_0\right\vert\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="abstand-ebene-ebene-parallel">Abstand Ebene-Ebene (parallel)</h4>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Ebene <span class="math inline">\(E:\vv{x}=\vv{p}+r\cdot\vv{u}+t\cdot\vv{w}\)</span>, Ebene <span class="math inline">\(F\)</span> mit Stützvektor <span class="math inline">\(\vv{q}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;">Bestimme den Abstand vom Aufpunkt der einen Ebene zur anderen Ebene.</td>
+<td style="text-align: left;"><span class="math inline">\(d(E,F)=d(Q,E)\)</span>, siehe <a href="#sec:abstand_punkt_ebene" data-reference-type="ref+page" data-reference="sec:abstand_punkt_ebene">[sec:abstand_punkt_ebene]</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(d(E,F)=\left\vert(\vv{p}-\vv{q})\cdot(\vv{u}\times\vv{v})_0\right\vert\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="häufige-anwendungen-1">Häufige Anwendungen</h3>
+<p>Im Folgenden sind stets nur Beispiele angegeben, sowohl bei der Aufgabenstellung als auch bei der Musterlösung bzw. Vorgehensweise.</p>
+<h4 id="nachweis-geometrischer-figuren">Nachweis geometrischer Figuren</h4>
+<div class="exercise">
+<p><strong>Aufgabe 3</strong>.  Zeigen Sie, dass das Viereck <span class="math inline">\(ABCD\)</span> ein Parallelogramm ist.</p>
+</div>
+<div class="recipe">
+<p><strong>Vorgehensweise 3</strong>.  Es müssen je nach Figur verschiedene Eigenschaften nachgewiesen werden, die sich auf Winkel, Parallelität, Seitenlängen oder Diagonalen beziehen können. Diese Eigenschaften sind im Folgenden gelistet.</p>
+</div>
+<p>Bei unnummerierten Aufzählungen muss <em>eine</em> der Bedingungen erfüllt sein (oder), bei nummerierten Aufzählungen müssen es <em>alle</em> Bedingungen sein (und).</p>
+<h5 id="gleichseitiges-dreieck">Gleichseitiges Dreieck</h5>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Dreieck <span class="math inline">\(ABC\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Die drei Seiten sind gleich lang.</td>
+<td style="text-align: left;"><span class="math inline">\(\vert\vv{AB}\vert = \vert\vv{BC}\vert = \vert\vv{CD}\vert\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(Zwei Winkel sind <span class="math inline">\(\SI{60}{\degree}\)</span> groß.)</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="gleichschenkliges-dreieck">Gleichschenkliges Dreieck</h5>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Dreieck <span class="math inline">\(ABC\)</span>, Schenkel <span class="math inline">\(\vv{AC}\)</span>, <span class="math inline">\(\vv{BC}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Zwei Seiten sind gleich lang.</td>
+<td style="text-align: left;"><span class="math inline">\(\vert\vv{AC}\vert = \vert\vv{BC}\vert\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Zwei Winkel sind gleich groß.</td>
+<td style="text-align: left;"><span class="math inline">\(\angle BAC = \angle CBA\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="rechtwinkliges-dreieck">Rechtwinkliges Dreieck</h5>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Dreieck <span class="math inline">\(ABC\)</span>, rechter Winkel bei <span class="math inline">\(C\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Es gibt einen rechten Winkel.</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{AC}\cdot\vv{BC} = 0\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Es gilt der Satz des Pythagoras.</td>
+<td style="text-align: left;"><span class="math inline">\(\vert\vv{AC}\vert^2 + \vert\vv{BC}\vert^2 = \vert\vv{AB}\vert^2\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="sec:nachweis_parallelogramm">Parallelogramm</h5>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Viereck <span class="math inline">\(ABCD\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Gegenüberliegende Winkel sind gleich groß.</td>
+<td style="text-align: left;"><span class="math inline">\(\angle CBA = \angle CDA\)</span> und <span class="math inline">\(\angle DAB = \angle DCB\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Gegenüberliegende Seiten sind parallel.</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{AB}\parallel\vv{CD}\)</span> und <span class="math inline">\(\vv{AD}\parallel\vv{BC}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Gegenüberliegende Seiten sind gleich lang.</td>
+<td style="text-align: left;"><span class="math inline">\(\vert\vv{AB}\vert = \vert\vv{CD}\vert\)</span> und <span class="math inline">\(\vert\vv{AD}\vert = \vert\vv{BC}\vert\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(Die Diagonalen halbieren sich gegenseitig.)</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="rechteck">Rechteck</h5>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Viereck <span class="math inline">\(ABCD\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;">Das Viereck ist ein Parallelogramm.</td>
+<td style="text-align: left;">siehe <a href="#sec:nachweis_parallelogramm" data-reference-type="ref+page" data-reference="sec:nachweis_parallelogramm">[sec:nachweis_parallelogramm]</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2.</td>
+<td style="text-align: left;">Es gibt einen rechten Winkel.</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{AB}\cdot\vv{BC} = 0\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>oder</em></p>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Viereck <span class="math inline">\(ABCD\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Es gibt drei rechte Winkel.</td>
+<td style="text-align: left;">z.B. <span class="math inline">\(\vv{AB}\cdot\vv{BC} = 0\)</span>, <span class="math inline">\(\vv{BC}\cdot\vv{CD} = 0\)</span> und <span class="math inline">\(\vv{CD}\cdot\vv{DA} = 0\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="sec:nachweis_raute">Raute</h5>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Viereck <span class="math inline">\(ABCD\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;">Das Viereck ist ein Parallelogramm.</td>
+<td style="text-align: left;">siehe <a href="#sec:nachweis_parallelogramm" data-reference-type="ref+page" data-reference="sec:nachweis_parallelogramm">[sec:nachweis_parallelogramm]</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2.</td>
+<td style="text-align: left;">Zwei benachbarte Seiten sind gleich lang.</td>
+<td style="text-align: left;"><span class="math inline">\(\vert\vv{AB}\vert = \vert\vv{BC}\vert\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>oder</em></p>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Viereck <span class="math inline">\(ABCD\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Alle Seiten sind gleich lang.</td>
+<td style="text-align: left;">z.B. <span class="math inline">\(\vert\vv{AB}\vert = \vert\vv{BC}\vert = \vert\vv{CD}\vert = \vert\vv{DA}\vert\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="quadrat">Quadrat</h5>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Viereck <span class="math inline">\(ABCD\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;">Das Viereck ist eine Raute.</td>
+<td style="text-align: left;">siehe <a href="#sec:nachweis_raute" data-reference-type="ref+page" data-reference="sec:nachweis_raute">[sec:nachweis_raute]</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2.</td>
+<td style="text-align: left;">Es gibt einen rechten Winkel.</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{AB}\cdot\vv{BC} = 0\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="drachen">Drachen</h5>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Viereck <span class="math inline">\(ABCD\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Jeweils zwei benachbarte Seiten sind gleich lang.</td>
+<td style="text-align: left;"><span class="math inline">\(\vert\vv{AB}\vert=\vert\vv{BC}\vert\)</span> und <span class="math inline">\(\vert\vv{CD}\vert=\vert\vv{AD}\vert\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="bestimmung-aller-punkte-mit-gleichem-abstand-zu-einer-ebene">Bestimmung aller Punkte mit gleichem Abstand zu einer Ebene</h4>
+<div class="exercise">
+<p><strong>Aufgabe 4</strong>.  Bestimmen Sie alle Punkte mit dem Abstand <span class="math inline">\(d\)</span> zur Ebene <span class="math inline">\(E\)</span>.</p>
+</div>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Ebene <span class="math inline">\(E:(\vv{x}-\vv{p})\cdot\vv{n}=0\)</span>, Abstand <span class="math inline">\(d\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;">Falls nötig, bestimme den Abstand <span class="math inline">\(d\)</span> (siehe <a href="#sec:metrik" data-reference-type="ref+page" data-reference="sec:metrik">[sec:metrik]</a>).</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2.</td>
+<td style="text-align: left;">Setze eine Formel für den Abstand eines allgemeinen Punktes zu der Ebene gleich den gegebenen Abstand.</td>
+<td style="text-align: left;"><span class="math inline">\(\left\vert(\vv{x}-\vv{p})\cdot\vv{n_0}\right\vert=d\)</span> (Hesse-Form) oder <span class="math inline">\(\vert n_{0,1}\cdot x_1+n_{0,2}\cdot x_2+n_{0,3}\cdot x_3-\vv{p}\cdot\vv{n_0}\vert=d\)</span> (Koordinateneinheitsform)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3.</td>
+<td style="text-align: left;">Falls nötig, forme zur Vereinfachung um. In den <em>beiden</em> Ebenen liegen alle Punkte, die die Bedingung erfüllen.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Lösungsebenen <span class="math inline">\(L_{1,2}: (\vv{x}-\vv{p})\cdot\vv{n_0}\pm d=0\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="bildung-eines-normalenvektors-zu-zwei-vektoren-hmf">Bildung eines Normalenvektors zu zwei Vektoren (<span data-acronym-label="HMF" data-acronym-form="singular+abbrv">HMF</span>)</h4>
+<div class="exercise">
+<p><strong>Aufgabe 5</strong>.  Geben Sie einen Normalenvektor <span class="math inline">\(\vv{n}\)</span> zu den Vektoren <span class="math inline">\(\vv{u}\)</span> und <span class="math inline">\(\vv{v}\)</span> an.</p>
+</div>
+<div class="listliketab">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Vektoren <span class="math inline">\(\vv{u}\)</span>, <span class="math inline">\(\vv{v}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;">Bilde mithilfe der Definition des Skalarproduktes zwei Bestimmungsgleichungen, in denen der Normalenvektor vorkommt.</td>
+<td style="text-align: left;"><span class="math inline">\(\vv{n}\cdot\vv{u}=0\)</span> und <span class="math inline">\(\vv{n}\cdot\vv{v}=0\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2.</td>
+<td style="text-align: left;">Multipliziere in den Gleichungen das Skalarprodukt aus.</td>
+<td style="text-align: left;"><span class="math inline">\(n_1u_1+n_2u_2+n_3u_3=0\)</span> und <span class="math inline">\(n_1v_1+n_2v_2+n_3v_3=0\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3.</td>
+<td style="text-align: left;">Wähle eine Koordinate des Normalenvektors frei, da nur die Richtung, nicht aber die Länge des Vektors relevant ist.</td>
+<td style="text-align: left;"><span class="math inline">\(n_1u_1+n_2u_2+u_3k=0\)</span> und <span class="math inline">\(n_1v_1+n_2v_2+v_3k=0\)</span> (hier: <span class="math inline">\(k:=n_3\)</span>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">4.</td>
+<td style="text-align: left;">Löse das <span data-acronym-label="LGS" data-acronym-form="singular+abbrv">LGS</span> mit zwei Unbekannten und zwei Variablen.</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="nachweis-der-lage-eines-punktes-auf-einer-strecke">Nachweis der Lage eines Punktes auf einer Strecke</h4>
+<div class="exercise">
+<p><strong>Aufgabe 6</strong>.  Gegeben sind die Punkte <span class="math inline">\(P\)</span> und <span class="math inline">\(Q\)</span>. Zeigen Sie, dass der Punkt <span class="math inline">\(A\)</span> auf der Strecke <span class="math inline">\(\overline{PQ}\)</span> zwischen <span class="math inline">\(P\)</span> und <span class="math inline">\(Q\)</span> liegt.</p>
+</div>
+<div class="recipe">
+<p><strong>Vorgehensweise 4</strong>.  Der Punkt <span class="math inline">\(A\)</span> liegt genau dann auf der Strecke <span class="math inline">\(\overline{PQ}\)</span>, wenn es eine reelle Zahl <span class="math inline">\(r\)</span> mit <span class="math inline">\(0\leq r\leq 1\)</span> gibt, sodass <span class="math inline">\(\vv{a} = \vv{p} + r\cdot\vv{PQ}\)</span> gilt (in diese Gleichung müssen die gegebenen Werte eingesetzt werden). Das kann man sich anschaulich so vorstellen, dass man zuerst dem Ortsvektor <span class="math inline">\(\vv{p}\)</span> zum Punkt <span class="math inline">\(P\)</span> folgt; vor dort an muss man null- bis einmal dem Vektor <span class="math inline">\(\vv{PQ}\)</span> zum Punkt <span class="math inline">\(Q\)</span> folgen, um zu einem Punkt zu gelangen, der auf der Strecke <span class="math inline">\(\overline{PQ}\)</span> liegt.</p>
+</div>
+<div class="note">
+<p><strong>Anmerkung 1</strong>.  Ähnlich werden Aufgaben gelöst, bei denen gezeigt werden soll, dass ein Punkt innerhalb eines bestimmten Vierecks liegt. Immer wird eine Gleichung aufgestellt, mit deren Hilfe man zu dem Punkt gelangt, wobei die Werte der Parameter – je nach Lage und Größe des Vierecks – eingeschränkt sind. Es handelt sich sozusagen um begrenzte Geraden bzw. begrenzte Ebenen.</p>
+</div>
+<h4 id="bestimmung-einer-geradengleichung-in-bestimmter-lage-zu-einer-ebene">Bestimmung einer Geradengleichung in bestimmter Lage zu einer Ebene</h4>
+<div class="exercise">
+<p><strong>Aufgabe 7</strong>.  Gegeben ist die Ebene <span class="math inline">\(E\)</span> mit <span class="math inline">\(E:3x_1+2x_2-6x_3=-12\)</span>. Eine zu <span class="math inline">\(E\)</span> parallele Ursprungsgerade liegt in der <span class="math inline">\(x_1\)</span>-<span class="math inline">\(x_2\)</span>-Ebene. Geben Sie begründet eine mögliche Geradengleichung von <span class="math inline">\(g\)</span> an.</p>
+</div>
+<div class="solution">
+<p><strong>Musterlösung 2</strong>.  Für eine Geradengleichung werden ein Stützvektor und ein Richtungsvektor benötigt. Da die Gerade durch den Ursprung verläuft, kann der Ursprung <span class="math inline">\(O(0\vert0\vert0)\)</span> als Aufpunkt verwendet werden. Da die Gerade in der <span class="math inline">\(x_1\)</span>-<span class="math inline">\(x_2\)</span>-Ebene liegt, muss die <span class="math inline">\(x_3\)</span>-Koordinate des Richtungsvektor <span class="math inline">\(0\)</span> sein. Somit muss für den Richtungsvektor <span class="math inline">\(\vv{u}\)</span> die Gleichung <span class="math inline">\(3u_1 + 2u_2 -6\cdot0 = 0\)</span> gelten; durch geschicktes Ausprobieren erhält man die Lösungen <span class="math inline">\(u_1 = 2\)</span> und <span class="math inline">\(u_2 = -3\)</span>. Daher kann die Gerade <span class="math inline">\(g\)</span> bspw. durch die Geradengleichung <span class="math inline">\(g: \vv{x} = r\cdot\begin{pmatrix} 2 \\ -3 \\ 0 \end{pmatrix}\)</span> beschrieben werden.</p>
+</div>
+<h1 id="stochastik">Stochastik</h1>
+<h3 id="grundlagen-2">Grundlagen</h3>
+<h4 id="definitionen">Definitionen</h4>
+<p>Ein <strong>Experiment</strong> nennt man <strong>Zufallsexperiment</strong>, wenn der tatsächliche Ausgang vom Zufall abhängig ist, wobei vorausgesetzt wird, dass es mindestens zwei mögliche Ausgänge gibt. Alle möglichen <strong>Ergebnisse <span class="math inline">\(e\)</span></strong> des Experiments bilden die <strong>Ergebnismenge <span class="math inline">\(\Omega = \{e_i,e_2,e_3,\dots,e_n\}\)</span></strong>. Eine Teilmenge der Ergebnismenge nennt man <strong>Ereignis</strong> (Ereignisse werden mit Großbuchstaben dargestellt, z.B. <span class="math inline">\(E\)</span> oder <span class="math inline">\(A\)</span>).<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> Dabei wird die leere Menge <span class="math inline">\(\{\} = \emptyset\)</span> als das <strong>unmögliche Ereignis</strong> und die Ergebnismenge <span class="math inline">\(\Omega\)</span> als das <strong>sichere Ereignis</strong> bezeichnet (es gilt also <span class="math inline">\(P(\Omega)=1\)</span> und <span class="math inline">\(P(\emptyset)=0\)</span>). Die <strong>Wahrscheinlichkeiten <span class="math inline">\(P(E)\)</span></strong> der Ereignisse werden dabei durch die <strong>Wahrscheinlichkeitsverteilung</strong> festgelegt. Es gilt dabei immer:</p>
+<ul>
+<li><p><span class="math inline">\(P(E)\geq 0\)</span></p></li>
+<li><p><span class="math inline">\(P(A)+P(B)+\dots = 1 = \SI{100}{\percent}\)</span></p></li>
+</ul>
+<p>Das <strong>Gegenereignis <span class="math inline">\(\overline{E}\)</span></strong> (sprich: E quer) besteht aus allen Ereignissen, die nicht das gefragte Ereignis bilden. Daher gilt <span class="math display">\[P(\overline{E}) = 1 - P(E).\]</span></p>
+<p>Besteht ein zufälliger Vorgang aus mehreren, nacheinander ablaufenden Teilvorgängen, so spricht man von einem <strong>mehrstufigen Zufallsexperiment</strong>, bei <span class="math inline">\(k\)</span> Teilvorgängen (<span class="math inline">\(k\in\mathbb{N}\setminus \{0\}\)</span>) von einem <strong><span class="math inline">\(k\)</span>-stufigen Zufallsexperiment</strong>.</p>
+<h4 id="empirisches-gesetz-der-großen-zahlen">Empirisches Gesetz der großen Zahlen</h4>
+<p>Wenn man ein Zufallsexperiment sehr oft durchführt, stabilisieren sich die <strong>relative Häufigkeiten</strong> für die Ergebnisse. Aufgrund relativer Häufigkeiten bei langen Versuchsreihen können <strong>Wahrscheinlichkeitsverteilungen</strong> festgelegt werden. Darauf achtet man auf mögliche Symmetrien (z.B. beim Wurf eines Quaders auf jeweils zwei ähnlich große Wahrscheinlichkeiten) und darauf, dass die Summe aller Wahrscheinlichkeiten <span class="math inline">\(\SI{100}{\percent}\)</span> ergibt.</p>
+<h4 id="summenregel">Summenregel</h4>
+<p>Die Wahrscheinlichkeit eines Ereignisses erhält man, indem man die Wahrscheinlichkeiten der enthaltenen Ergebnisse addiert.</p>
+<h4 id="pfadregel">Pfadregel</h4>
+<p>Die Wahrscheinlichkeit für ein mehrstufiges Ereignis erhält man, indem man die die Wahrscheinlichkeiten des dazugehörigen Pfades multipliziert.</p>
+<h4 id="baumdiagramme">Baumdiagramme</h4>
+<p>Mit einem <strong>Baumdiagramm</strong> (siehe <a href="#fig:baumdiagramm" data-reference-type="ref+page" data-reference="fig:baumdiagramm">[fig:baumdiagramm]</a>) lassen sich mehrstufige Zufallsexperimente darstellen.</p>
+<p>Die Summe aller Wahrscheinlichkeiten an den Ästen, die von demselben Verzweigungspunkt ausgehen ist stets 1.</p>
+<figure>
+<embed src="baumdiagramm.pdf" id="fig:baumdiagramm" /><figcaption aria-hidden="true">Baumdiagramm eines zweistufigen Zufallsexperiments (mit zwei abhängigen Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span>)</figcaption>
+</figure>
+<h3 id="zufallsgrößen">Zufallsgrößen</h3>
+<p>Eine <strong>Zufallsgröße</strong> nimmt unter gleichen Bedingungen verschiedene Werte an; das Ergebnis ist vom Zufall abhängig. Um anzugeben, dass die Zufallsgröße <span class="math inline">\(X\)</span> mit der Wahrscheinlichkeit <span class="math inline">\(p\)</span> den Wert <span class="math inline">\(k\)</span> annimmt, schreibt man <span class="math display">\[P(X=k)=p.\]</span></p>
+<p>Zufallsgrößen müssen stets vor der Verwendung eingeführt werden (z.B.: Die Zufallsgröße <span class="math inline">\(X\)</span> beschreibt die Anzahl… und/oder Die Zufallsgröße <span class="math inline">\(X\)</span> kann als binomialverteilt mit den Paramtern <span class="math inline">\(n\)</span> und <span class="math inline">\(p\)</span> angenommen werden, weil…).</p>
+<h4 id="diskrete-zufallsgrößen">Diskrete Zufallsgrößen</h4>
+<p>Für eine <strong>diskrete Zufallsgröße <span class="math inline">\(X\)</span></strong> mit den Werten <span class="math inline">\(x_1, x_2, x_3,\dots ,x_n\)</span> definiert man folgende theoretische Kenngrößen:</p>
+<h5 id="erwartungswert">Erwartungswert</h5>
+<p>Der <strong>Erwartungswert <span class="math inline">\(E(X)\)</span></strong> (auch <span class="math inline">\(\mu\)</span>) gibt an, welcher Wert durchschnittlich bei einer großen Zahl von Durchführungen des Zufallsexperiments zu erwarten ist. Er ist also eine Prognose für den Mittelwert und lässt sich mit <span class="math display">\[\mu = x_1\cdot P(X=x_1)+x_2\cdot P(X=x_2)+\dots +x_n\cdot P(X=x_n)=\sum_{i=1}^n x_i\cdot P(X=x_i)\]</span> berechnen. Die Berechnung erfolgt also ähnlich zum Mittelwert, indem anstelle der relativen Häufigkeiten die Wahrscheinlichkeiten mit dem entsprechenden Wert der Zufallsgröße multipliziert werden.</p>
+<p>Ein Spiel mit dem Erwartungswert <span class="math inline">\(\mu = 0\)</span> nennt man <strong>fair</strong>. Das beliebteste Beispiel hierfür ist dabei ein Glücksrad mit verschiedenen Feldern, bei denen man jeweils verschiedene Geldbeträge gewinnen kann, wobei allerdings vor dem Drehen ein Einsatz gezahlt werden muss. Wird der Einsatz von dem ausgezahlten Betrag eines Feldes abgezogen, erhält man den Wert einer Zufallsgröße, die den Gewinn eines Feldes angibt. Daraus kann nun der Erwartungswert berechnet werden: Ist er negativ, dann macht man <em>im Durchschnitt</em> Schulden, wenn man es spielt; ist er positiv, dann macht man <em>im Durchschnitt</em> Gewinn, wenn man es spielt. Beträgt der Erwartungswert genau null, dann bekommt man <em>im Durchschnitt</em> so viel Geld als Gewinn wieder, wie man als Einsatz gezahlt hat.</p>
+<h5 id="standardabweichung">Standardabweichung</h5>
+<p>Die <strong>(theoretische) Standardabweichung <span class="math inline">\(\sigma\)</span></strong> beschreibt die Streuung der Wahrscheinlichkeitsverteilung um den Erwartungswert <span class="math inline">\(\mu\)</span> und stellt somit eine Prognose für die empirische Standardabweichung <span class="math inline">\(s\)</span> dar. Sie lässt sich berechnen durch die Formel <span class="math display">\[\sigma = \sqrt{(x_1-\mu)^2\cdot P(X=x_1)+\dots+(x_n-\mu)^2\cdot P(X=x_n)}=\sqrt{\sum_{i=1}^n (x_i-\mu)^2\cdot P(X=x_i)}.\]</span></p>
+<p>Das Quadrat von <span class="math inline">\(\sigma\)</span> wird als <strong>Varianz</strong> <span class="math display">\[V(X)=\sigma^2\]</span> bezeichnet.</p>
+<h3 id="sec:kombinatorik">Kombinatorik</h3>
+<p>Die <strong>Kombinatorik</strong> behandelt das Abzählen von Kombinationen (siehe <a href="#fig:kombinatorik_tabelle" data-reference-type="ref+page" data-reference="fig:kombinatorik_tabelle">[fig:kombinatorik_tabelle]</a> bzw. siehe <a href="#fig:kombinatorik_entscheidungsbaum" data-reference-type="ref+page" data-reference="fig:kombinatorik_entscheidungsbaum">[fig:kombinatorik_entscheidungsbaum]</a>).</p>
+<figure>
+<img src="kombinatorik_tabelle.png" id="fig:kombinatorik_tabelle" style="width:75.0%" alt="Die wichtigsten Formeln der Kombinatorik" /><figcaption aria-hidden="true">Die wichtigsten Formeln der Kombinatorik</figcaption>
+</figure>
+<figure>
+<img src="kombinatorik_entscheidungsbaum.png" id="fig:kombinatorik_entscheidungsbaum" style="width:95.0%" alt="Welche Formel ist die richtige?" /><figcaption aria-hidden="true">Welche Formel ist die richtige?</figcaption>
+</figure>
+<p>Es bezeichnet <span class="math inline">\(\binom{n}{k} = \frac{n!}{(n-k)! \cdot k!}\)</span> der <strong>Binomialkoeffizient</strong>.</p>
+<h3 id="bedingte-wahrscheinlichkeit-und-abhängige-ereignisse">Bedingte Wahrscheinlichkeit und abhängige Ereignisse</h3>
+<h4 id="abhängige-ereignisse">Abhängige Ereignisse</h4>
+<p>Zwei Ereignisse sind <strong>unabhängig</strong>, wenn <span class="math display">\[P_E(F)=P(F)\]</span> oder daraus folgend <span class="math display">\[P(E\cap F)=P(E)\cdot P(F)\]</span> gilt. Andernfalls sind sie <strong>abhängig</strong>.</p>
+<p>Die Schreibweise <span class="math inline">\(P_E(F)\)</span> meint die Wahrscheinlichkeit dafür, dass – unter der Bedingung, dass das Ereignis <span class="math inline">\(E\)</span> zutrifft, – auch das Ereignis <span class="math inline">\(F\)</span> zutrifft.</p>
+<h4 id="baumdiagramm">Baumdiagramm</h4>
+<p>Auch bedingte Ereignisse lassen sich mit Hilfe eines Baumdiagrammes darstellen (siehe <a href="#fig:baumdiagramm" data-reference-type="ref+page" data-reference="fig:baumdiagramm">[fig:baumdiagramm]</a>).</p>
+<p>Es gilt wegen der Pfadregel <span class="math display">\[P(E\cap F) = P(E)\cdot P_E(F) .\]</span></p>
+<h4 id="vierfeldertafel">Vierfeldertafel</h4>
+<p>Mithilfe der <strong>Vierfeldertafel</strong> (siehe <a href="#tab:abhaengig_vierfeldertafel" data-reference-type="ref+page" data-reference="tab:abhaengig_vierfeldertafel">[tab:abhaengig_vierfeldertafel]</a>) lassen sich relative (Wahrscheinlichkeiten) und absolute (Anzahlen) Häufigkeiten abhängiger Ereignisse darstellen.</p>
+<div id="tab:abhaengig_vierfeldertafel">
+<table>
+<caption>Vierfeldertafel mit relativen Häufigkeiten zweier abhängigen Ereignissen</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;"><span class="math inline">\(F\)</span></th>
+<th style="text-align: left;"><span class="math inline">\(\overline{F}\)</span></th>
+<th style="text-align: left;"><span class="math inline">\(\Sigma\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(E\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(P(E\cap F)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(P(E\cap\overline{F})\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(P(E)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\overline{E}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(P(\overline{E}\cap F)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(P(\overline{E}\cap\overline{F})\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(P(\overline{E})\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\Sigma\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(P(F)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(P(\overline{F})\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span id="tab:abhaengig_vierfeldertafel" label="tab:abhaengig_vierfeldertafel">[tab:abhaengig_vierfeldertafel]</span></p>
+<p>Es gilt <span class="math display">\[P(F)=P(E\cap F)+P(\overline{E}\cap F) .\]</span></p>
+<h4 id="satz-von-bayes">Satz von Bayes</h4>
+<p>Für zwei Ereignisse <span class="math inline">\(E\)</span> und <span class="math inline">\(F\)</span> gilt <span class="math display">\[P_E(F) = \frac{P(E\cap F)}{P(E)} .\]</span></p>
+<h3 id="wahrscheinlichkeitsverteilungen">Wahrscheinlichkeitsverteilungen</h3>
+<h4 id="gleichverteilung-laplace-experimente">Gleichverteilung (Laplace-Experimente)</h4>
+<p>Die Wahrscheinlichkeitsverteilung eines Zufallsexperiments heißt <strong>Gleichverteilung</strong>, wenn alle Ergebnisse die gleiche Wahrscheinlichkeit besitzen, also <strong>gleichwahrscheinlich</strong> sind. Diese Bedingung nennt man <strong>Laplace-Annahme</strong>. Kann man bei einem Zufallsexperiment von der Gültigkeit der Laplace-Annahme ausgehen, spricht man von einem <strong>Laplace-Experiment</strong>. Ein einfaches Beispiel für ein Laplace-Experiment ist das einmalige Werfen eines normalen (nicht gezinkten) Würfels.</p>
+<p>Besteht die Ergebnismenge <span class="math inline">\(\Omega = \{e_i,e_2,e_3,\dots,e_n\}\)</span> eines Laplace-Experiments aus <span class="math inline">\(n\)</span> Ergebnissen, so tritt jedes Ergebnis <span class="math inline">\(e_i\)</span> (<span class="math inline">\(i\in \{1,2,\dots,n\}\)</span>) mit der Wahrscheinlichkeit <span class="math display">\[P(e_i)=\frac{1}{n}=\frac{1}{\vert\Omega\vert}\]</span> ein. Für ein Ereignis <span class="math inline">\(E \subseteq \Omega\)</span> gilt allgemein <span class="math display">\[P(\textrm{Ereignis})=\frac{\textrm{Anzahl der günstigen Ergebnisse}}{\textrm{Anzahl der möglichen Ergebnisse}} \qquad\textrm{bzw.}\qquad P(E)=\frac{\vert E\vert}{\vert\Omega\vert}.\]</span> Die Anzahl der möglichen Ereignisse kann oft mithilfe der Formeln der Kombinatorik (siehe <a href="#sec:kombinatorik" data-reference-type="ref+page" data-reference="sec:kombinatorik">[sec:kombinatorik]</a>) bestimmt werden.</p>
+<h4 id="binomialverteilung">Binomialverteilung</h4>
+<p>Zufallsexperimente, bei denen man sich für nur zwei Ergebnisse interessiert (z.B. Treffer oder Niete) nennt man <strong>Bernoulli-Experimente</strong>. Ein Experiment, das aus <span class="math inline">\(n\)</span> unabhängigen gleichen Bernoulli-Experimenten zusammengesetzt ist, nennt man <strong>Bernoulli-Kette der Länge <span class="math inline">\(n\)</span></strong> (auch: <strong><span class="math inline">\(n\)</span>-stufiges Bernoulli-Experiment</strong>). Die Zufallsgröße <span class="math inline">\(X\)</span> gibt hierbei die Anzahl der Treffer an. Die Wahrscheinlichkeit, bei der Durchführung einer Bernoulli-Kette der Länge <span class="math inline">\(n\)</span> genau <span class="math inline">\(k\)</span> Treffer (mit <span class="math inline">\(0 \leq k \leq n\)</span>) mit der Wahrscheinlichkeit <span class="math inline">\(p\)</span> eines Treffers (<strong>Erfolgswahrscheinlichkeit</strong>) zu erzielen, beträgt <span class="math display">\[P(X=k) = B(n,p,k) = \binom{n}{k}\cdot p^k \cdot (1-p)^{n-k} .\]</span> Die Wahrscheinlichkeitsverteilung der Zufallsgröße <span class="math inline">\(X\)</span> heißt <strong>Binomialverteilung</strong>.</p>
+<p>Der Erwartungswert<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> der binomialverteilten Zufallsgröße <span class="math inline">\(X\)</span> beträgt <span class="math display">\[\mu = n\cdot p\]</span> und die Standardabweichung beträgt <span class="math display">\[\sigma = \sqrt{n\cdot p\cdot (1-p)} .\]</span></p>
+<p>Bei der <strong>kumulierten Binomialverteilung</strong> betrachtet man alle Werte der Zufallsgröße <span class="math inline">\(X\)</span>, für die <span class="math inline">\(X\leq k\)</span> gilt. Sie lässt sich berechnen mit <span class="math display">\[P(X\leq k) = \sum_{i=0}^k B(n,p,i) ,\]</span> was für große <span class="math inline">\(n\)</span> sehr aufwändig sein kann. Daher ist eine Funktion gesucht, welche die Binomialverteilung hinreichend genau annähert; durch Integration kann dann (theoretisch) der Flächeninhalt bestimmt werden.</p>
+<p>Diese Kurve ist die <strong>Glockenkurve</strong> <span class="math display">\[f_{\sigma,\mu} (x) = \frac{1}{\sqrt{2\pi\sigma^2}} \cdot \textrm{e}^{-\frac{(x-\mu)^2}{2\sigma^2}}\]</span> von Carl Friedrich Gauss (siehe <a href="#fig:glockenkurve" data-reference-type="ref+page" data-reference="fig:glockenkurve">[fig:glockenkurve]</a>). Ihr Extrempunkt<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> liegt bei <span class="math inline">\(x_{\text{max}}=\mu\)</span>, die Wendestellen<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> liegen bei <span class="math inline">\(x_W=\mu\pm\sigma\)</span>. Wichtig ist, dass die gesamte Fläche unter der Kurve gleich 1 ist (gleich der Wahrscheinlichkeit des sicheren Ereignisses).</p>
+<p>Mit wachsendem <span class="math inline">\(n\)</span> werden die Graphen einer Binomialverteilung immer breiter und zunehmend symmetrischer um den Erwartungswert <span class="math inline">\(ßmu\)</span>. Die Histogramme werden mit zunehmender Verbreiterung der Histogramme flacher, d.h. die Einzelwahrscheinlichkeiten werden kleiner (siehe <a href="#fig:schaubilder_binomialverteilung_n" data-reference-type="ref+page" data-reference="fig:schaubilder_binomialverteilung_n">[fig:schaubilder_binomialverteilung_n]</a>). Für <span class="math inline">\(p\to 0\)</span> und <span class="math inline">\(p \to 1\)</span> werden die Graphen immer höher und schmaler. Für <span class="math inline">\(p=0,5\)</span> sind die Graphen symmetrisch, für <span class="math inline">\(p\to 0\)</span> und <span class="math inline">\(p \to 1\)</span> ergibt sich eine leicht anwachsende Asymmetrie.</p>
+<figure>
+<img src="schaubilder_binomialverteilung_n.png" id="fig:schaubilder_binomialverteilung_n" alt="Schaubilder einer binomialverteilten Zufallsgröße für verschiedene n" /><figcaption aria-hidden="true">Schaubilder einer binomialverteilten Zufallsgröße für verschiedene <span class="math inline">\(n\)</span></figcaption>
+</figure>
+<p>Ein zum Erwartungswert <span class="math inline">\(\mu\)</span> symmetrisches Intervall der Form <span class="math inline">\([\mu-k\sigma ; \mu+k\sigma]\)</span> bezeichnet man als <strong>Sigma-Umgebung</strong> oder <strong>Sigma-Intervall</strong> (z.B. das sog. <span class="math inline">\(2\sigma\)</span>-Intervall <span class="math inline">\([\mu-2\sigma ; \mu+2\sigma]\)</span>). Soll für solche Intervallgrenzen die Wahrscheinlichkeit <span class="math inline">\(P\)</span> (z.B. <span class="math inline">\(P(X=\mu-2\sigma)\)</span>) bestimmt werden, wird die untere Grenze grundsätzlich ab- und die obere Grenze grundsätzlich aufgerundet, sodass nur natürliche Zahlen für <span class="math inline">\(k\)</span>, die Anzahl der Treffer, eingesetzt werden.</p>
+<p>Die Wahrscheinlichkeit, dass sich <span class="math inline">\(k\)</span> im Intervall <span class="math inline">\([a;b]\)</span> befindet, wird als <span class="math inline">\(P([a;b])\)</span> notiert.</p>
+<p>Je größer <span class="math inline">\(n\)</span> ist und je näher <span class="math inline">\(p\)</span> bei <span class="math inline">\(0{,}5\)</span> liegt, desto besser wird im Allgemeinen die Näherung. Nach einer Faustregel ist die Näherung brauchbar, wenn <span class="math inline">\(\sigma &gt; 3\)</span> gilt (<strong>Laplace-Bedingung</strong>).</p>
+<h5 id="problemlösen-mit-der-binomialverteilung">Problemlösen mit der Binomialverteilung</h5>
+<p>Es gibt folgende Möglichkeiten, eine Wahrscheinlichkeit einer Binomialverteilung zu ermitteln:</p>
+<ul>
+<li><p>Formel für <span class="math inline">\(P(X=k)\)</span> bzw. <span class="math inline">\(P(X\leq k)\)</span></p></li>
+<li><p>Wertetabelle für <span class="math inline">\(B(n,p,k)\)</span></p></li>
+<li><p>Wertetabelle für <span class="math inline">\(B(n,p,1)+\dots+B(n,p,k)\)</span></p></li>
+<li><p>Tabellenkalkulations-Software bzw. Grafiktaschenrechner (GTR)</p></li>
+</ul>
+<p>Bei der Lösung von Problemen mit der Binomialverteilung überlegt man vor dem Rechnen:</p>
+<ul>
+<li><p>Welches Bernoulli-Experiment liegt zugrunde?</p></li>
+<li><p>Was bedeutet Treffer? Die Zufallsgröße <span class="math inline">\(X\)</span> zählt die Anzahl der Treffer.</p></li>
+<li><p>Welche der Parameter Versuchsanzahl <span class="math inline">\(n\)</span>, Trefferwahrscheinlichkeit <span class="math inline">\(p\)</span>, Trefferzahl <span class="math inline">\(k\)</span> sind gegeben, welche gesucht?</p></li>
+<li><p>Welche Wahrscheinlichkeiten der Binomialverteilung sind bekannt?</p></li>
+</ul>
+<p>Dann stellt man eine den Angaben entsprechende Gleichung oder Ungleichung auf und löst sie. Oft ist nur eine Näherungslösung mithilfe des Taschenrechners möglich.</p>
+<p>Soll nach <span class="math inline">\(n\)</span> oder <span class="math inline">\(k\)</span> (welche im Binomialkoeffizienten <span class="math inline">\(\binom{n}{k}\)</span> vorkommen) aufgelöst werden, ist häufig in Schulaufgaben zur Vereinfachung der Rechnung <span class="math inline">\(\binom{n}{k}=1\)</span> anzutreffen, was für <span class="math inline">\(k \in \{0, n\}\)</span> gilt. Ansonsten, wenn das nicht möglich ist, muss für verschiedene Werte die Wahrscheinlichkeit <span class="math inline">\(P\)</span> mithilfe des Taschenrechners berechnet und so lange ausprobiert werden, bis das gewünschte Ergebnis erreicht ist.</p>
+<h5 id="sec:sigmaregeln">Sigmaregeln</h5>
+<p>Für eine binomialverteilte Zufallsgröße <span class="math inline">\(X\)</span> mit den Parametern <span class="math inline">\(n\)</span> und <span class="math inline">\(p\)</span> erhält man folgende Näherungen (siehe <a href="#fig:glockenkurve" data-reference-type="ref+page" data-reference="fig:glockenkurve">[fig:glockenkurve]</a> und <a href="#fig:sigmaregeln" data-reference-type="ref+page" data-reference="fig:sigmaregeln">[fig:sigmaregeln]</a>):</p>
+<ul>
+<li><p><span class="math inline">\(P ( \mu - \sigma \leq X \leq \mu + \sigma ) \approx \SI{68,3}{\percent}\)</span></p></li>
+<li><p><span class="math inline">\(P ( \mu - 2\sigma \leq X \leq \mu + 2\sigma ) \approx \SI{95,4}{\percent}\)</span></p></li>
+<li><p><span class="math inline">\(P ( \mu - 3\sigma \leq X \leq \mu + 3\sigma ) \approx \SI{99,7}{\percent}\)</span></p></li>
+<li><p><span class="math inline">\(P ( \mu - 1,64\sigma \leq X \leq \mu + 1,64\sigma ) \approx \SI{90}{\percent}\)</span></p></li>
+<li><p><span class="math inline">\(P ( \mu - 1,96\sigma \leq X \leq \mu + 1,96\sigma ) \approx \SI{95}{\percent}\)</span></p></li>
+<li><p><span class="math inline">\(P ( \mu - 2,58\sigma \leq X \leq \mu + 2,58\sigma ) \approx \SI{99}{\percent}\)</span></p></li>
+</ul>
+<figure>
+<img src="glockenkurve.png" id="fig:glockenkurve" style="width:60.0%" alt="Wahrscheinlicheiten bei der Glockenkurve" /><figcaption aria-hidden="true">Wahrscheinlicheiten bei der Glockenkurve</figcaption>
+</figure>
+<figure>
+<img src="sigmaregeln.jpg" id="fig:sigmaregeln" style="width:80.0%" alt="Veranschaulichung der Sigmaregeln" /><figcaption aria-hidden="true">Veranschaulichung der Sigmaregeln</figcaption>
+</figure>
+<p>Je größer <span class="math inline">\(n\)</span> ist und je näher <span class="math inline">\(p\)</span> bei <span class="math inline">\(0,5\)</span> liegt, desto besser wird im Allgemeinen die Näherung. Nach einer Faustregel ist die Näherung brauchbar, wenn <span class="math inline">\(\sigma &lt; 3\)</span> gilt (<strong>Laplace-Bedingung</strong>).</p>
+<h4 id="hypergeometrische-verteilung">Hypergeometrische Verteilung</h4>
+<p>Die <strong>hypergeometrische Verteilung</strong> wird angewendet, wenn mit einem Griff (also ohne Zurücklegen) gezogen wird, wobei es nur zwei interessante Ergebnisse gibt (z.B. kaputt/nicht kaputt oder gelb/nicht gelb).</p>
+<p>Bezeichnet <span class="math inline">\(N\)</span> die Anzahl der Elemente der Grundgesamtheit, <span class="math inline">\(M\)</span> die Anzahl der Elemente mit der gewünschten Eigenschaft, <span class="math inline">\(n\)</span> die Größe der Stichprobe und <span class="math inline">\(k\)</span> die Anzahl der Elemente mit der gewünschten Eigenschaft, lässt sich die Wahrscheinlichkeit, dass <span class="math inline">\(k\)</span> Elemente der Stichprobe die gewünschte Eigenschaft aufweisen, mit <span class="math display">\[P(X=k) = h(k\mid N,M,n) = \frac{\binom{M}{k}\cdot\binom{N-M}{n-k}}{\binom{N}{n}}\]</span> berechnen.</p>
+<p>Der Erwartungswert einer hypergeometrischen Zufallsgröße <span class="math inline">\(X\)</span> beträgt <span class="math display">\[\mu = n\cdot\frac{M}{N} .\]</span></p>
+<p>Das bekannteste Beispiel für eine Anwendung der hypergeometrischen Verteilung ist das Lotto-Spiel.</p>
+<h3 id="testen-von-hypothesen">Testen von Hypothesen</h3>
+<p>Wenn bei einem Bernoulli-Versuch die Wahrscheinlichkeit <span class="math inline">\(p\)</span> unbekannt ist, kann man meistens eine <strong>Hypothese</strong> (Vermutung) aufstellen. Dabei gibt es beim Testen von Hypothesen grundsätzlich eine <strong>Nullhypothese <span class="math inline">\(H_0\)</span></strong> (mit der angenommenen Wahrscheinlichkeit <span class="math inline">\(p_0\)</span>) und eine <strong>Alternativhypothese <span class="math inline">\(H_1\)</span></strong> (mit der angenommenen Wahrscheinlichkeit <span class="math inline">\(p_1\)</span>), gegen welche die Hypothese getestet wird. Normalerweise sollte die Nullhypothese so gewählt sein, dass das Ziel ist, sie zu verwerfen und damit seine Vermutung zu bestätigen.</p>
+<p>Ob die Hypothese haltbar ist, kann mithilfe einer <strong>Stichprobe</strong> getestet werden. Festgelegt wird vorher daher der <strong>Stichprobenumfang <span class="math inline">\(n\)</span></strong> und eine <strong>Entscheidungsregel</strong> für oder gegen die Nullhypothese <span class="math inline">\(H_0\)</span>. Die Entscheidungsregel beantwortet die folgende Frage: Wann entscheide ich mich dafür, die Nullhypothese zu verwerfen bzw. anzunehmen?</p>
+<p>Dazu wird ein <strong>Annahmebereich <span class="math inline">\(A\)</span></strong> (z.B. <span class="math inline">\(A=\{0,1,2,3\}\)</span>) und ein <strong>Ablehnungsbereich <span class="math inline">\(\overline{A} = \Omega\setminus A\)</span></strong> (oft auch <strong>Verwerfungsbereich</strong>, z.B. <span class="math inline">\(\overline{A} = \{4,5,\dots,10\}\)</span>) festgelegt. Wenn das Ergebnis der Stichprobe im Annahmebereich <span class="math inline">\(A\)</span> liegt, nimmt man die Nullhypothese <span class="math inline">\(H_0\)</span> an, andernfalls verwirft man sie und entscheidet sich für die Alternative <span class="math inline">\(H_1\)</span>. Den äußersten Wert (bzw. die äußersten Werte) des Annahmebereichs <span class="math inline">\(A\)</span> bezeichnet man als <strong>kritischer Wert</strong> (im Beispiel <span class="math inline">\(k=3\)</span>).</p>
+<p>Ein Hypothesentest überprüft niemals, ob eine Hypothese richtig oder falsch ist. Daher sollte die Entscheidungsregel nie formuliert werden wie Wenn …, dann gilt/stimmt/…. Besser ist die Formulierung Wenn …, dann kann man davon ausgehen, dass ….</p>
+<p>Beim Testen von Hypothesen gibt es grundsätzlich vier verschiedene Möglichkeiten. Diese sind in <a href="#tab:moeglichkeiten_testen_hypothesen" data-reference-type="ref+page" data-reference="tab:moeglichkeiten_testen_hypothesen">[tab:moeglichkeiten_testen_hypothesen]</a> aufgeführt. Dabei ist die Nullhypothese in diesem Beispiel <span class="math inline">\(H_0\)</span>: <span class="math inline">\(p_0 = 0,1\)</span> bzw. ausformuliert: <span class="math inline">\(\SI{10}{\percent}\)</span> aller Schüler lieben Mathematik.</p>
+<div id="tab:moeglichkeiten_testen_hypothesen">
+<table>
+<caption>Vier Möglichkeiten zum Testen von Hypothesen</caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;" rowspan="2"></td>
+<td style="text-align: center;" colspan="2">Alternative <span class="math inline">\(H_1\)</span></td>
+<td style="text-align: left;" rowspan="2">Entscheidungsregel</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Formulierung</td>
+<td style="text-align: left;">Schreibweise</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Alternativtest</strong></td>
+<td style="text-align: left;"><em>Nicht</em> aller Schüler lieben Mathematik, <em>sondern</em> .</td>
+<td style="text-align: left;"><span class="math inline">\(H_1\)</span>: <span class="math inline">\(p_1=0,3\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\rightarrow\)</span> Erwartungswert <span class="math inline">\(\mu\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Linksseitiger Signifikanztest</strong></td>
+<td style="text-align: left;"><em>Weniger als</em> aller Schüler lieben Mathematik.</td>
+<td style="text-align: left;"><p><span class="math inline">\(H_1\)</span>: <span class="math inline">\(p_1 &lt; 0,1\)</span></p>
+<p>(kritischer Wert <span class="math inline">\(a\)</span> liegt <em>links</em> vom Erwartungswert)</p></td>
+<td style="text-align: left;"><span class="math inline">\(\rightarrow\)</span> Signifikanzniveau <span class="math inline">\(\alpha\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Rechtsseitiger Signifikanztest</strong></td>
+<td style="text-align: left;"><em>Mehr als</em> aller Schüler lieben Mathematik.</td>
+<td style="text-align: left;"><p><span class="math inline">\(H_1\)</span>: <span class="math inline">\(p_1 &gt; 0,1\)</span></p>
+<p>(kritischer Wert liegt <em>rechts</em> vom Erwartungswert)</p></td>
+<td style="text-align: left;"><span class="math inline">\(\rightarrow\)</span> Signifikanzniveau <span class="math inline">\(\alpha\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Zweiseitiger Signifikanztest</strong></td>
+<td style="text-align: left;">Der Anteil der Schüler, die Mathematik lieben, ist <em>verschieden von</em> .</td>
+<td style="text-align: left;"><p><span class="math inline">\(H_1\)</span>: <span class="math inline">\(p_1 \neq 0,1\)</span></p>
+<p>(kritische Werte <span class="math inline">\(a\)</span> bzw. <span class="math inline">\(b\)</span> liegen <em>links</em> bzw. <em>rechts</em> vom Erwartungswert)</p></td>
+<td style="text-align: left;"><span class="math inline">\(\rightarrow\)</span> Signifikanzniveau <span class="math inline">\(\alpha\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span id="tab:moeglichkeiten_testen_hypothesen" label="tab:moeglichkeiten_testen_hypothesen">[tab:moeglichkeiten_testen_hypothesen]</span></p>
+<h4 id="alternativtest">Alternativtest</h4>
+<p>Beim <strong>Alternativtest</strong> ist die Wahrscheinlichkeit, die durch die Alternative <span class="math inline">\(H_1\)</span> angenommen wird, eine konkrete Wahrscheinlichkeit (z.B. <span class="math inline">\(p_1 = 0,3\)</span>). Als Annahmebereich wird häufig ein (um den Erwartungswert <span class="math inline">\(\mu\)</span> symmetrisches) Intervall <span class="math display">\[A = \{ \mu-k,\dots,\mu -1,\mu,\mu+1,\dots,\mu+k \}\]</span> festgelegt.</p>
+<h4 id="einseitiger-signifikanztest">Einseitiger Signifikanztest</h4>
+<p>Wenn man weiß, dass sich <span class="math inline">\(p\)</span> nur in eine Richtung (nach oben oder unten) verändert hat, benutzt man den <strong>einseitigen Signifikanztest</strong> (siehe <a href="#fig:einseitiger_signifikanztest" data-reference-type="ref+page" data-reference="fig:einseitiger_signifikanztest">[fig:einseitiger_signifikanztest]</a>).<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
+<figure>
+<img src="einseitiger_signifikanztest.png" id="fig:einseitiger_signifikanztest" alt="Schaubilder eines einseitigen Signifikanztests (linksseitig bzw. rechtsseitig)" /><figcaption aria-hidden="true">Schaubilder eines einseitigen Signifikanztests (linksseitig bzw. rechtsseitig)</figcaption>
+</figure>
+<ol>
+<li><p>Man legt den <strong>Stichprobenumfang <span class="math inline">\(n\)</span></strong> und das <strong>Signifikanzniveau <span class="math inline">\(\alpha\)</span></strong> (die <strong>maximale Irrtumswahrscheinlichkeit</strong>, z.B. <span class="math inline">\(\alpha = \SI{5}{\percent}\)</span>) fest.</p></li>
+<li><p>Als Testgröße <span class="math inline">\(X\)</span> verwendet man die Trefferzahl für die Parameter <span class="math inline">\(n\)</span> und <span class="math inline">\(p_0\)</span>.</p></li>
+<li><p>Man bestimmt den Annahmebereich <span class="math inline">\(A\)</span> der Nullhypothese (siehe <a href="#links-_rechtsseitiger_signifikanztest" data-reference-type="ref+page" data-reference="links-_rechtsseitiger_signifikanztest">[links-_rechtsseitiger_signifikanztest]</a>). Bei der Ermittlung von <span class="math inline">\(a\)</span> bzw. <span class="math inline">\(b\)</span> können eine (mit dem Taschenrechner bestimmte) Tabelle der kumulierten Wahrscheinlichkeiten (oder die Sigmaregeln, siehe <a href="#sec:sigmaregeln" data-reference-type="ref+page" data-reference="sec:sigmaregeln">[sec:sigmaregeln]</a>) verwendet werden.</p></li>
+<li><p>Man führt eine Stichprobe von Umfang <span class="math inline">\(n\)</span> durch. Die Nullhypothese <span class="math inline">\(H_0\)</span> wird beibehalten, wenn das Stichprobenereignis im Annahmebereich liegt, sonst wird <span class="math inline">\(H_0\)</span> verworfen.</p></li>
+</ol>
+<div id="links-_rechtsseitiger_signifikanztest">
+<table>
+<caption>Links- und rechtsseitiger Signifikanztest</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Linksseitiger Test</th>
+<th style="text-align: left;">Rechtsseitiger Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Nullhypothese <span class="math inline">\(H_0\)</span>:</td>
+<td style="text-align: left;"><span class="math inline">\(p=p_0\)</span> oder <span class="math inline">\(p \geq p_0\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(p=p_0\)</span> oder <span class="math inline">\(p \leq p_0\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Alternative <span class="math inline">\(H_1\)</span>:</td>
+<td style="text-align: left;"><span class="math inline">\(p&lt;p_0\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(p &gt; p_0\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Annahmebereich <span class="math inline">\(A\)</span>:</td>
+<td style="text-align: left;"><span class="math inline">\(A=\{ a,\dots,n-1,n \}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(A=\{ 0,1,\dots,b \}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ablehnungsbereich <span class="math inline">\(\overline{A}\)</span>:</td>
+<td style="text-align: left;"><span class="math inline">\(\overline{A} = \{ 0,1,\dots,a-1 \}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\overline{A}=\{b+1,\dots,n-1,n\}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p><span class="math inline">\(a\)</span>: kleinste Zahl mit</p>
+<p><span class="math inline">\(P(X \leq a ) &gt; \alpha\)</span> bzw.</p>
+<p><span class="math inline">\(P(X&lt;a)\leq\alpha\)</span></p></td>
+<td style="text-align: left;"><p><span class="math inline">\(b\)</span>: kleinste Zahl mit</p>
+<p><span class="math inline">\(P(X&lt;b)\leq\alpha \Leftrightarrow P(X\leq b)&gt;1-\alpha\)</span></p>
+<p>bzw.</p>
+<p><span class="math inline">\(P(X&gt;b)\leq\alpha \Leftrightarrow 1-P(X\leq b)\leq \alpha\)</span></p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><span class="math inline">\(P(\text{Fehler 1. Art})\)</span></p>
+<p>(<strong>Irrtumswahrscheinlichkeit</strong>)</p></td>
+<td style="text-align: left;"><span class="math inline">\(P(\overline{A}) = P(X\leq a)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(P(\overline{A}) = 1-P(X\leq b-1)\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span id="links-_rechtsseitiger_signifikanztest" label="links-_rechtsseitiger_signifikanztest">[links-_rechtsseitiger_signifikanztest]</span></p>
+<h4 id="zweiseitiger-signifikanztest">Zweiseitiger Signifikanztest</h4>
+<p>Bei einem <strong>zweiseitigen Signifikanztest</strong> (siehe <a href="#fig:zweiseitiger_signifikanztest" data-reference-type="ref+page" data-reference="fig:zweiseitiger_signifikanztest">[fig:zweiseitiger_signifikanztest]</a>) testet man eine <strong>Nullhypothese</strong> <span class="math inline">\(H_0\)</span>: <span class="math inline">\(p=p_0\)</span>, die <strong>Alternative</strong> ist <span class="math inline">\(H_1\)</span>: <span class="math inline">\(p\neq p_0\)</span>.</p>
+<figure>
+<img src="zweiseitiger_signifikanztest.png" id="fig:zweiseitiger_signifikanztest" style="width:50.0%" alt="Schaubild eines zweiseitigen Signifikanztests (für \alpha = \SI{5}{\percent})" /><figcaption aria-hidden="true">Schaubild eines zweiseitigen Signifikanztests (für <span class="math inline">\(\alpha = \SI{5}{\percent}\)</span>)</figcaption>
+</figure>
+<ol>
+<li><p>Man legt den <strong>Stichprobenumfang</strong> <span class="math inline">\(n\)</span> und das <strong>Signifikanzniveau</strong> (die <strong>maximale Irrtumswahrscheinlichkeit</strong>, z.B. <span class="math inline">\(\alpha = \SI{5}{\percent}\)</span>) fest.</p></li>
+<li><p>Als Testgröße <span class="math inline">\(X\)</span> verwendet man die Trefferzahl für die Parameter <span class="math inline">\(n\)</span> und <span class="math inline">\(p_0\)</span>.</p></li>
+<li><p>Man bestimmt den <strong>Annahmebereich <span class="math inline">\(A=[a,b]\)</span></strong> der Hypothese (alle Werte, die nicht im Annahmebereich liegen, bilden den <strong>Ablehnungsbereich</strong>). Dazu sucht man aus der (mit dem Taschenrechner erzeugten) Tabelle der kumulierten Wahrscheinlichkeiten von <span class="math inline">\(X\)</span> die kleinsten Zahlen <span class="math inline">\(a\)</span> und <span class="math inline">\(b\)</span>, sodass <span class="math display">\[P(X\leq a) &gt; \frac{\alpha}{2} \quad \textrm{ und } \quad P(X\leq b) &gt; 1-\frac{\alpha}{2}\]</span> gilt.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> Für den Fall <span class="math inline">\(\alpha = \SI{5}{\percent}\)</span> sind <span class="math inline">\(a\)</span> und <span class="math inline">\(b\)</span> die kleinsten Zahlen, für die <span class="math display">\[P(X\leq a) &gt; \SI{2,5}{\percent} \quad \textrm{ und } \quad P(X\leq b) &gt; \SI{97,5}{\percent}\]</span> gilt.</p></li>
+<li><p>Man führt eine Stichprobe vom Umfang <span class="math inline">\(n\)</span> durch. Die Nullhypothese <span class="math inline">\(H_0\)</span> wird angenommen, wenn das Stichprobenergebnis im Annahmebereich liegt, ansonsten wird <span class="math inline">\(H_0\)</span> verworfen.</p></li>
+</ol>
+<h4 id="fehler-beim-testen-von-binomialverteilungen">Fehler beim Testen von Binomialverteilungen</h4>
+<div id="tab:entscheidungsmoeglichkeiten_nach_stichprobe">
+<table>
+<caption>Entscheidungsmöglichkeiten nach der Durchführung einer Stichprobe beim Hypothesentest</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Entscheidung für <span class="math inline">\(H_0\)</span></th>
+<th style="text-align: left;">Entscheidung für <span class="math inline">\(H_1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(H_0\)</span> stimmt</td>
+<td style="text-align: left;"><p><strong>Sicherheit 1. Art</strong>:</p>
+<p><span class="math inline">\(P(A)\)</span> (bezogen auf <span class="math inline">\(p_0\)</span>)</p></td>
+<td style="text-align: left;"><p><strong>Fehler 1. Art</strong> (<strong><span class="math inline">\(\alpha\)</span>-Fehler</strong>):</p>
+<p><strong>Irrtumswahrscheinlichkeit</strong></p>
+<p><span class="math inline">\(P(\overline{A}) = 1-P(A)\)</span> (bezogen auf <span class="math inline">\(p_0\)</span>)</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(H_1\)</span> stimmt</td>
+<td style="text-align: left;"><p><strong>Fehler 2. Art</strong> (<strong><span class="math inline">\(\beta\)</span>-Fehler</strong>):</p>
+<p><strong>Irrtumswahrscheinlichkeit</strong> <span class="math inline">\(P(A)\)</span> (bezogen auf <span class="math inline">\(p_1\)</span>)</p></td>
+<td style="text-align: left;"><p><strong>Sicherheit 2. Art</strong>:</p>
+<p><span class="math inline">\(P(\overline{A}) = 1-P(A)\)</span> (bezogen auf <span class="math inline">\(p_1\)</span>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span id="tab:entscheidungsmoeglichkeiten_nach_stichprobe" label="tab:entscheidungsmoeglichkeiten_nach_stichprobe">[tab:entscheidungsmoeglichkeiten_nach_stichprobe]</span></p>
+<p>Das Ergebnis eines Tests bedeutet nicht, dass eine Hypothese wahr oder falsch ist. Es bedeutet nur, dass sich aufgrund der Entscheidungsregel dazu entschlossen wurde, eine Hypothese als wahr oder falsch anzusehen. Nach der Stichprobe sind daher folgende Entscheidungen möglich, wobei auch Fehlentscheidungen vorkommen können (siehe <a href="#tab:entscheidungsmoeglichkeiten_nach_stichprobe" data-reference-type="ref+page" data-reference="tab:entscheidungsmoeglichkeiten_nach_stichprobe">[tab:entscheidungsmoeglichkeiten_nach_stichprobe]</a>):</p>
+<ul>
+<li><p>Liegt das Ergebnis im Annahmebereich, wird mit einer Wahrscheinlichkeit <span class="math inline">\(P(A)\)</span> (bezogen auf <span class="math inline">\(p_0\)</span>) die richtige Hypothese <span class="math inline">\(H_0\)</span> angenommen (<strong>Sicherheit 1. Art</strong>).</p></li>
+<li><p>Gleichzeitig wird aber mit einer Wahrscheinlichkeit von <span class="math inline">\(P(\overline{A})\)</span> (bezogen auf <span class="math inline">\(p_0\)</span>) fehlerhaft eine (eigentlich richtige) Hypothese <span class="math inline">\(H_0\)</span> verworfen, wenn das Ergebnis der Stichprobe im Ablehnungsbereich <span class="math inline">\(\overline{A}\)</span> liegt. In diesem Fall – also wenn die Nullhypothese verworfen wird, obwohl sie richtig ist – spricht man von einem <strong>Fehler 1. Art</strong>. Ihre Wahrscheinlichkeit ist dieselbe wie die <strong>Irrtumswahrscheinlichkeit</strong> und ist maximal so groß wie <span class="math inline">\(\alpha\)</span>.</p></li>
+<li><p>Liegt das Ergebnis der Stichprobe außerhalb des Annahmebereichs <span class="math inline">\(A\)</span>, wird mit einer Wahrscheinlichkeit von <span class="math inline">\(P(\overline{A})\)</span> (bezogen auf <span class="math inline">\(p_1\)</span>) die falsche Hypothese <span class="math inline">\(H_0\)</span> verworfen und sich für die richtige Hypothese <span class="math inline">\(H_1\)</span> entschieden (<strong>Sicherheit 2. Art</strong>).</p></li>
+<li><p>Gleichzeitig wird aber mit einer Wahrscheinlichkeit von <span class="math inline">\(P(A)\)</span> (bezogen auf <span class="math inline">\(p_1\)</span>) fehlerhaft eine falsche Hypothese <span class="math inline">\(H_0\)</span> angenommen, wenn das Ergebnis der Stichprobe im Annahmebereich <span class="math inline">\(A\)</span> liegt. In diesem Fall – also wenn die Nullhypothese akzeptiert wird, obwohl sie falsch ist – spricht man von einem <strong>Fehler 2. Art</strong>.</p></li>
+</ul>
+<p>Wenn man den Annahmebereich von <span class="math inline">\(H_0\)</span> vergrößert, um die Wahrscheinlichkeit für den Fehler 1. Art zu verkleinern, dann wird die Wahrscheinlichkeit für den Fehler 2. Art vergrößert. Wenn man den Annahmebereich von <span class="math inline">\(H_0\)</span> verkleinert, um die Wahrscheinlichkeit für den Fehler 2. Art zu verkleinern, dann wird die Wahrscheinlichkeit für den Fehler 1. Art vergrößert.</p>
+<p>Wenn man den Stichprobenumfang erhöht, kann man bei gleichem Signifikanzniveau die Wahrscheinlichkeit für den Fehler 2. Art verkleinern.</p>
+<p>Wird das Signifikanzniveau <span class="math inline">\(\alpha\)</span> (die maximale Irrtumswahrscheinlichkeit) zu klein gewählt wird, ist ein Test nicht mehr <strong>sinnvoll</strong>, da es zu unwahrscheinlich wird, einen Fehler zu begehen.</p>
+<h1 id="anhang">Anhang</h1>
+<h3 id="spezielle-funktionen-des-taschenrechners">Spezielle Funktionen des Taschenrechners</h3>
+<p>Die folgenden Abschnitte beziehen sich nur auf den Taschenrechner <a href="https://www.casio-schulrechner.de/de/produkte/wissenschaftlicherechner/fx991dex/">FX-991DE X von Casio</a>, der von der Schule in der Mittelstufe als Sammelbestellung angeschafft worden ist.</p>
+<h4 id="lösen-von-polynom-gleichungen-des-zweiten-bis-vierten-grades">Lösen von Polynom-Gleichungen des zweiten bis vierten Grades</h4>
+<p>Polynom-Gleichungen des zweiten bis vierten Grades können folgenderweise mit dem Taschenrechner gelöst werden:</p>
+<ol>
+<li><p>Drücke auf <span class="math inline">\(\boxed{\text{MENU}}\)</span> und wähle dann <span class="math inline">\(\boxed{\text{7}}\)</span> (Gleichgung/Funkt).</p></li>
+<li><p>Wähle <span class="math inline">\(\boxed{\text{2}}\)</span> für Polynom-Gleichungen.</p></li>
+<li><p>Gib den Grad der Polynom-Gleichung an (<span class="math inline">\(\boxed{\text{2}}\)</span>, <span class="math inline">\(\boxed{\text{3}}\)</span> oder <span class="math inline">\(\boxed{\text{4}}\)</span>).</p></li>
+<li><p>Gib die Koeffizienten an. Beachte dabei, dass nur eine Seite der Gleichung angezeigt wird; die andere hat den Wert <span class="math inline">\(0\)</span>. Bestätige deine Eingabe jeweils durch <span class="math inline">\(\boxed{\text{=}}\)</span>.</p></li>
+<li><p>Nacheinander werden dir die Lösungen für <span class="math inline">\(x\)</span> angezeigt. Zur jeweils nächsten Lösung gelangst du durch <span class="math inline">\(\boxed{\text{=}}\)</span>.</p></li>
+</ol>
+<h4 id="lösen-von-gleichungen-mithilfe-des-newton-verfahrens">Lösen von Gleichungen mithilfe des Newton-Verfahrens</h4>
+<p>Mit dem Taschenrechner können Gleichungen mithilfe des Newton-Verfahrens (siehe <a href="#sec:newton-verfahren" data-reference-type="ref+page" data-reference="sec:newton-verfahren">[sec:newton-verfahren]</a>) gelöst werden:</p>
+<ol>
+<li><p>Gib die Gleichung in den Taschenrechner ein; verwende dabei als Variable das <span class="math inline">\(\boxed{x}\)</span> (oben rechts) und als Gleichzeichen <span class="math inline">\(\boxed{\text{ALPHA}} + \boxed{\text{CALC}}\)</span> (oben links.)</p></li>
+<li><p>Drücke auf <span class="math inline">\(\boxed{\text{SHIFT}} + \boxed{\text{CALC}}\)</span>.</p></li>
+<li><p>Gib einen Startwert für das Newton-Verfahren an. Er sollte in der Umgebung der gesuchten Lösung liegen.</p></li>
+<li><p>Drücke auf <span class="math inline">\(\boxed{\text{=}}\)</span>.</p></li>
+</ol>
+<h4 id="lösen-von-gleichungssystemen-mit-2-bis-4-unbekannten">Lösen von Gleichungssystemen mit <span class="math inline">\(2\)</span> bis <span class="math inline">\(4\)</span> Unbekannten</h4>
+<p>Gleichungssysteme mit <span class="math inline">\(2\)</span> bis <span class="math inline">\(4\)</span> Unbekannte können folgenderweise mit dem Taschenrechner gelöst werden:</p>
+<ol>
+<li><p>Drücke auf <span class="math inline">\(\boxed{\text{MENU}}\)</span> und wähle dann <span class="math inline">\(\boxed{\text{7}}\)</span> (Gleichgung/Funkt).</p></li>
+<li><p>Wähle <span class="math inline">\(\boxed{\text{1}}\)</span> für Gleichungssysteme.</p></li>
+<li><p>Gib die Anzahl an Unbekannten an (<span class="math inline">\(\boxed{\text{2}}\)</span>, <span class="math inline">\(\boxed{\text{3}}\)</span> oder <span class="math inline">\(\boxed{\text{4}}\)</span>).</p></li>
+<li><p>Gib die Koeffizienten an. Beachte dabei, dass auf der linken Seite der Gleichungen nur die Unbekannten stehen. Bestätige deine Eingabe jeweils durch <span class="math inline">\(\boxed{\text{=}}\)</span>.</p></li>
+<li><p>Nacheinander werden dir die Lösungen für <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> und <span class="math inline">\(z\)</span> angezeigt. Zur jeweils nächsten Unbekannten gelangst du durch <span class="math inline">\(\boxed{\text{=}}\)</span>.</p></li>
+</ol>
+<h4 id="vektorrechung">Vektorrechung</h4>
+<ol>
+<li><p>Drücke auf <span class="math inline">\(\boxed{\text{MENU}}\)</span> und wähle dann <span class="math inline">\(\boxed{\text{5}}\)</span> (Vektorrechnung).</p></li>
+<li><p>Durch Wählen der entsprechenden Zahlen können bis zu vier verschiedene Vektoren definiert werden. Dazu muss jeweils zuerst die Dimension des Vektors festgelegt werden (<span class="math inline">\(\boxed{\text{2}}\)</span> oder <span class="math inline">\(\boxed{\text{3}}\)</span>).</p></li>
+<li><p>Über <span class="math inline">\(\boxed{\text{OPTN}}\)</span> (oben links) stehen viele verschiedene Funktionen zur Verfügung:</p>
+<ul>
+<li><p>Mit <span class="math inline">\(\boxed{\text{1}}\)</span> bzw. <span class="math inline">\(\boxed{\text{2}}\)</span> können Vektoren definiert bzw. bearbeitet werden.</p></li>
+<li><p>Mit <span class="math inline">\(\boxed{\text{3}}\)</span> bis <span class="math inline">\(\boxed{\text{6}}\)</span> können Vektoren für Rechnungen ausgewählt werden.</p></li>
+<li><p>Mit <span class="math inline">\(\boxed{\downarrow}\)</span> und <span class="math inline">\(\boxed{\text{2}}\)</span> kann ein Skalarprodukt berechnet werden.</p></li>
+<li><p>Mit <span class="math inline">\(\boxed{\downarrow}\)</span> und <span class="math inline">\(\boxed{\text{3}}\)</span> kann der Winkel zwischen zwei Vektoren bestimmt werden.</p></li>
+<li><p>Mit <span class="math inline">\(\boxed{\downarrow}\)</span> und <span class="math inline">\(\boxed{\text{4}}\)</span> kann ein Einheitsvektor bestimmt werden.</p></li>
+</ul>
+<p>Den Betrag von Vektoren erhält man durch <span class="math inline">\(\boxed{\text{SHIFT}}\)</span> und <span class="math inline">\(\boxed{\text{(}}\)</span>. Das Kreuzprodukt erhält man durch die normale Multiplikationstaste <span class="math inline">\(\boxed{\times}\)</span>.</p></li>
+</ol>
+<h3 id="operatoren-im-fach-mathematik">Operatoren im Fach Mathematik</h3>
+<p>Der folgende Abschnitt einschließlich der Tabelle ist als Auszug den <a href="https://lehrplan.lernnetz.de/index.php?DownloadID=993">Fachanforderungen Mathematik für Schleswig-Holstein (2014)</a> wörtlich entnommen.</p>
+<p>Im Folgenden werden Operatoren erläutert, die im Fach Mathematik in Abschlussprüfungen verwendet werden. Diese Operatoren können hinsichtlich ihrer Bedeutung durch Zusätze (zum Beispiel rechnerisch oder grafisch) spezifiziert werden. Zugelassene Hilfsmittel dürfen zur Bearbeitung verwendet werden, sofern dem kein entsprechender Zusatz entgegensteht.<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></p>
+<p>Sofern durch den Operator nichts anderes bestimmt ist, ist bei der Bearbeitung der Aufgabe das Vorgehen so zu dokumentieren, dass es für eine fachkundige Person nachvollziehbar ist. Im Einzelfall können auch hier nicht aufgeführte Operatoren eingesetzt werden, wenn davon auszugehen ist, dass sich deren Bedeutung aus dem Kontext ergibt (zum Beispiel auswerten, beschriften, darstellen).</p>
+<table>
+<caption>Operatoren im Fach Mathematik (Fortsetzung)</caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Operatoren</td>
+<td style="text-align: left;">Erläuterungen</td>
+<td style="text-align: left;">Beispiele (Oberstufe)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">angeben, nennen</td>
+<td style="text-align: left;">Die erfragten Objekte, Sachverhalte, Begriffe oder Daten werden ohne Erläuterungen, Begründungen oder Lösungswege mitgeteilt oder notiert.</td>
+<td style="text-align: left;"><p>Geben Sie drei Punkte an, die in der Ebene <span class="math inline">\(E\)</span> liegen.</p>
+<p>Nennen Sie drei Aspekte, die den Verlauf der Graphen charakterisieren.</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">auflösen</td>
+<td style="text-align: left;">Gleichungen werden unter Angabe von wesentlichen Zwischenschritten in eine äquivalente Form gebracht. Ziel ist im Allgemeinen eine Form, aus der ein Variablen- oder Parameterwert unmittelbar abzulesen ist. Ziel kann auch eine vorgegebene Form sein.</td>
+<td style="text-align: left;">Lösen Sie die Matrizengleichung nach der Matrix <span class="math inline">\(X\)</span> auf.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">begründen</td>
+<td style="text-align: left;"><p>Ein Sachverhalt wird auf Gesetzmäßigkeiten oder kausale Zusammenhänge zurückgeführt. Hierbei sind mathematische Regeln und Beziehungen zu nutzen.</p>
+<p><em>Auch bei der Verwendung mathematischer Syntax ist eine geschlossene Antwort erforderlich, die auch Textanteile enthält. Die Angabe einer Formel oder Ähnliches genügt hier nicht. Aufgrund der verschiedenen Ausprägungen des Operators begründen ergeben sich Überschneidungen mit beweisen und zeigen, wobei dort formale oder rechnerische Aspekte eine höhere Bedeutung haben.</em></p></td>
+<td style="text-align: left;"><p>Begründen Sie, dass die Funktion nicht mehr als drei Wendestellen haben kann.</p>
+<p>Begründen Sie, warum von einer binomialverteilten Zufallsgröße ausgegangen werden kann.</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">berechnen</td>
+<td style="text-align: left;"><p>Ergebnisse werden von einem Ansatz ausgehend auf rechnerischem Wege gewonnen.</p>
+<p><em>Auch die Nutzung des Taschenrechners ist zulässig.</em></p></td>
+<td style="text-align: left;">Berechnen Sie die Wahrscheinlichkeit des Ereignisses <span class="math inline">\(A\)</span>.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">beschreiben</td>
+<td style="text-align: left;"><p>Sachverhalte oder Verfahren werden in Textform unter Verwendung der Fachsprache in vollständigen Sätzen dargestellt.</p>
+<p><em>Hier sind auch Einschränkungen möglich (Beschreiben Sie in Stichworten).</em></p></td>
+<td style="text-align: left;">Beschreiben Sie einen Lösungsweg.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">bestimmen, ermitteln</td>
+<td style="text-align: left;"><p>Ergebnisse werden durch Nutzung mathematischer Überlegungen oder Verfahren gewonnen.</p>
+<p><em>Alle Werkzeugebenen, das heißt auch die Nutzung des Taschenrechners sowie das Ablesen aus gegebenen Diagrammen, Skizzen, Abbildungen usw. sind zulässig.</em></p></td>
+<td style="text-align: left;"><p>Bestimmen Sie aus diesen Werten die Koordinaten der beiden Punkte.</p>
+<p>Ermitteln Sie den Schnittpunkt.</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">beurteilen</td>
+<td style="text-align: left;">Zu einem Sachverhalt wird eine selbstständige Bewertung unter Verwendung von Fachwissen und Fachmethoden formuliert.</td>
+<td style="text-align: left;">Beurteilen Sie, wie gut die vorgeschlagene Funktion das Problem modelliert.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><p>beweisen,</p>
+<p>widerlegen</p></td>
+<td style="text-align: left;"><p>Aussagen oder Sachverhalte werden unter Verwendung von bekannten mathematischen Sätzen, logischen Schlüssen und Äquivalenzumformungen bestätigt oder falsifiziert, gegebenenfalls unter Verwendung von Gegenbeispielen.</p>
+<p><em>Verwendete Variablen werden eingeführt.</em></p></td>
+<td style="text-align: left;"><p>Beweisen Sie, dass die vier Mittelpunkte der Seiten des Vierecks in einer Ebene liegen.</p>
+<p>Beweisen oder widerlegen Sie die gegebene These.</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">entscheiden</td>
+<td style="text-align: left;"><p>Unter mehreren Möglichkeiten werden eine oder mehrere ausgewählt.</p>
+<p><em>Eine Begründung der Entscheidung wird gesondert gefordert.</em></p></td>
+<td style="text-align: left;"><p>Entscheiden Sie, welche der Ihnen bekannten Verteilungen zur Problemstellung passt.</p>
+<p>Entscheiden und begründen Sie, welche der Alternativen die kostengünstigere ist.</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ergänzen, vervollständigen</td>
+<td style="text-align: left;">Ein teilweise vorgegebener Entwurf oder Sachverhalt wird nach Vorgaben erweitert oder weiterentwickelt.</td>
+<td style="text-align: left;">Vervollständigen Sie die Wertetabelle.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">erläutern</td>
+<td style="text-align: left;">Sachverhalte oder Verfahren werden in angemessener Textform nachvollziehbar und verständlich dargestellt und gegebenenfalls durch zusätzliche Informationen und Beispiele veranschaulicht.</td>
+<td style="text-align: left;">Erläutern Sie den Unterschied zwischen einem Ergebnis und einem Ereignis bei einem Zufallsexperiment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">erstellen</td>
+<td style="text-align: left;">Zu einem Sachverhalt wird eine mathematische Darstellung in fachlich korrekter, meist vorgegebener Form angefertigt.</td>
+<td style="text-align: left;">Erstellen Sie eine Wertetabelle der Wahrscheinlichkeitsverteilung.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">herleiten</td>
+<td style="text-align: left;">Die Entstehung oder Entwicklung eines gegebenen Sachverhalts aus allgemeineren Sachverhalten wird nachvollziehbar dargestellt.</td>
+<td style="text-align: left;">Leiten Sie die gegebene Gleichung der Stammfunktion her.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">interpretieren</td>
+<td style="text-align: left;">Die Ergebnisse einer mathematischen Überlegung werden rückübersetzt auf das ursprüngliche Problem.</td>
+<td style="text-align: left;">Interpretieren Sie das Ergebnis im Sachzusammenhang.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">klassifizieren</td>
+<td style="text-align: left;"><p>Objekte oder Sachverhalte werden nach vorgegebenen oder selbstständig zu wählenden Kriterien unter Benennung des Ordnungsschemas in Klassen eingeteilt.</p>
+<p><em>Eine Begründung der vorgegebenen oder selbst gewählten Kriterien wird gegebenenfalls gesondert gefordert.</em></p></td>
+<td style="text-align: left;">Klassifizieren Sie die Graphen der Schar.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">modellieren</td>
+<td style="text-align: left;">Zu einem realen Sachverhalt wird ein mathematisches Modell entwickelt.</td>
+<td style="text-align: left;">Modellieren Sie den Sachverhalt durch eine geeignete Funktion.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">skizzieren</td>
+<td style="text-align: left;">Die wesentlichen Eigenschaften eines Objektes oder einer Struktur werden grafisch angemessen dargestellt – eventuell als Freihandzeichnung; in der Regel ohne Berücksichtigung eines Maßstabs.</td>
+<td style="text-align: left;"><p>Skizzieren Sie den Graphen der Funktion <span class="math inline">\(f\)</span>.</p>
+<p>Skizzieren Sie die drei Objekte unter Berücksichtigung der gegenseitigen Lage.</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">untersuchen, prüfen</td>
+<td style="text-align: left;">Sachverhalte oder mathematische Objekte werden nach vorgegebenen oder selbst gewählten Aspekten analysiert und nach fachlich üblichen, sinnvollen Kriterien dargestellt. Dabei müssen unter Umständen selbstständig Fallunterscheidungen vorgenommen werden.</td>
+<td style="text-align: left;"><p>Untersuchen Sie, ob es eine Funktion der Schar gibt, deren Graph keinen Hochpunkt besitzt.</p>
+<p>Prüfen Sie, ob die beiden Graphen Berührpunkte haben.</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">vergleichen</td>
+<td style="text-align: left;"><p>nach vorgegebenen oder selbst gewählten Gesichtspunkten werden Gemeinsamkeiten, Ähnlichkeiten und Unterschiede ermittelt und dargestellt.</p>
+<p><em>Eine Beurteilung wird gegebenenfalls gesondert gefordert.</em></p></td>
+<td style="text-align: left;"><p>Vergleichen Sie den Verlauf der Graphen der Funktionen <span class="math inline">\(f_a\)</span> für positive und für negative Parameter <span class="math inline">\(a\)</span>.</p>
+<p>Vergleichen Sie die Entwicklung der beiden Populationen in den ersten zehn Tagen.</p>
+<p>Vergleichen Sie die beiden Lösungsverfahren und beurteilen Sie deren Genauigkeit.</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">zeichnen, konstruieren</td>
+<td style="text-align: left;">Eine hinreichend exakte Abbildung wird – gegebenenfalls maßstabsgetreu – angefertigt.</td>
+<td style="text-align: left;">Zeichnen Sie den Graphen der Funktion in einem geeigneten Koordinatensystem.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p>zeigen,</p>
+<p>nachweisen</p></td>
+<td style="text-align: left;"><p>Eine Aussage oder ein Sachverhalt wird nach gültigen Schlussregeln, mit Berechnungen, Herleitungen oder logischen Begründungen bestätigt.</p>
+<p><em>Teile der Argumentationskette können ohne Herleitung aus den eingeführten Hilfsmitteln gewonnen werden.</em></p></td>
+<td style="text-align: left;"><p>Zeigen Sie, dass die Punkte <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> und <span class="math inline">\(C\)</span> auf einer Geraden liegen.</p>
+<p>Weisen Sie nach, dass die beiden gefundenen Vektoren orthogonal zueinander sind.</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">zuordnen</td>
+<td style="text-align: left;">Zwischen den Objekten zweier Mengen wird nach sinnvollen Kriterien eine Beziehung hergestellt.</td>
+<td style="text-align: left;">Ordnen Sie jedem Graphen eine der vorgegebenen Funktionsgleichungen zu.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="tab:operatoren" label="tab:operatoren">[tab:operatoren]</span></p>
+<h3 id="informationen-speziell-für-das-abitur-2021">Informationen speziell für das Abitur 2021</h3>
+<ul>
+<li><p><a href="https://za.schleswig-holstein.de/zabDokumente/?view=101&amp;path=Abitur|Termine&amp;dHash=6a0be7ee7e95c8d0366d8e8d6bfab818">öffentlicher Terminplan für das Abitur 2021 an allgemeinbildenden Schulen (PDF)</a></p></li>
+<li><p><a href="https://za.schleswig-holstein.de/zabDokumente/?view=101&amp;path=Abitur|2021&amp;dHash=10ac7bb7f979793e07dd8e5adbcb4611">Prüfungsregelungen zur Abiturprüfung Mathematik 2021 (PDF)</a></p></li>
+<li><p><a href="https://za.schleswig-holstein.de/zabDokumente/?view=100&amp;path=Abitur%7C2021">allgemeine Informationen zum Abitur 2021 (Webpage)</a></p></li>
+</ul>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Zu beachten ist, dass die Multiplikation mit null oder Division durch null oft versteckt auftritt: So ist beispielsweise die Multiplikation mit <span class="math inline">\((x - 1)\)</span> keine Äquivalenzumformung, da dieser Multiplikator im Falle <span class="math inline">\(x = 1\)</span> eben null sein kann. Allerdings kann man durch Fallunterscheidung sicherstellen, dass eine Multiplikation oder Division durch null nicht stattfindet: Fälle, in denen ein Multiplikator oder Divisor null ist, sind gesondert zu untersuchen; ansonsten sind die umgeformten Aussagen nur unter einer entsprechenden Zusatzvoraussetzung (also nicht allgemein) zueinander äquivalent.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>biquadratische Gleichung: Gleichung vierten Grades der Form <span class="math inline">\(ax^4+bx^2+c=0\)</span><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>iterativ: sich schrittweise in wiederholten Rechengängen der exakten Lösung annähernd<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p><span class="math inline">\(\mathrm{e}\approx 2.718\)</span>: Eulersche Zahl<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>Gilt <span class="math inline">\(d\neq 0\)</span>, muss für eine vollständige Spiegelung an der x-Achse zusätzlich das Vorzeichen von <span class="math inline">\(d\)</span> umgekehrt werden.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>Als Merkhilfe kann diese Formel mit der für den Flächeninhalt <span class="math inline">\(A=\pi\cdot r^2\)</span> eines Kreises verglichen werden.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7" role="doc-endnote"><p>Bei Kurvenscharen wird eine Bestimmungsgleichung weniger benötigt. Der übrige Parameter des allgemeinen Funktionsterms entspricht dann dem Scharparameter.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8" role="doc-endnote"><p>Man beachte, dass auch Rechtecke, Quadrate und Rauten Parallelogramme sind.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9" role="doc-endnote"><p>Man beachte, dass auch Rechtecke, Quadrate und Rauten Parallelogramme sind.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10" role="doc-endnote"><p>Es ist wichtig, dass genau zwischen den Begriffen Ergebnis (<span class="math inline">\(e\)</span>; <em>ein</em> möglicher Ausgang; z.B. Würfeln einer ) und Ereignis (<span class="math inline">\(E\)</span>; <em>mindestens ein</em> möglicher Ausgang; z.B. Würfeln einer oder ) unterschieden wird.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11" role="doc-endnote"><p>Wenn <span class="math inline">\(\mu\)</span> nicht ganzzahlig ist, liegt der Erwartungswert bei einem der ganzzahligen Werte daneben. Welcher es genau ist, kann durch die Berechnung und anschließendem Vergleich beider Werte bestimmt werden.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12" role="doc-endnote"><p>Die erste Ableitung der Glockenkurve ist <span class="math display">\[f^\prime_{\sigma,\mu} (x) = \frac{-2(x-\mu)}{2\sigma^2} \cdot f_{\sigma,\mu} (x) .\]</span> Da ein Produkt vorliegt, ist der Satz vom Nullprodukt (siehe <a href="#sec:satz_nullprodukt" data-reference-type="ref+page" data-reference="sec:satz_nullprodukt">[sec:satz_nullprodukt]</a>) anwendbar: Der rechte Faktor (die Funktion <span class="math inline">\(f_{\sigma,\mu} (x)\)</span>) ist eine <span class="math inline">\(\textrm{e}\)</span>-Funktion und wird daher nicht null; der Vorfaktor wird null für <span class="math inline">\(x=\mu\)</span>.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13" role="doc-endnote"><p>Die zweite Ableitung der Glockenkurve ist <span class="math display">\[f^{\prime\prime}_{\sigma,\mu} (x) = \frac{1}{\sigma^2} \left( \frac{1}{\sigma^2}(x-\mu)^2-1 \right) \cdot f_{\sigma,\mu} (x) .\]</span> Da ein Produkt vorliegt, ist der Satz vom Nullprodukt (siehe <a href="#sec:satz_nullprodukt" data-reference-type="ref+page" data-reference="sec:satz_nullprodukt">[sec:satz_nullprodukt]</a>) anwendbar: Der rechte Faktor (die Funktion <span class="math inline">\(f_{\sigma,\mu} (x)\)</span>) ist eine <span class="math inline">\(\textrm{e}\)</span>-Funktion und wird daher nicht null; der Vorfaktor wird null für <span class="math inline">\(x=\mu\pm\sigma\)</span>.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14" role="doc-endnote"><p>Die Nullhypothese ist in Abituraufgaben wohl meistens derjenige Ausdruck, der ein Gleich im Relationszeichen enthält, also <span class="math inline">\(\geq\)</span> oder <span class="math inline">\(\leq\)</span>.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15" role="doc-endnote"><p>Dies kann z.B. mithilfe des Taschenrechners geschehen. Alternativ kann auch oft mit den Näherungswerten <span class="math inline">\([ \mu - k\sigma , \mu + k\sigma ]\)</span> gerechnet werden, wobei die Faktoren <span class="math inline">\(k\)</span> gemäß den Sigmaregeln (siehe <a href="#sec:sigmaregeln" data-reference-type="ref+page" data-reference="sec:sigmaregeln">[sec:sigmaregeln]</a>) von Signifikanzniveau <span class="math inline">\(\alpha\)</span> abhängen. Dies ist eine gute – in der Praxis meist ausreichende – Näherung für den Annahmebereich, stimmt aber meist nicht genau damit überein.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16" role="doc-endnote"><p>Anmerkung: Dies bedeutet, dass (außer im hilfsmittelfreien Teil) stets der Taschenrechner z.B. beim Lösen von Gleichungen oder Gleichungssystemen verwendet werden sollte. Die Verwendung des Taschenrechners sollte aber kurz deutlich gemacht werden (z.B. mit <span class="math inline">\(\overset{\text{TR}}{=}\)</span>), um Missverständnissen vorzubeugen.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
-    <p>
-      Unter einer <b>Menge</b> versteht man in der Mathematik jede Zusammenfassung von verschiedenen Objekten zu einer Gesamtheit.
-      Die Objekte, die zu einer Menge gehören, nennt man die <b>Elemente</b> der Menge.
-      Gehört ein Objekt \(x\) zu einer Menge \(A\), schreibt man dafür \(x\in A\); für das Gegenteil schreibt man \(x\notin A\).
-    </p>
-    <p>Mengen können auf verschiedene Weisen angegeben werden.</p>
-    <!-- Tabelle -->
-    <p>Ein <b>Intervall</b> ist eine abkürzende Schreibweise, um eine Teilmenge der reellen Zahlen auszudrücken.</p>
-
-  <h5>1.2 Tangente, Normale und Sekante</h5>
-
-    <p>
-      Die <b>Tangente</b> einer Funktion \(f\) an dem Punkt \(P(x_0\vert f(x_0))\) ist einer Gerade durch \(P\) mit der Steigung \[m_t=f^\prime (x_0).\]
-      Sie wird durch die <b>allgemeine Tangentengleichung</b> bzw. <b>Punkt-Steigungs-Form</b> \[t_{x_0} (x)=f^\prime (x_0)\cdot (x-x_0)+f(x_0)\] beschrieben.
-      Um eine Tangente durch den Punkt \(P\) zu erhalten, können andernfalls der Punkt \(P\) und die Steigung \(f^\prime (x_0)\) im Punkt \(P\) aber auch in die allgemeine Geradengleichung \[ y = m\cdot x + b \qquad\Leftrightarrow\qquad f(x_0)=f^\prime (x_0)\cdot x_0 + b \] eingesetzt werden, sodass der y-Achsen-Abschnitt der Tangente einfach bestimmt werden kann.
-    </p>
-    <p>
-      Die <b>Normale</b> verläuft orthogonal zu der Tangente durch den Punkt \(P\).
-      Daher besitzt sie die Steigung \[m_n=-\frac{1}{m_t}\] und die Gleichung \[n_{x_0} (x)=-\frac{1}{f^\prime (x_0)}\cdot (x-x_0)+f(x_0).\]
-    </p>
-    <p>
-      Die <b>Sekante</b> schneidet eine Funktion \(f\) in (mindestens) zwei Punkten.
-    </p>
-    <p>
-    Es gilt für den <b>Steigungswinkel</b> (bzw. je nach Zusammenhang <b>Neigungswinkel</b>), wenn mit \(m\) die Steigung bezeichnet wird, \[ \tan(\alpha)=m \qquad\textrm{bzw.}\qquad \alpha = \tan^{-1}{(m)} .\]
-    </p>
+<!-- ENDE FORMELSAMMLUNG mATHEMATIK -->
 
 <!--<h2>Formelsammlung für das Abitur Physik 2021</h2>-->
 
