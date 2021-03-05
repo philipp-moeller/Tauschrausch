@@ -24,7 +24,7 @@ module.exports = async function(pkt) {
 	var html = new Template('./html/Mirko.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
 		note: y,
-		punkte: x,
+		punkte: pkt,
 		mathe: z,
 		ergebnis: v
 	
