@@ -45,10 +45,20 @@ module.exports = async function(method,path,query,cookies) {
 			}
 			break;
 		case 'jan':
+			if (path.length==0) {
+				// GET "/jan"
+				build = require('./pages/Jan.js')
+				html = await build(100)
+			}
 			if (path.length==1) {
-				// GET "/jan/{irgendwas}"
+				// GET "/jan/{coolnessfaktor}"
 				build = require('./pages/Jan.js')
 				html = await build(path[0])
+			}
+			if (path.length>1) {
+				// GET "/jan/zu/viele/parameter"
+				build = require('./pages/Jan.js')
+				html = await build(0)
 			}
 			break;
 		case 'menu':
