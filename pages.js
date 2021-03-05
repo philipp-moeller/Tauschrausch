@@ -37,6 +37,13 @@ module.exports = async function(method,path,query,cookies) {
 				html = await build(path[0])
 			}
 			break;
+		case 'christoph':
+			if (path.length==0) {
+				// GET "/christoph"
+				build = require('./pages/christoph.js')
+				html = await build()
+			}
+			break;
 		case 'menu':
 			if (path.length==0) {
 				// GET "/menu"
