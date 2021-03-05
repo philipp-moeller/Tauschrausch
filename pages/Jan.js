@@ -5,7 +5,7 @@ const Template = require('../template.js');
 // Beispiel:
 // const User = require('../db/user.js');
 
-module.exports = async function(/* Hier können Daten eingelesen werden. */) {
+module.exports = async function(coolness) {
 
 	// Hier können Daten aus der Datenbank gelesen und / oder verarbeitet werden.
 	//
@@ -18,7 +18,8 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 		alter: 17,
 		ort: "Kiel",
 		fach: "Informatik",
-		dino: "Longisquama"
+		dino: "Longisquama",
+		coolnessindex : coolness
 	});
 	return await html.parse();
 }
