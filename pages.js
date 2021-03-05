@@ -61,6 +61,18 @@ module.exports = async function(method,path,query,cookies) {
 				html = await build(0)
 			}
 			break;
+		case 'maja':
+			if (path.length==1) {
+				// GET "/maja/{pinguine}"
+				build = require('./pages/maja.js')
+				html = await build(path[0])
+			}
+			if (path.length==0) {
+				// GET "/maja"
+				build = require('./pages/maja.js')
+				html = await build(18)
+			}
+			break;
 		case 'menu':
 			if (path.length==0) {
 				// GET "/menu"
