@@ -14,7 +14,7 @@ module.exports = async function(iqpath) {
 	// await user.init();
 
 	var iqwert = Math.floor(Math.random() * (90 - 50 + 1) + 50);
-	var iqresultcombine = iqwert + iqpath;
+	var iqresultcombine = String(iqpath) + String(iqwert);
 	var iqresultadd = Number(iqwert) + Number(iqpath);
 
 	var html = new Template('./html/christian.html',{
