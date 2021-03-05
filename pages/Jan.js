@@ -13,6 +13,8 @@ module.exports = async function(coolness) {
 	// var user = new User(1);
 	// await user.init();
 
+	coolness= coolness*2;
+	
 	var html = new Template('./html/Jan.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
 		alter: 17,
