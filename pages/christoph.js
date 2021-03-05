@@ -5,7 +5,7 @@ const Template = require('../template.js');
 // Beispiel:
 // const User = require('../db/user.js');
 
-module.exports = async function(/* Hier können Daten eingelesen werden. */) {
+module.exports = async function(alter) {
 
 	// Hier können Daten aus der Datenbank gelesen und / oder verarbeitet werden.
 	//
@@ -16,7 +16,7 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 	var x = "neunten " + "März " + "2003";
 	var y = "Katzen";
 	var z = "Hunde";
-	var a = 17+1;
+	alter = alter;
 	var b = "im" + "Internet";
 
 	var html = new Template('./html/christoph.html',{
@@ -24,7 +24,7 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 		tag: x,
 		ueberlegenestier: y,
 		okayestier: z,
-		alter: a,
+		alter: alter,
 		ort: b
 	});
 	return await html.parse();
