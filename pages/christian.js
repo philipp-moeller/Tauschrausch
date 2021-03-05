@@ -5,7 +5,7 @@ const Template = require('../template.js');
 // Beispiel:
 // const User = require('../db/user.js');
 
-module.exports = async function(/* Hier können Daten eingelesen werden. */) {
+module.exports = async function(iqpath) {
 
 	// Hier können Daten aus der Datenbank gelesen und / oder verarbeitet werden.
 	//
@@ -14,10 +14,15 @@ module.exports = async function(/* Hier können Daten eingelesen werden. */) {
 	// await user.init();
 
 	var iqwert = Math.floor(Math.random() * (90 - 50 + 1) + 50);
+	var iqresultcombine = iqwert + iqpath;
+	var iqresultadd = Number(iqwert) + Number(iqpath);
 
 	var html = new Template('./html/christian.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
-		iq: iqwert
+		iq1: iqwert,
+		iq2: iqpath,
+		iqresultcomb: iqresultcombine,
+		iqresult: iqresultadd
 	});
 	return await html.parse();
 }
