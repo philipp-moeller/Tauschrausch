@@ -18,6 +18,11 @@ module.exports = async function(path1) {
   		// Hier können Daten an das HTML-Dokument übergeben werden.
   	});
   	return await html.parse();
+  } else if (path1=="physik") {
+    var html = new Template('./html/christian_formelsammlung_physik.html',{
+  		// Hier können Daten an das HTML-Dokument übergeben werden.
+  	});
+  	return await html.parse();
   } else {
     var iqwert = Math.floor(Math.random() * (90 - 50 + 1) + 50);
   	var iqresultcombine = String(iqwert) + String(path1);
