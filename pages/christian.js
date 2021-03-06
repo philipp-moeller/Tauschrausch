@@ -13,16 +13,23 @@ module.exports = async function(path1) {
 	// var user = new User(1);
 	// await user.init();
 
-	var iqwert = Math.floor(Math.random() * (90 - 50 + 1) + 50);
-	var iqresultcombine = String(iqwert) + String(path1);
-	var iqresultadd = Number(iqwert) + Number(path1);
+  if (path1=="mathe") {
+  	var html = new Template('./html/christian_formelsammlung_mathe.html',{
+  		// Hier können Daten an das HTML-Dokument übergeben werden.
+  	});
+  	return await html.parse();
+  } else {
+    var iqwert = Math.floor(Math.random() * (90 - 50 + 1) + 50);
+  	var iqresultcombine = String(iqwert) + String(path1);
+  	var iqresultadd = Number(iqwert) + Number(path1);
 
-	var html = new Template('./html/christian.html',{
-		// Hier können Daten an das HTML-Dokument übergeben werden.
-		iq1: iqwert,
-		iq2: path1,
-		iqresultcomb: iqresultcombine,
-		iqresult: iqresultadd
-	});
-	return await html.parse();
+    var html = new Template('./html/christian.html',{
+  		// Hier können Daten an das HTML-Dokument übergeben werden.
+  		iq1: iqwert,
+  		iq2: path1,
+  		iqresultcomb: iqresultcombine,
+  		iqresult: iqresultadd
+  	});
+  	return await html.parse();
+  }
 }
