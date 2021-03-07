@@ -1,7 +1,7 @@
 const Template = require('../template.js');
 const User = require('../db/user.js');
 const db = require('../config.js');
-const dbTable = require('../db/editTable.js');
+const dbTable = require('../db/dbTable.js');
 const util = require('util');
 const { table } = require('console');
 
@@ -30,7 +30,8 @@ module.exports = async function() {
 	console.table(tableContent); // tableContent[index].id -> [index] from object table
 	// .map anschauen
 
-
+	// look for user in table with this name
+	dbTable("TestName 1");
 	
 	var html = new Template('./html/articles.html',{
         // pass through db-table/rows to html
