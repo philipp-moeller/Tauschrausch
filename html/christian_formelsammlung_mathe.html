@@ -328,7 +328,9 @@
 </ul>
 <p>Bei Exponentialgleichungen ist zu beachten, dass Potenzen mit gleicher Basis gleich sind, wenn ihre Exponenten gleich sind.</p>
 <p>Bei Ungleichungen ist das <strong>Inversionsgesetz</strong> zu beachten, nach dem bei Multiplikation mit bzw. Division durch eine negative Zahl die Ordnungsrelation die Richtung ändert. Ist das Vorzeichen eines Terms unbekannt (z.B. bei <span class="math inline">\(x-2\)</span>), muss eine Fallunterscheidung für <span class="math inline">\(x-2&lt;0\)</span> bzw. <span class="math inline">\(x-2&gt;0\)</span> durchgeführt werden.</p>
-<h5 id="p-q-formel">p-q-Formel</h5>
+<p>Eine Summe von Brüchen mit verschiedenem Nenner wird am besten vereinfacht, indem die dazugehörige Gleichung mit dem kleinsten gemeinsamen Vielfachen der Nennen multipliziert wird (z.B. wird aus <span class="math inline">\(0=\frac23+\frac16+\frac{x}{15}\)</span> durch Multiplikation mit <span class="math inline">\(30\)</span> die einfacher erscheinende Gleichung <span class="math inline">\(0=20+5+2x\)</span>).</p>
+
+ <h5 id="p-q-formel">p-q-Formel</h5>
 <p>Für quadratische Gleichungen der Form <span class="math inline">\(x^2+px+q=0\)</span> gilt <span class="math display">\[x_{1,2}=-\frac{p}{2}\pm\sqrt{\left(\frac{p}{2}\right)^2-q}.\]</span></p>
 <h5 id="substitution">Substitution</h5>
 <p>In <strong>biquadratischen Gleichungen</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> lässt sich <span class="math inline">\(u:=x^2\)</span> substituieren. So erhält man eine eine einfacher zu lösende Gleichung <span class="math inline">\(au^2+bu+c=0\)</span>. Später muss dann <span class="math inline">\(x=\pm\sqrt{u}\)</span> zurück-substituiert werden.</p>
@@ -855,19 +857,82 @@
 <p>Bei der Untersuchung von <strong>unbegrenzten Flächen</strong> auf einen Inhalt untersucht man Integrale mit einer variablen und einer festen Grenze wie <span class="math inline">\(\int_a^z f(x)\,\mathrm{d}x\)</span> oder <span class="math inline">\(\int_z^3 f(x)\,\mathrm{d}x\)</span> auf einen Grenzwert für <span class="math inline">\(z\to\pm\infty\)</span> bzw. <span class="math inline">\(z\to c\)</span>. Dieses Integrale, die sich durch einen Grenzwert ergeben, nennt man <strong>uneigentliche Integrale</strong>, z.B. <span class="math display">\[\lim_{z\to\infty} \int_1^z \frac{2}{x^2}\,\mathrm{d}x = \lim_{z\to\infty} \left[-\frac{2}{x}\right]_1^z = \lim_{z\to\infty} \left(-\frac{2}{z}+2\right)=2 .\]</span></p>
 <h4 id="rotationsvolumen">Rotationsvolumen</h4>
 <p>Bei Drehung einer auf dem Intervall <span class="math inline">\(I=[a,b]\)</span> stetigen Funktion <span class="math inline">\(f\)</span> um die <span class="math inline">\(x\)</span>-Achse entsteht ein <strong>Rotationskörper</strong> mit dem Volumen <span class="math inline">\(V\)</span>. Sein Volumen, das <strong>Rotationsvolumen</strong>, kann durch die Formel <span class="math display">\[V = \pi\cdot\int^b_a [f(x)]^2 \,\textrm{d}x\]</span> berechnet werden.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+
 <h3 id="häufige-anwendungen">Häufige Anwendungen</h3>
+  
 <p>Im Folgenden sind stets nur Beispiele angegeben, sowohl bei der Aufgabenstellung als auch bei der Musterlösung bzw. Vorgehensweise.</p>
-<h4 id="rekonstruktion-des-funktionsterms-ganzrationaler-funktionen-gegebenen-grades">Rekonstruktion des Funktionsterms ganzrationaler Funktionen gegebenen Grades</h4>
+
+<h4 id="rekonstruktion-des-funktionsterms-ganzrationaler-funktionen-gegebenen-grades-steckbrieffunktionen">Rekonstruktion des Funktionsterms ganzrationaler Funktionen gegebenen Grades (Steckbrieffunktionen)</h4>
 <div class="recipe">
-<p><strong>Vorgehensweise</strong>.</p>
+<p><strong>Vorgehensweise</strong>. </p>
 <ol>
-<li><p>Stelle eine allgemeine Funktionsgleichung auf (z.B. <span class="math inline">\(f(x)=ax^2+bx+c\)</span>) und bestimme ggf. ihre ersten Ableitungen.</p></li>
-<li><p>Finde in der Aufgabenstellung so viele Bestimmungsgleichungen, wie es Unbekannte in der Funktionsgleichung gibt (z.B. <span class="math inline">\(f(3)=2\)</span> oder <span class="math inline">\(f^\prime (2)=0\)</span>).<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p></li>
+<li><p>Stelle eine allgemeine Funktionsgleichung auf (z.B. <span class="math inline">\(f(x)=ax^2+bx+c\)</span>) und bestimme ggf. ihre ersten Ableitungen. Beachte dabei mögliche Symmetrien zum Ursprung oder zur y-Achse.</p></li>
+<li><p>Finde in der Aufgabenstellung so viele Bestimmungsgleichungen, wie es Unbekannte in der Funktionsgleichung gibt (z.B. <span class="math inline">\(f(3)=2\)</span> oder <span class="math inline">\(f^\prime (2)=0\)</span>, siehe <a href="#tab:bestimmungsgleichungen" data-reference-type="ref+page" data-reference="tab:bestimmungsgleichungen">[tab:bestimmungsgleichungen]</a>).<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
 <li><p>Setze die Bestimmungsgleichungen in die Funktionsgleichung ein und löse das Gleichungssystem.</p></li>
 <li><p>Setze die Lösungen der Unbekannten in die Funktionsgleichung ein.</p></li>
 </ol>
 </div>
+<div id="tab:bestimmungsgleichungen">
+<table>
+<caption>Beispiele für das Herleiten von Bestimmungsgleichungen</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Formulierung</th>
+<th style="text-align: left;">Bestimmungsgleichungen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Eine ganzrationale Funktion <span class="math inline">\(n\)</span>-ten Grades …</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">… geht durch den Ursprung.</td>
+<td style="text-align: left;"><span class="math inline">\(f(0)=0\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">… geht durch den Punkt <span class="math inline">\(A(3\vert 2)\)</span>.</td>
+<td style="text-align: left;"><span class="math inline">\(f(3)=2\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">… hat in <span class="math inline">\(A(3\vert 2)\)</span> die Steigung <span class="math inline">\(4\)</span>.</td>
+<td style="text-align: left;"><span class="math inline">\(f(3)=2\)</span> / <span class="math inline">\(f^\prime(3)=4\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">… hat bei <span class="math inline">\(x=3\)</span> eine zur x-Achse parallele Tangente.</td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime(3)=0\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">… hat bei <span class="math inline">\(x=3\)</span> eine Nullstelle.</td>
+<td style="text-align: left;"><span class="math inline">\(f(3)=0\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">… hat in <span class="math inline">\(A(3\vert 2)\)</span> einen Tiefpunkt.</td>
+<td style="text-align: left;"><span class="math inline">\(f(3)=2\)</span> / <span class="math inline">\(f^\prime(3)=0\)</span> / <span class="math inline">\(f^{\prime\prime}(3)&gt;0\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">… hat bei <span class="math inline">\(x=3\)</span> einen Sattelpunkt.</td>
+<td style="text-align: left;"><span class="math inline">\(f^\prime(3)=0\)</span> / <span class="math inline">\(f^{\prime\prime}(3)=0\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">… berührt bei <span class="math inline">\(x=3\)</span> die x-Achse.</td>
+<td style="text-align: left;"><span class="math inline">\(f(3)=0\)</span> / <span class="math inline">\(f^\prime(3)=0\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">… berührt die Gerade <span class="math inline">\(y=5x-3\)</span> im Punkt <span class="math inline">\(B(2\vert 7)\)</span>.</td>
+<td style="text-align: left;"><span class="math inline">\(f(2)=7\)</span> / <span class="math inline">\(f^\prime(3)=5\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Die Tangente in <span class="math inline">\(A(3\vert 2)\)</span> schließt mit der x-Achse einen Winkel von <span class="math inline">\(\SI{45}{\degree}\)</span> ein.</td>
+<td style="text-align: left;"><span class="math inline">\(f(3)=2\)</span> / <span class="math inline">\(f^\prime(3)=1\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span id="tab:bestimmungsgleichungen" label="tab:bestimmungsgleichungen">[tab:bestimmungsgleichungen]</span></p>
+
 <h4 id="untersuchung-des-übergangs-der-graphen-zweier-funktionen">Untersuchung des Übergangs der Graphen zweier Funktionen</h4>
+
 <div class="exercise">
 <p><strong>Aufgabe</strong>.  Gegeben sind die Funktionen <span class="math inline">\(f\)</span> mit <span class="math inline">\(D_f=[a,b]\)</span> und <span class="math inline">\(g\)</span> mit <span class="math inline">\(D_g=[b,c]\)</span>. Untersuchen Sie den Übergang der Graphen der Funktionen <span class="math inline">\(f\)</span> und <span class="math inline">\(g\)</span> an der Stelle <span class="math inline">\(x=b\)</span> und interpretieren Sie das Ergebnis.</p>
 </div>
@@ -915,7 +980,9 @@
 <p>Der <strong>Nullvektor</strong> <span class="math display">\[\vec{o} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}\]</span> ist der Vektor mit dem Betrag <span class="math inline">\(0\)</span>. Er ist der Ortsvektor des <strong>Koordinatenursprungs</strong> <span class="math display">\[O(0\vert0\vert0) .\]</span></p>
 <h4 id="sec:punkte">Punkte im dreidimensionalen Koordinatensystem</h4>
 <p>Die Koordinaten von Punkten werden in der Reihenfolge der Koordinatenachsen-Nummerierung angegeben: <span class="math display">\[P(p_1\vert p_2\vert p_3)\]</span> Da Punkte im Koordinatensystem und ihre Ortsvektoren eindeutig zugeordnet sind, können Punkte auch durch ihr Ortsvektoren beschrieben werden (z.B. der Punkt <span class="math inline">\(P\)</span> durch seinen Ortsvektor <span class="math inline">\(\vec{p}\)</span>).</p>
+
 <h3 id="vektorrechnung">Vektorrechnung</h3>
+
 <h4 id="addition">Addition</h4>
 <p><span class="math display">\[\vec{a}+\vec{b}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}+\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}=\begin{pmatrix} a_1+b_1 \\ a_2+b_2 \\ a_3+b_3 \end{pmatrix}\]</span></p>
 <h4 id="subtraktion">Subtraktion</h4>
@@ -925,7 +992,10 @@
 <h4 id="skalarprodukt">Skalarprodukt</h4>
 <p><span class="math display">\[\vec{a}\cdot\vec{b} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}\cdot\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix} = a_1b_1+a_2b_2+a_3b_3\]</span></p>
 <p>Gilt <span class="math inline">\(\vec{a}\cdot\vec{b}=0\)</span>, dann stehen die Vektoren <span class="math inline">\(\vec{a}\)</span> und <span class="math inline">\(\vec{b}\)</span> orthogonal zueinander.</p>
-<p>Es gelten die Zusammenhänge <span class="math display">\[\vec{a}\cdot\vec{b} = \vert\vec{a}\vert\cdot\vert\vec{b}\vert\cdot\cos{(\alpha)},\]</span> wobei <span class="math inline">\(\alpha\)</span> der von <span class="math inline">\(\vec{a}\)</span> und <span class="math inline">\(\vec{b}\)</span> eingeschlossene Winkel ist, und <span class="math display">\[\vec{a}\cdot\vec{a} = a_1^2+a_2^2+a_3^2 = \vert\vec{a}\vert^2 .\]</span></p>
+<p>
+  Es gelten die Zusammenhänge <span class="math display">\[\vec{a}\cdot\vec{b} = \vert\vec{a}\vert\cdot\vert\vec{b}\vert\cdot\cos{(\alpha)},\]</span> wobei <span class="math inline">\(\alpha\)</span> der von <span class="math inline">\(\vec{a}\)</span> und <span class="math inline">\(\vec{b}\)</span> eingeschlossene Winkel ist, und <span class="math display">\[\vec{a}\cdot\vec{a} = a_1^2+a_2^2+a_3^2 = \vert\vec{a}\vert^2 .\]</span>
+  Es gilt zudem <span class="math display">\[\vv{a}\cdot\vv{a} = \vv{a}^2 .\]</span>
+ </p>
 <p>Um der Verwechslung mit der normalen Multiplikation vorzubeugen, wird auch häufig das Zeichen <span class="math inline">\(\circ\)</span> für das Skalarprodukt verwendet (z.B. <span class="math inline">\(\vec{a}\circ\vec{b}\)</span> anstelle von <span class="math inline">\(\vec{a}\cdot\vec{b}\)</span>).</p>
 <p>Ist ein Vektor <span class="math inline">\(\vec{b}\)</span>, der senkrecht zu einem Vektor <span class="math inline">\(\vec{a}\)</span> steht, gesucht, dann muss folglich die Gleichung <span class="math inline">\(\vec{a}\cdot\vec{b} = 0\)</span> bzw. <span class="math inline">\(a_1b_1+a_2b_2+a_3b_3 = 0\)</span> gelöst werden. Ist eine Koordinate von <span class="math inline">\(\vec{a}\)</span> oder <span class="math inline">\(\vec{b}\)</span> null (im folgenden Beispiel ist <span class="math inline">\(b_3=0\)</span>), dann vereinfacht sich die Rechnung. Denn dann muss <span class="math inline">\(a_1b_1+a_2b_2+0\cdot b_3 = 0\)</span> bzw.<span class="math inline">\(a_1b_1+a_2b_2= 0\)</span> gelten. Dies ist z.B. der Fall, wenn <span class="math inline">\(b_1 = a_2\)</span> und <span class="math inline">\(b_1 = -a_1\)</span> sind, denn es gilt <span class="math inline">\(\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}\cdot\begin{pmatrix} a_2 \\ -a_1 \\ 0 \end{pmatrix} = 0\)</span>.</p>
 <h4 id="kreuzprodukt-vektorprodukt">Kreuzprodukt (Vektorprodukt)</h4>
@@ -939,7 +1009,9 @@
 <p>Zwei Vektoren <span class="math inline">\(\vec{a}\)</span> und <span class="math inline">\(\vec{b}\)</span> sind genau dann linear abhängig bzw. <strong>kollinear</strong>, wenn sie parallel sind (also wenn sie bei gleichem Aufpunkt bzw. Ortsvektor auf einer Geraden liegen): <span class="math display">\[\vec{a} = r \cdot \vec{b} \text{ mit } r\in\mathbb{R}\]</span></p>
 <p>Drei Vektoren <span class="math inline">\(\vec{a}\)</span>, <span class="math inline">\(\vec{b}\)</span> und <span class="math inline">\(\vec{c}\)</span> sind genau dann linear abhängig bzw. <strong>komplanar</strong>, wenn sie (bei gleichem Aufpunkt bzw. Ortsvektor) in einer Ebenen liegen: <span class="math display">\[\vec{a} = r \cdot \vec{b} + s\cdot\vec{c} \text{ mit } r,s\in\mathbb{R}\]</span></p>
 <p>Der Nullvektor <span class="math inline">\(\vec{o}\)</span> ist zu jedem Vektor und zu jeder Ebene parallel.</p>
+ 
 <h3 id="vektorielle-berechnung-von-punkten-und-größen">Vektorielle Berechnung von Punkten und Größen</h3>
+
 <h4 id="mittelpunkt-einer-strecke">Mittelpunkt einer Strecke</h4>
 <p>Für den Mittelpunkt <span class="math inline">\(M\)</span> (bzw. seinen Ortsvektor <span class="math inline">\(\vec{m}\)</span>) der Strecke <span class="math inline">\(\overline{PQ}\)</span> zwischen den Punkten <span class="math inline">\(P\)</span> (mit dem Ortsvektor <span class="math inline">\(\vec{p}\)</span>) und <span class="math inline">\(Q\)</span> (mit dem Ortsvektor <span class="math inline">\(\vec{q}\)</span>) gilt <span class="math display">\[M\left(\frac{p_1+q_1}{2}\left\vert\frac{p_1+q_1}{2}\right\vert\frac{p_3+q_3}{2}\right) \qquad\textrm{bzw.}\qquad \vec{m} = \frac{\vec{p}+\vec{q}}{2} .\]</span></p>
 <h4 id="winkelberechnung">Winkelberechnung</h4>
@@ -1701,8 +1773,25 @@
 <div class="solution">
 <p><strong>Musterlösung</strong>.  Für eine Geradengleichung werden ein Stützvektor und ein Richtungsvektor benötigt. Da die Gerade durch den Ursprung verläuft, kann der Ursprung <span class="math inline">\(O(0\vert0\vert0)\)</span> als Aufpunkt verwendet werden. Da die Gerade in der <span class="math inline">\(x_1\)</span>-<span class="math inline">\(x_2\)</span>-Ebene liegt, muss die <span class="math inline">\(x_3\)</span>-Koordinate des Richtungsvektor <span class="math inline">\(0\)</span> sein. Somit muss für den Richtungsvektor <span class="math inline">\(\vec{u}\)</span> die Gleichung <span class="math inline">\(3u_1 + 2u_2 -6\cdot0 = 0\)</span> gelten; durch geschicktes Ausprobieren erhält man die Lösungen <span class="math inline">\(u_1 = 2\)</span> und <span class="math inline">\(u_2 = -3\)</span>. Daher kann die Gerade <span class="math inline">\(g\)</span> bspw. durch die Geradengleichung <span class="math inline">\(g: \vec{x} = r\cdot\begin{pmatrix} 2 \\ -3 \\ 0 \end{pmatrix}\)</span> beschrieben werden.</p>
 </div>
+
+<h4 id="angabe-eines-terms-mit-dem-wert-0">Angabe eines Terms mit dem Wert <span class="math inline">\(0\)</span></h4>
+<div class="exercise">
+  <p>
+    <strong>Aufgabe</strong>.  Gegeben seien die Vektoren <span class="math inline">\(\vv{a}\)</span> und <span class="math inline">\(\vv{b} \in\mathbb{R}^3\)</span>.
+    Geben Sie einen Term an, dessen Wert die Zahl Null ist und der nur aus <span class="math inline">\(\vv{a}\)</span> und <span class="math inline">\(\vv{b}\)</span>, dem Skalar- und Kreuzprodukt sowie aus Klammern besteht.
+    Beide Vektoren und Produkte müssen dabei in dem Term mindestens einmal verwendet werden.
+  </p>
+</div>
+<div class="solution">
+  <p>
+    <strong>Musterlösung</strong>.  Da der Vektor <span class="math inline">\(\vv{a}\times\vv{b}\)</span> senkrecht zu den Vektoren <span class="math inline">\(\vv{a}\)</span> und <span class="math inline">\(\vv{b}\)</span> steht und das Skalarprodukt zweier zueinander senkrechter Vektoren den Wert null hat, erfüllt der Term <span class="math display">\[\vv{a} \cdot (\vv{a}\times\vv{b})\]</span> den geforderten Bedingungen.
+  </p>
+</div>
+
 <h1 id="stochastik">Stochastik</h1>
+ 
 <h3 id="grundlagen-2">Grundlagen</h3>
+
 <h4 id="definitionen">Definitionen</h4>
 <p>Ein <strong>Experiment</strong> nennt man <strong>Zufallsexperiment</strong>, wenn der tatsächliche Ausgang vom Zufall abhängig ist, wobei vorausgesetzt wird, dass es mindestens zwei mögliche Ausgänge gibt. Alle möglichen <strong>Ergebnisse <span class="math inline">\(e\)</span></strong> des Experiments bilden die <strong>Ergebnismenge <span class="math inline">\(\Omega = \{e_i,e_2,e_3,\dots,e_n\}\)</span></strong>. Eine Teilmenge der Ergebnismenge nennt man <strong>Ereignis</strong> (Ereignisse werden mit Großbuchstaben dargestellt, z.B. <span class="math inline">\(E\)</span> oder <span class="math inline">\(A\)</span>).<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> Dabei wird die leere Menge <span class="math inline">\(\{\} = \emptyset\)</span> als das <strong>unmögliche Ereignis</strong> und die Ergebnismenge <span class="math inline">\(\Omega\)</span> als das <strong>sichere Ereignis</strong> bezeichnet (es gilt also <span class="math inline">\(P(\Omega)=1\)</span> und <span class="math inline">\(P(\emptyset)=0\)</span>). Die <strong>Wahrscheinlichkeiten <span class="math inline">\(P(E)\)</span></strong> der Ereignisse werden dabei durch die <strong>Wahrscheinlichkeitsverteilung</strong> festgelegt. Es gilt dabei immer:</p>
 <ul>
