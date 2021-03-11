@@ -20,7 +20,31 @@ module.exports = async function(method,path,query,cookies) {
 			if (path.length==0) {
 				// GET "/login"
 				build = require('./pages/login.js')
-				html = await build()
+				html = await build(query)
+			}
+			break;
+		case 'menu':
+			if (path.length==0) {
+				// GET "/menu"
+				build = require('./pages/menu.js')
+				html = await build(query.username) // watch menu.js!
+			}
+			break;
+		case 'articles':
+			if (path.length==0) {
+				// GET "/articles"
+				build = require('./pages/articles.js')
+				html = await build(100)
+			}
+			if (path.length==1) {
+				// GET "/articles/{article01}|{article02}|{...}}"
+				build = require('./pages/articles.js')
+				html = await build(path[0])
+			}
+			if (path.length==2) {
+				// GET "/articles/{?}"
+				build = require('./pages/articles.js')
+				html = await build(0)
 			}
 			break;
 		case 'christian':
@@ -81,30 +105,6 @@ module.exports = async function(method,path,query,cookies) {
 				// GET "/maja"
 				build = require('./pages/maja.js')
 				html = await build(18)
-			}
-			break;
-		case 'menu':
-			if (path.length==0) {
-				// GET "/menu"
-				build = require('./pages/menu.js')
-				html = await build(query.username, query.password) // watch menu.js!
-			}
-			break;
-		case 'articles':
-			if (path.length==0) {
-				// GET "/articles"
-				build = require('./pages/articles.js')
-				html = await build(100)
-			}
-			if (path.length==1) {
-				// GET "/articles/{article01}|{article02}|{...}}"
-				build = require('./pages/articles.js')
-				html = await build(path[0])
-			}
-			if (path.length==2) {
-				// GET "/articles/{?}"
-				build = require('./pages/articles.js')
-				html = await build(0)
 			}
 			break;
 		default:
