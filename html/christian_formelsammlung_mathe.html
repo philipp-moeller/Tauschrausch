@@ -331,24 +331,38 @@
 <p>Eine Summe von Brüchen mit verschiedenem Nenner wird am besten vereinfacht, indem die dazugehörige Gleichung mit dem kleinsten gemeinsamen Vielfachen der Nennen multipliziert wird (z.B. wird aus <span class="math inline">\(0=\frac23+\frac16+\frac{x}{15}\)</span> durch Multiplikation mit <span class="math inline">\(30\)</span> die einfacher erscheinende Gleichung <span class="math inline">\(0=20+5+2x\)</span>).</p>
 
 <h5 id="p-q-formel">p-q-Formel</h5>
+
 <p>Für quadratische Gleichungen der Form <span class="math inline">\(x^2+px+q=0\)</span> gilt <span class="math display">\[x_{1,2}=-\frac{p}{2}\pm\sqrt{\left(\frac{p}{2}\right)^2-q}.\]</span></p>
+
 <h5 id="substitution">Substitution</h5>
+
 <p>In <strong>biquadratischen Gleichungen</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> lässt sich <span class="math inline">\(u:=x^2\)</span> substituieren. So erhält man eine eine einfacher zu lösende Gleichung <span class="math inline">\(au^2+bu+c=0\)</span>. Später muss dann <span class="math inline">\(x=\pm\sqrt{u}\)</span> zurück-substituiert werden.</p>
+
 <h5 id="sec:linearfaktorzerlegung">Linearfaktorzerlegung</h5>
+
 <p>Ganzrationale Funktionen der Form <span class="math display">\[f(x)=ax^n+bx^{n-1}+cx^{n-2}+\dots\]</span> lassen sich mithilfe ihrer Nullstellen als Produkt ihrer <strong>Linearfaktoren</strong>, also in der Form <span class="math display">\[f(x)=(x-x_{N,1})(x-x_{N,2})\dots (x-x_{N,n})\]</span> schreiben.</p>
+
 <h5 id="sec:satz_nullprodukt">Satz vom Nullprodukt</h5>
+
 <p>Ein Produkt ist genau dann Null, wenn einer der Faktoren Null ist.</p>
 <p>Dieser Satz kann angewendet werden z.B. nach dem Ausklammern eines <span class="math inline">\(x\)</span>, eines Linearfaktors <span class="math inline">\((x-x_N)\)</span> (siehe <a href="#sec:linearfaktorzerlegung" data-reference-type="ref+page" data-reference="sec:linearfaktorzerlegung">[sec:linearfaktorzerlegung]</a>) oder natürlich, wenn schon ein Produkt (bspw. aus ganzrationaler und Exponentialfunktion) vorliegt.</p>
+
 <h5 id="polynomdivision">Polynomdivision</h5>
+
 <p>Bei der <strong>Polynomdivision</strong> (siehe <a href="#fig:polynomdivision" data-reference-type="ref+page" data-reference="fig:polynomdivision">[fig:polynomdivision]</a>) wird ein Polynom durch ein anderes geteilt.</p>
+
 <figure>
-<img src="beispiel_polynomdivision.jpg" id="fig:polynomdivision" style="width:50.0%" alt="Beispiel für Polynomdivision" /><figcaption aria-hidden="true">Beispiel für Polynomdivision</figcaption>
+<img src="../files/figures_formulary_maths/beispiel_polynomdivision.jpg" id="fig:polynomdivision" style="width:50.0%" alt="Beispiel für Polynomdivision" /><figcaption aria-hidden="true">Beispiel für Polynomdivision</figcaption>
 </figure>
+
 <h5 id="sec:newton-verfahren">Newton-Verfahren</h5>
+
 <p>Bei dem <strong>Newton-Verfahren</strong> werden Nullstellen iterativ<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> durch die Annahme, dass sich die Nullstellen einer Tangente in der Nähe der Nullstellen der zugehörigen Funktion befinden, angenähert.</p>
 <p>Man startet dabei bei einem geeigneten Wert <span class="math inline">\(x_0\)</span> und führt die Rechnung <span class="math display">\[x_{n+1}=x_0-\frac{f(x_n)}{f^\prime(x_n)}\]</span> so oft durch, bis sich die beiden ersten Nachkommastellen nicht mehr ändern.</p>
 <p>Für die Herleitung der Formel wird die Tangentengleichung <span class="math inline">\(t_{x_0}(x)=0\)</span> gesetzt und nach <span class="math inline">\(x\)</span> aufgelöst (für Tangentengleichungen siehe <a href="#sec:tangenten" data-reference-type="ref+page" data-reference="sec:tangenten">[sec:tangenten]</a>).</p>
+
 <h4 id="sec:methoden_loesen_gleichungssysteme">Methoden zum Lösen von linearen Gleichungssystemen (<span data-acronym-label="HMF" data-acronym-form="singular+abbrv">HMF</span>)</h4>
+
 <p>Ein <strong><span data-acronym-label="LGS" data-acronym-form="singular+short">LGS</span></strong> besteht aus mehreren Gleichungen und mehreren Variablen.</p>
 <p>Zum Lösen von linearen Gleichungssystemen <em>von Hand</em> können jeweils mehrere Gleichungen so kombiniert (z.B. addiert, subtrahiert) werden, dass nacheinander jeweils alle Variablen bis auf eine wegfallen. Anschließend werden die gefundenen Werte wieder in eine ursprüngliche Gleichung eingesetzt, um den Wert der letzten Variable zu bestimmen.</p>
 <p>Ist die Lösung eines Gleichungssystems eindeutig bestimmt, dann hat es eine Lösung. Sind die Koeffizienten zweier Gleichungen jeweils Vielfache voneinander, dann hat das Gleichungssystem keine Lösung. Sind sogar zwei Gleichungen Vielfache voneinander, dann hat es unendlich viele Lösungen.</p>
@@ -483,7 +497,7 @@
 <li><p>Vom Funktionswert <span class="math inline">\(f(1)\)</span> wird der Wert von <span class="math inline">\(c\)</span> abgezogen; das Ergebnis wird durch den Wert des Parameters <span class="math inline">\(a\)</span> geteilt. Da <span class="math inline">\(f(1)=a\cdot b+c\)</span> gilt, ist das Ergebnis der Wert der Basis <span class="math inline">\(b\)</span>.</p></li>
 </ol>
 <figure>
-<embed src="../file/figures_formulary_maths/bestimmung_funktionsterm_exponentialfunktion_graph.pdf" id="fig:bestimmung_funktionsterm_exponentialfunktion" /><figcaption aria-hidden="true">Bestimmung des Funktionsterms eines Exponentialfunktion anhand des Graphen</figcaption>
+<embed src="bestimmung_funktionsterm_exponentialfunktion_graph.pdf" id="fig:bestimmung_funktionsterm_exponentialfunktion" /><figcaption aria-hidden="true">Bestimmung des Funktionsterms eines Exponentialfunktion anhand des Graphen</figcaption>
 </figure>
 <p>Die <strong>natürliche Exponentialfunktion</strong> bezeichnet den am häufigsten vorkommenden Fall <span class="math inline">\(a=\textrm{e}\)</span>.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> Da die natürliche Exponentialfunktion wenige mathematisch interessante Eigenschaften besitzt, kommt sie in Abituraufgaben häufig als Produkt mit einer ganzrationalen Funktion vor, wodurch ihre Eigenschaften stark verändert werden können.</p>
 <h5 id="logarithmusfunktion">Logarithmusfunktion</h5>
