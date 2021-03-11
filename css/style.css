@@ -52,7 +52,7 @@ input[type=button], input[type=submit] {
     border-radius: 4px;
 }
 
-/* article table */
+/* table class articleTable */
 table.articleTable {
     border: 1px solid rgba(255, 191, 54, 0.397);
 
@@ -65,7 +65,7 @@ table.articleTable td {
     text-align: left;
 }
 
-/* table general */
+/* table class tableSimple  */
 table.tableSimple table, td, th {
     border: 1px solid rgba(255, 191, 54, 0.397);
 }
