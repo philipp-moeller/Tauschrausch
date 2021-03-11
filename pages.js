@@ -94,7 +94,17 @@ module.exports = async function(method,path,query,cookies) {
 			if (path.length==0) {
 				// GET "/articles"
 				build = require('./pages/articles.js')
-				html = await build() // pass through db-table/rows
+				html = await build(100)
+			}
+			if (path.length==1) {
+				// GET "/articles/{article01}|{article02}|{...}}"
+				build = require('./pages/articles.js')
+				html = await build(path[0])
+			}
+			if (path.length==2) {
+				// GET "/articles/{?}"
+				build = require('./pages/articles.js')
+				html = await build(0)
 			}
 			break;
 		default:
