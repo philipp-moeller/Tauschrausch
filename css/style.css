@@ -56,32 +56,33 @@ input[type=button], input[type=submit] {
 table.articleTable {
     border: 1px solid rgba(255, 191, 54, 0.397);
 
-    width: 25%;
+    width: 50%;
     border-collapse: collapse;
 }
 table.articleTable td {
-    height: 25px;
+    height: 50;
     padding: 15px;
     text-align: left;
 }
 
-table, td, th {
-    border: none;
+/* table general */
+table.tableSimple table, td, th {
+    border: 1px solid rgba(255, 191, 54, 0.397);
 }
 
-table {
+table.tableSimple table {
     width: 25%;
     border-collapse: collapse;
 }
-td, th {
+table.tableSimple td, th {
     height: 25px;
     padding: 15px;
     text-align: left;
 }
-th {
+table.tableSimple th {
     background-color: #ff4f1934;
     color: rgb(252, 121, 33);
 }
-tr:hover {background-color: #ff8c203d;}
-tr:nth-child(even) {background-color: #000000;}
+table.tableSimple tr:hover {background-color: #ff8c203d;}
+table.tableSimple tr:nth-child(even) {background-color: #000000;}
 
