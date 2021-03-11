@@ -793,6 +793,8 @@ a(t) &amp;= -A_x\cdot\omega^2\cdot \sin{(\omega\cdot t)} &amp; A_a &amp;= A_x\cd
 
 <h4 id="sec:doppler-effekt">Doppler-Effekt</h4>
 
+<p><span style="color: red">Im Folgenden wird - trotz Verwechslungsgefahr mit der konstanten Lichtgeschwindigkeit <span class="math inline">\(c\)</span> - die Ausbreitungsgeschwindigkeit der Welle mit <span class="math inline">\(c\)</span> bezeichnet, damit die Geschwindigkeit des Senders bzw. Empfängers mit <span class="math inline">\(v\)</span> bezeichnet werden kann.</span></p>
+
 <p>Der <strong>Doppler-Effekt</strong> beschreibt die auftretenden Effekte der Fälle, bei denen Sender oder Empfänger sich im Medium der Welle bewegen. Dazu werden drei Fälle unterschieden; für die beim Empfänger wahrnehmbare Frequenz <span class="math inline">\(f_B\)</span> gilt jeweils (für die ausführliche Herleitung siehe <a href="#sec:herleitung_doppler-effekt_fb" data-reference-type="ref+page" data-reference="sec:herleitung_doppler-effekt_fb">[sec:herleitung_doppler-effekt_fb]</a>):</p>
 <ul>
 <li><p><strong>Der Sender bewegt sich in Richtung der Wellenausbreitung:</strong> <span class="math display">\[f_B = \frac{f_Q}{1 - \frac{v_Q}{c}}\]</span></p></li>
@@ -2629,17 +2631,34 @@ y_\text{res}(x,t) &amp;= A\cdot\left[\sin{\left(\frac{2\pi}{T}\cdot t-\frac{2\pi
 </ul></li>
 </ul>
 <p>So erhält man die dargestellten Bedingungen.</p>
+
 <h5 id="sec:herleitung_doppler-effekt_fb">Doppler-Effekt: Beim Empfänger ankommende Frequenz <span class="math inline">\(f_B\)</span></h5>
+
+<p><span style="color: red">Im Folgenden wird - trotz Verwechslungsgefahr mit der konstanten Lichtgeschwindigkeit <span class="math inline">\(c\)</span> - die Ausbreitungsgeschwindigkeit der Welle mit <span class="math inline">\(c\)</span> bezeichnet, damit die Geschwindigkeit des Senders bzw. Empfängers mit <span class="math inline">\(v\)</span> bezeichnet werden kann.</span></p>
+
 <p>Für die Herleitung der beim Empfänger ankommenden Frequenz <span class="math inline">\(f_B\)</span> beim Doppler-Effekt (siehe <a href="#sec:doppler-effekt" data-reference-type="ref+page" data-reference="sec:doppler-effekt">[sec:doppler-effekt]</a>) werden drei mögliche Fälle unterschieden:</p>
+
 <ul>
-<li><p><strong>Der Sender bewegt sich in Richtung der Wellenausbreitung:</strong></p>
-<p>Ohne Bewegung der Quelle hätte sich sich der erste Schwingungszustand der Welle nach einer Schwingungsdauer <span class="math inline">\(T_Q\)</span> um den Abstand einer Wellenlänge <span class="math inline">\(\lambda_Q\)</span> entfernt. Bewegt sich aber die Quelle mit der Geschwindigkeit <span class="math inline">\(v_Q\)</span> weiter, während sich die Welle ausbreitet, ist der Ort, an dem der erste Schwingungszustand erneut ausgesendet wird, um <span class="math display">\[\Delta x = v_Q \cdot T_Q\]</span> verschoben. Die Schwingungszustände haben also nun den verkürzten Abstand <span class="math display">\[\lambda_B = \lambda_Q - \Delta x = \lambda_Q - v_Q\cdot T_Q .\]</span> Dieser Abstand wird von einem im Medium ruhenden Beobachter als Wellenlänge <span class="math inline">\(\lambda_B\)</span> der Welle aufgefasst. Daher gilt mit der (im Medium konstanten) Ausbreitungsgeschwindigkeit der Welle <span class="math inline">\(c\)</span>: <span class="math display">\[\begin{aligned}
-c&amp;= c &amp;&amp; |\, c=f\cdot\lambda \\
-f_B\cdot\lambda_B &amp;= f_Q\cdot\lambda_Q &amp;&amp; |:\lambda_B \\
-f_B &amp;= \frac{f_Q\cdot\lambda_Q}{\lambda_B} &amp;&amp; |\, \lambda_B = \lambda_Q - v_Q\cdot T_Q \\
- &amp;= \frac{f_Q\cdot\lambda_Q}{\lambda_Q - v_Q\cdot T_Q} &amp;&amp; |\,\textrm{(durch $\lambda_Q$ kürzen)} \\
- &amp;= \frac{f_Q}{1 - \frac{v_Q\cdot T_Q}{\lambda_Q}} &amp;&amp; |\,\frac{\lambda_Q}{T_Q}=c \\
- &amp;= \frac{f_Q}{1 - \frac{v_Q}{c}}\end{aligned}\]</span></p></li>
+<li>
+  <p><strong>Der Sender bewegt sich in Richtung der Wellenausbreitung:</strong></p>
+  <p>
+    Ohne Bewegung der Quelle hätte sich sich der erste Schwingungszustand der Welle nach einer Schwingungsdauer <span class="math inline">\(T_Q\)</span> um den Abstand einer Wellenlänge <span class="math inline">\(\lambda_Q\)</span> entfernt.
+    Bewegt sich aber die Quelle mit der Geschwindigkeit <span class="math inline">\(v_Q\)</span> weiter, während sich die Welle ausbreitet, ist der Ort, an dem der erste Schwingungszustand erneut ausgesendet wird, um <span class="math display">\[\Delta x = v_Q \cdot T_Q\]</span> verschoben.
+    Die Schwingungszustände haben also nun den verkürzten Abstand <span class="math display">\[\lambda_B = \lambda_Q - \Delta x = \lambda_Q - v_Q\cdot T_Q .\]</span>
+    Dieser Abstand wird von einem im Medium ruhenden Beobachter als Wellenlänge <span class="math inline">\(\lambda_B\)</span> der Welle aufgefasst.
+    Daher gilt mit der (im Medium konstanten) Ausbreitungsgeschwindigkeit der Welle <span class="math inline">\(c\)</span>:
+    <span class="math display">
+      \[\begin{aligned}
+        c&amp;= c &amp;&amp; |\, c=f\cdot\lambda \\
+        f_B\cdot\lambda_B &amp;= f_Q\cdot\lambda_Q &amp;&amp; |:\lambda_B \\
+        f_B &amp;= \frac{f_Q\cdot\lambda_Q}{\lambda_B} &amp;&amp; |\, \lambda_B = \lambda_Q - v_Q\cdot T_Q \\
+         &amp;= \frac{f_Q\cdot\lambda_Q}{\lambda_Q - v_Q\cdot T_Q} &amp;&amp; |\,\textrm{(durch $\lambda_Q$ kürzen)} \\
+         &amp;= \frac{f_Q}{1 - \frac{v_Q\cdot T_Q}{\lambda_Q}} &amp;&amp; |\,\frac{\lambda_Q}{T_Q}=c \\
+         &amp;= \frac{f_Q}{1 - \frac{v_Q}{c}}
+      \end{aligned}\]
+    </span>
+  </p>
+</li>
 <li><p><strong>Der Empfänger bewegt sich auf die im Medium ruhende Quelle zu:</strong></p>
 <p>Diesem Fall bleibt die Wellenlänge gleich: <span class="math display">\[\begin{aligned}
 \lambda_B &amp;= \lambda_Q &amp;&amp; |\, \lambda=\frac{c}{f} \nonumber \\
