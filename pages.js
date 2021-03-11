@@ -30,7 +30,7 @@ module.exports = async function(method,path,query,cookies) {
 				html = await build(100)
 			}
 			if (path.length==1) {
-				// GET "/christian/{irgendeineZahl}|{mathe}|{physik}}"
+				// GET "/christian/{{irgendeineZahl}|{mathe}|{physik}}"
 				build = require('./pages/christian.js')
 				html = await build(path[0])
 			}

@@ -340,11 +340,17 @@ a_y(t) &amp;= -g &amp;\end{aligned}\]</span></p>
 <li><p>Der Fall <span class="math inline">\(v_{y,0}=0\)</span> entspricht dem waagerechten Wurf (siehe <a href="#sec:waagerechter_wurf" data-reference-type="ref+page" data-reference="sec:waagerechter_wurf">[sec:waagerechter_wurf]</a>).</p></li>
 <li><p>Entspricht die Abwurfhöhe der Aufschlagshöhe <span class="math inline">\(H_0 = 0\)</span>, dann gilt für die Wurfdauer (für die ausführliche Herleitung siehe <a href="#sec:herleitung_schiefer_wurf_ta_h0=0" data-reference-type="ref+page" data-reference="sec:herleitung_schiefer_wurf_ta_h0=0">[sec:herleitung_schiefer_wurf_ta_h0=0]</a>) <span class="math display">\[t_A = \frac{2v_{y,0}}{g}\]</span> und für die Wurfweite (für die ausführliche Herleitung siehe <a href="#sec:herleitung_schiefer_wurf_xa_h0=0" data-reference-type="ref+page" data-reference="sec:herleitung_schiefer_wurf_xa_h0=0">[sec:herleitung_schiefer_wurf_xa_h0=0]</a>) <span class="math display">\[x_A = \frac{2\cdot v_{x,0}\cdot v_{y,0}}{g} = \frac{v_0^2\cdot\sin{(2\alpha)}}{g} .\]</span> Aus der letzten Formel resultiert der Winkel <span class="math display">\[\alpha_\text{max} = \SI{45}{\degree}\]</span> für die <strong>maximale Wurfweite</strong> in diesem Fall (für die ausführliche Herleitung siehe <a href="#sec:herleitung_schiefer_wurf_alphamax_h0=0" data-reference-type="ref+page" data-reference="sec:herleitung_schiefer_wurf_alphamax_h0=0">[sec:herleitung_schiefer_wurf_alphamax_h0=0]</a>).</p></li>
 </ul>
+
 <h3 id="dynamik">Dynamik</h3>
+
 <p>Die <strong>Dynamik</strong> beschäftigt sich mit den Gründen und Ursachen von Bewegung.</p>
+
 <h4 id="sec:kraft">Kraft</h4>
+
 <p>Die Ursache für Bewegungen ist immer eine <strong>Kraft</strong>. Das Formelzeichen für Kraft ist <span class="math display">\[F \quad \textrm{(engl. \glqq force\grqq)} ,\]</span> die Einheit ist nach ihrem Entdecker <strong>Isaac Newton</strong> (1642 – 1727) <span class="math display">\[\si{\newton} = \text{Newton} .\]</span></p>
-<p>Die <strong>Gravitationskraft</strong> der Erde lässt sich mit <span class="math display">\[F_G = m\cdot g  \qquad\textrm{(mit der \textbf{Erdbeschleunigung} $\textstyle g \approx \SI{9,81}{\meter\per\square\second}$)}\]</span> berechnen; die Gravitationskraft zwischen zwei Körpern allgemein (mit dem Abstand <span class="math inline">\(r\)</span> und den Massen <span class="math inline">\(m_1\)</span> und <span class="math inline">\(m_2\)</span>) ist <span class="math display">\[F_G = G\cdot\frac{m_1\cdot m_2}{r^2}  \qquad\textrm{(mit der \textbf{Gravitationskonstante} $\textstyle G\approx\SI{6,67e-11}{\cubic\meter\per\kg\per\square\second}$)} .\]</span></p>
+<p>
+  Die <strong>Gravitationskraft</strong> der Erde <span style="color: red">(auf der Erdoberfläche)</span> lässt sich mit <span class="math display">\[F_G = m\cdot g  \qquad\textrm{(mit der \textbf{Erdbeschleunigung} $\textstyle g \approx \SI{9,81}{\meter\per\square\second}$)}\]</span> berechnen; die Gravitationskraft zwischen zwei Körpern allgemein (mit dem Abstand <span class="math inline">\(r\)</span> und den Massen <span class="math inline">\(m_1\)</span> und <span class="math inline">\(m_2\)</span>) ist <span class="math display">\[F_G = G\cdot\frac{m_1\cdot m_2}{r^2}  \qquad\textrm{(mit der \textbf{Gravitationskonstante} $\textstyle G\approx\SI{6,67e-11}{\cubic\meter\per\kg\per\square\second}$)} .\]</span>
+</p>
 <h5 id="sec:newton_axiome">Newtons Axiome der Dynamik</h5>
 <p>Um den Begriff Kraft zu definieren und seinen Zusammenhang mit der Veränderung von Bewegungszuständen über die Beschleunigung zu klären, stellt Newton drei Prinzipien auf:</p>
 <ol>
@@ -360,6 +366,7 @@ a_y(t) &amp;= -g &amp;\end{aligned}\]</span></p>
 </ul></li>
 </ol>
 <p>Die Kraft <span class="math inline">\(F=m \cdot a\)</span> heißt allgemein auch <strong>Trägheitskraft</strong>.</p>
+
 <h5 id="sec:kraftmessung">Kraftmessung</h5>
 <p>Damit die Grundgleichung der Mechanik <span class="math display">\[F=m \cdot a\]</span> überhaupt sinnvoll ist, muss die wirkende Kraft nachgewiesen werden:</p>
 <ul>
@@ -370,16 +377,16 @@ a_y(t) &amp;= -g &amp;\end{aligned}\]</span></p>
 </ul>
 <p>Die Grundgleichung der Mechanik lässt sich daher experimentell überprüfen, indem eine Kraft sowohl dynamisch über ihre beschleunigende Wirkung als auch statisch über ihre verformende Wirkung gemessen wird, um dann die Ergebnisse zu vergleichen.</p>
 <div class="setup">
-<p><strong>Aufbau 1</strong>.  Ein Wagen mit variabler Masse <span class="math inline">\(m_W\)</span> wird durch die konstante <strong>Gewichtskraft</strong> <span class="math display">\[F_G = g \cdot m_M\]</span> eines Massestücks der variablen Masse <span class="math inline">\(m_M\)</span> beschleunigt. Dazu wird das Massestück an einen Faden gehängt, der über eine Rolle umgeleitet und an dem Wagen befestigt wird.</p>
+<p><strong>Aufbau</strong>.  Ein Wagen mit variabler Masse <span class="math inline">\(m_W\)</span> wird durch die konstante <strong>Gewichtskraft</strong> <span class="math display">\[F_G = g \cdot m_M\]</span> eines Massestücks der variablen Masse <span class="math inline">\(m_M\)</span> beschleunigt. Dazu wird das Massestück an einen Faden gehängt, der über eine Rolle umgeleitet und an dem Wagen befestigt wird.</p>
 </div>
 <div class="execute">
-<p><strong>Durchführung 1</strong>.  Die Gewichtskraft des Massestücks kann dann statisch durch einen Federkraftmesser und dynamisch durch die Beschleunigung des Wagens gemessen werden.</p>
+<p><strong>Durchführung</strong>.  Die Gewichtskraft des Massestücks kann dann statisch durch einen Federkraftmesser und dynamisch durch die Beschleunigung des Wagens gemessen werden.</p>
 </div>
 <div class="observe">
-<p><strong>Beobachtung 1</strong>.  Die statische Kraft ist proportional zu der gemessenen Beschleunigung.</p>
+<p><strong>Beobachtung</strong>.  Die statische Kraft ist proportional zu der gemessenen Beschleunigung.</p>
 </div>
 <div class="explane">
-<p><strong>Deutung 1</strong>.  Daraus resultiert, dass die Grundgleichung der Mechanik wahr ist, weil sie genau dies aussagt.</p>
+<p><strong>Deutung</strong>.  Daraus resultiert, dass die Grundgleichung der Mechanik wahr ist, weil sie genau dies aussagt.</p>
 </div>
 <h5 id="kräftezerlegung">Kräftezerlegung</h5>
 <p>Kräfte sind <strong>gerichtete Größen</strong>: Ihre Wirkung hängt von ihrem Betrag und ihrer Richtung ab. Mathematisch gesehen sind Kräfte daher Vektoren: <span class="math display">\[\vv{F}\]</span></p>
@@ -584,11 +591,14 @@ a(t) &amp;= -A_x\cdot\omega^2\cdot \sin{(\omega\cdot t)} &amp; A_a &amp;= A_x\cd
 <h4 id="resonanz"><span style="color: gray">Resonanz</span></h4>
 <p>Wird ein schwingungsfähiges System (z.B. ein Federpendel) mit einer Eigenfrequenz <span class="math inline">\(\omega\)</span> durch eine äußere Kraft periodisch beschleunigt, nimmt es unter bestimmten Bedingungen Energie auf oder ab. Die sinusförmige, treibende Beschleunigung hat dabei die Amplitude <span class="math inline">\(A_{Tr}\)</span> und die Kreisfrequenz <span class="math inline">\(\omega_{Tr}\)</span>.</p>
 <p>Die maximale Energieaufnahme einer Schwingung wird als <strong>Resonanz</strong> bezeichnet. Der <strong>Resonanzfall</strong>, den Fall der maximalen Energieaufnahme, tritt auf, wenn <span class="math inline">\(\omega_{Tr} \approx \omega\)</span> gilt. Der Effekt wird gestärkt, wenn die Amplitude <span class="math inline">\(A_{Tr}\)</span> möglichst groß ist.</p>
-<p>Ist ein Diagramm gegeben, in dem die Geschwindigkeit einer Schwingung und die treibende Frequenz, lässt sich allgemein sagen, dass Energie aufgenommen wird, wenn Geschwindigkeit und treibende Beschleunigung in die gleiche Richtung zeigen (das gleiche Vorzeichen haben). Haben Geschwindigkeit und treibende Beschleunigung entgegengesetzte Richtungen, wird im Allgemeinen Energie abgegeben.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>Ist ein Diagramm gegeben, in dem die Geschwindigkeit einer Schwingung und die treibende Frequenz, lässt sich allgemein sagen, dass Energie aufgenommen wird, wenn Geschwindigkeit und treibende Beschleunigung in die gleiche Richtung zeigen (das gleiche Vorzeichen haben). Haben Geschwindigkeit und treibende Beschleunigung entgegengesetzte Richtungen, wird im Allgemeinen Energie abgegeben.<a style="color: gray" href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
 <p>Daraus resultiert, dass bei einer Resonanz Geschwindigkeit und treibenden Beschleunigung stets in die gleiche Richtung zeigen.</p>
+
 <h3 id="sec:harmonische_wellen">Harmonische Wellen</h3>
+
 <p>Eine <strong>Welle</strong> allgemein ist eine sich räumlich ausbreitende Schwingung einer ort- und zeitabhängigen physikalischen Größe. <strong>Mechanische Wellen</strong> sind an ein schwingungsfähiges <strong>Medium</strong> gebunden. In Medien wird die Ausbreitung einer örtlichen Schwingung durch die Kopplung benachbarter <strong>Oszillatoren</strong> (schwingungsfähige physikalische Elemente) vermittelt. Eine Welle transportiert Energie, aber keine Materie. Die benachbarten Oszillatoren transportieren die Schwingung durch den Raum, ohne sich selbst im zeitlichen Mittel fortzubewegen.</p>
-<p>Das Entstehen mechanischer Wellen veranschaulicht <a href="#fig:welle_gekoppelte_pendel" data-reference-type="ref+page" data-reference="fig:welle_gekoppelte_pendel">[fig:welle_gekoppelte_pendel]</a>. Dabei kann zwischen <strong>Transversalwellen</strong> (Amplitude senkrecht zur Ausbreitungsrichtung) und <strong>Longitudinalwellen</strong> (Amplitude in Ausbreitungsrichtung) unterschieden werden.</p>
+
+<p>Das Entstehen mechanischer Wellen veranschaulicht <a href="#fig:welle_gekoppelte_pendel" data-reference-type="ref+page" data-reference="fig:welle_gekoppelte_pendel">[fig:welle_gekoppelte_pendel]</a>. Dabei kann zwischen <strong>Transversalwellen</strong> (<strong>Querwellen</strong>, Amplitude senkrecht zur Ausbreitungsrichtung) und <strong>Longitudinalwellen</strong> (Amplitude in Ausbreitungsrichtung) unterschieden werden.</p>
 <figure>
 <img src="welle_gekoppelte_pendel.jpg" id="fig:welle_gekoppelte_pendel" style="width:50.0%" alt="Fortschreitende Welle zwischen gekoppelten Pendeln: a) Pendel mit Kopplungsfedern, b) Zustand einer Transversalwelle, c) Zustand einer Longitudinalwelle" /><figcaption aria-hidden="true">Fortschreitende Welle zwischen gekoppelten Pendeln: a) Pendel mit Kopplungsfedern, b) Zustand einer Transversalwelle, c) Zustand einer Longitudinalwelle</figcaption>
 </figure>
@@ -602,7 +612,20 @@ a(t) &amp;= -A_x\cdot\omega^2\cdot \sin{(\omega\cdot t)} &amp; A_a &amp;= A_x\cd
 <figure>
 <img src="ausbreitung_harmonische_welle.png" id="fig:ausbreitung_harmonische_welle" style="width:65.0%" alt="Ausbreitung einer harmonischen Welle" /><figcaption aria-hidden="true">Ausbreitung einer harmonischen Welle</figcaption>
 </figure>
+
+<div class="exercise">
+<p>
+  <strong>Anwendung</strong>.
+  In <!--\vref{fig:seilwelle_momentaufnahme_und_einzelschwingung}--> ist sowohl die Momentaufnahme als auch der Verlauf der Schwingung eines Oszillators bei einer Transversalwelle zu sehen.
+  Anhand der Beschriftung der x-Achse kann die Zuordnung der beiden Diagramme erfolgen.
+</p>
+<figure>
+<img src="seilwelle_momentaufnahme_und_einzelschwingung.png" id="fig:seilwelle_momentaufnahme_und_einzelschwingung" style="width:65.0%" alt="Momentaufnahme (links) und Verlauf der Schwingung eines Oszillators (rechts) bei einer Transversalwelle" /><figcaption aria-hidden="true">Momentaufnahme (links) und Verlauf der Schwingung eines Oszillators (rechts) bei einer Transversalwelle</figcaption>
+</figure>
+</div>
+
 <h4 id="grundgrößen-von-wellen">Grundgrößen von Wellen</h4>
+
 <p>Viele Grundgrößen können von denen der Schwingungen (<a href="#sec:harmonische_schwingungen" data-reference-type="ref+page" data-reference="sec:harmonische_schwingungen">[sec:harmonische_schwingungen]</a>) übernommen werden, aber aufgrund der räumlichen Ausbreitung werden auch neue Größen definiert:</p>
 <dl>
 <dt>Schwingungsdauer, Frequenz:</dt>
@@ -680,7 +703,9 @@ a(t) &amp;= -A_x\cdot\omega^2\cdot \sin{(\omega\cdot t)} &amp; A_a &amp;= A_x\cd
 <img src="interferenz_kreiswellen.png" id="fig:interferenz_kreiswellen" style="width:90.0%" alt="Interferenz von zwei Kreiswellen: X bedeutet konstruktive, O bedeutet destruktive Interferenz" /><figcaption aria-hidden="true">Interferenz von zwei Kreiswellen: X bedeutet konstruktive, O bedeutet destruktive Interferenz</figcaption>
 </figure>
 <p>Von zwei Zentren gehen zwei Kreiswellen aus. Die durchgezogenen Kreise markieren jeweils Entfernungen ganzer Wellenlängen, die gestrichelten Kreise halber Wellenlängen. Werden alle Schnittpunkte dieser Kreise mit konstruktiver Interferenz mit X und alle Schnittpunkte mit destruktiver Interferenz mit O markiert ergibt sich das Bild, welches auf <a href="#fig:interferenz_kreiswellen" data-reference-type="ref+page" data-reference="fig:interferenz_kreiswellen">[fig:interferenz_kreiswellen]</a> zu sehen ist. Auf der senkrechten Linie in der Mitte liegen alle Punkte für <span class="math inline">\(\Delta x = 0\)</span>, nach außen hin nimmt der Gangunterschied zu.</p>
+
 <h4 id="sec:beugung_spalt">Anwendung: Beugung am Spalt</h4>
+
 <p>Würde man einen Spalt, hinter dem ein ein Schirm steht, mit kleinen Kugeln beschießen, würde man einen Schatten des Spalts auf dem Schirm vermuten. Eine Welle, die auf den Spalt trifft, breitet sich jedoch hinter dem Schirm auch nach unten und oben aus, wie in <a href="#fig:interferenz_spalt" data-reference-type="ref+page" data-reference="fig:interferenz_spalt">[fig:interferenz_spalt]</a> zu sehen.</p>
 <figure>
 <img src="interferenz_spalt.png" id="fig:interferenz_spalt" style="width:50.0%" alt="Beugung am Spalt" /><figcaption aria-hidden="true">Beugung am Spalt</figcaption>
@@ -688,18 +713,50 @@ a(t) &amp;= -A_x\cdot\omega^2\cdot \sin{(\omega\cdot t)} &amp; A_a &amp;= A_x\cd
 <p>Anhand der Intensitätsverteilung rechts in <a href="#fig:interferenz_spalt" data-reference-type="ref+page" data-reference="fig:interferenz_spalt">[fig:interferenz_spalt]</a> lässt sich ein Interferenzmuster hinter den Spalt vermuten. Das Auftreten von Interferenzmuster folgt aber aus der Überlagerung mehrerer Wellen; es traf aber nur eine Welle auf den Spalt.</p>
 <p>Mit dem Huygensschen Prinzip (siehe <a href="#sec:huygenssches_prinzip" data-reference-type="ref+page" data-reference="sec:huygenssches_prinzip">[sec:huygenssches_prinzip]</a>) sind diese beiden Probleme zu erklären: Jeder Punkt der Wellenfront ist Ausgangspunkt einer kreisförmigen, neuen Welle. So gibt es neue Wellenzentren; daher kann die ursprüngliche Welle zusätzliche Punkte erreichen und Interferenzmuster bilden.</p>
 <p>Für den Gangunterschied der äußersten Teilwellen ergibt sich bei den Maxima bzw. Minima <span class="math display">\[\Delta x_\textrm{max} = \left( k+\frac12 \right) \cdot\lambda \qquad\textrm{bzw.}\qquad \Delta x_\textrm{min} = k\cdot\lambda \qquad\textrm{(mit $k=1,2,3,\dots$)}\]</span> (für die ausführliche Herleitung siehe <a href="#sec:herleitung_spalt_gangunterschied" data-reference-type="ref+page" data-reference="sec:herleitung_spalt_gangunterschied">[sec:herleitung_spalt_gangunterschied]</a>). Aus <span class="math display">\[\sin{(\varphi)} = \frac{\Delta x}{b}\]</span> (graphische Herleitung aus <a href="#fig:interferenz_spalt_erklaerung" data-reference-type="ref+page" data-reference="fig:interferenz_spalt_erklaerung">[fig:interferenz_spalt_erklaerung]</a>) mit der <strong>Spaltbreite</strong> <span class="math inline">\(b\)</span> folgen die Bedingungen <span class="math display">\[\sin{(\varphi_\textrm{max})} = \frac{\left( 2k+1 \right) \cdot\lambda}{2b} \qquad\textrm{bzw.}\qquad  \sin{(\varphi_\textrm{min})} = \frac{k\cdot\lambda}{b} \qquad\textrm{(mit $k=1,2,3,\dots$)}\]</span> für die Winkel der Maxima bzw. Minima des Interferenzmusters. Bei Experimenten oder Aufgaben zur Interferenz von Wellen am Spalt kann der Winkel <span class="math inline">\(\varphi\)</span> jedoch häufig auch durch andere Größen, die aus der Makrobetrachtung des Aufbaus gewonnen werden, (z.B. Abstand des Spalts zum Schirm, Abstand des Maximums/Minimums zum 0. Maximum des Interferenzmusters) beschrieben werden, weil der Winkel <span class="math inline">\(\varphi\)</span> in der Praxis schwer zu messen ist.</p>
+
 <h4 id="sec:interferenz_doppelspalt_gitter">Anwendung: Interferenz am Doppelspalt bzw. Gitter</h4>
+
 <p>Auch wenn Wellen auf einen Doppelspalt bzw. auf ein Gitter treffen, bildet sich auf einem dahinterliegenden Schirm ein charakteristisches Interferenzmuster. Diese Intensitätsverteilung beschreibt die ortsabhängige Amplitude der Welle. Sie ergibt sich aus der Überlagerung der Wellen, die von den einzelnen Spalten ausgehen.</p>
 <figure>
 <img src="interferenz_doppelspalt_erklärung.png" id="fig:interferenz_doppelspalt_erklaerung" style="width:40.0%" alt="Schema des Aufbaus des Doppelspaltexperiments" /><figcaption aria-hidden="true">Schema des Aufbaus des Doppelspaltexperiments</figcaption>
 </figure>
 <p>Mithilfe von <a href="#fig:interferenz_doppelspalt_erklaerung" data-reference-type="ref+page" data-reference="fig:interferenz_doppelspalt_erklaerung">[fig:interferenz_doppelspalt_erklaerung]</a> sollen auch hier mathematische Zusammenhänge hergeleitet werden:</p>
-<p>Von den beiden Spaltöffnungen auf der linken Seite geht jeweils eine Kreiswelle aus. Diese beiden Wellen überlagern sich im Punkt <span class="math inline">\(P\)</span>. Es gelten offensichtlich <span class="math display">\[\tan{\alpha} = \frac{y}{x}\]</span> und für den Gangunterschied der beiden Wellen im Punkt <span class="math inline">\(P\)</span> <span class="math display">\[\Delta d = d_2 - d_1 .\]</span> Aus den Spaltöffnungen gilt <span class="math display">\[\sin{\alpha} = \frac{\Delta d}{h}\]</span> und durch die Kleinwinkelnäherung (siehe <a href="#sec:kleinwinkelnaeherung" data-reference-type="ref+page" data-reference="sec:kleinwinkelnaeherung">[sec:kleinwinkelnaeherung]</a>) <span class="math display">\[\frac{y}{x} = \frac{\Delta d}{h} .\]</span> Durch Einsetzen der Bedingungen für konstruktive bzw. destruktive Interferenz erhält man die Position der Maxima mit <span class="math display">\[y = \frac{k\cdot\lambda\cdot x}{h} \textrm{ mit } k=1,2,3,\dots\]</span> und der Position der Minima mit <span class="math display">\[y = \frac{x\cdot\lambda\cdot\left( k-\frac12\right)}{h} \textrm{ mit } k=1,2,3,\dots .\]</span></p>
-<p>Es ist zu beachten, dass ein Doppelspalt bzw. Gitter aus mehreren Einzelspalten besteht: Fällt ein Maximum des Interferenzmusters eines Doppelspalts oder Gitters zufällig auf ein Minimum eines Einzelspalts, ist kein Maximum zu erkennen, obwohl es rechnerisch auftreten sollte.</p>
+<p>
+  Von den beiden Spaltöffnungen auf der linken Seite geht jeweils eine Kreiswelle aus.
+  Diese beiden Wellen überlagern sich im Punkt <span class="math inline">\(P\)</span>.
+  Es gelten offensichtlich <span class="math display">\[\tan{\alpha} = \frac{y}{x}\]</span> und für den Gangunterschied der beiden Wellen im Punkt <span class="math inline">\(P\)</span> <span class="math display">\[\Delta d = d_2 - d_1 .\]</span>
+  Aus den Spaltöffnungen gilt <span class="math display">\[\sin{\alpha} = \frac{\Delta d}{h}\]</span> und durch die Kleinwinkelnäherung (siehe <a href="#sec:kleinwinkelnaeherung" data-reference-type="ref+page" data-reference="sec:kleinwinkelnaeherung">[sec:kleinwinkelnaeherung]</a>) <span class="math display">\[\frac{y}{x} = \frac{\Delta d}{h} .\]</span>
+  Durch Einsetzen der Bedingungen für konstruktive bzw. destruktive Interferenz erhält man die Position der Maxima mit <span class="math display">\[y = \frac{k\cdot\lambda\cdot x}{h} \textrm{ mit } k=1,2,3,\dots\]</span> und der Position der Minima mit <span class="math display">\[y = \frac{x\cdot\lambda\cdot\left( k-\frac12\right)}{h} \textrm{ mit } k=1,2,3,\dots .\]</span></p>
+<p>
+  Es ist zu beachten, dass ein Doppelspalt bzw. Gitter aus mehreren Einzelspalten besteht:
+  Fällt ein Maximum des Interferenzmusters eines Doppelspalts oder Gitters zufällig auf ein Minimum eines Einzelspalts, ist kein Maximum zu erkennen, obwohl es rechnerisch auftreten sollte.
+</p>
+
 <div class="exercise">
-<p><strong>Anwendung 3</strong>.  Eine beliebte Klausurfrage ist, ob Interferenzerscheinungen auftreten können, wenn die Wellenlänge der auftreffenden Strahlung größer ist als der Spaltmittenabstand <span class="math inline">\(h\)</span>. Das ist aber wegen der Definition des Sinus durch <span class="math display">\[\sin{\alpha} = \frac{\Delta d}{b} = \frac{k\cdot\lambda}{h} \leq 1\]</span> nicht möglich.</p>
+<p><strong>Anwendung</strong>.
+  Eine beliebte Klausurfrage ist, ob Interferenzerscheinungen auftreten können, wenn die Wellenlänge der auftreffenden Strahlung größer ist als der Spaltmittenabstand <span class="math inline">\(h\)</span>.
+  Das ist aber wegen der Definition des Sinus durch <span class="math display">\[\sin{\alpha} = \frac{\Delta d}{b} = \frac{k\cdot\lambda}{h} \leq 1\]</span> nicht möglich.
+  Genauso können auch Bedingungen abgeleitet werden, unter denen z.B. mindestens 10 Maxima zu erkennen sind.
+</p>
 </div>
+
+<div class="exercise">
+<p><strong>Anwendung</strong>.
+  Wird ein (Doppel-)Spalt bzw. Gitter gleichzeitig mit Strahlung mehrerer Wellenlängen bestrahlt, sind auf dem Schirm auch einzelne, aber dennoch nebeneinanderliegende Maxima für jede Wellenlänge zu sehen (außer beim 0. Maximum).
+  Bei gleicher Ordnung vergrößert sich der Abstand eines Maximums zum 0. Maximum, wenn die Wellenlänge erhöht wird.
+  Soll gezeigt werden, dass z.B. die 2. und 3. Maxima sich nicht überschneiden, genügt es daher zu zeigen, dass das Maximum 2. Ordnung vom Licht der höchsten Wellenlänge einen kleineren Abstand als das Maximum 3. Ordnung vom Licht der niedrigsten Wellenlänge zum 0. Maximum hat.
+</p>
+</div>
+  
+<div class="exercise">
+<p><strong>Anwendung</strong>.
+  Wird der Spalt so gedreht, dass sich die Ausrichtung zum Schirm ändert, dann ist die Formel für die Maxima bzw. Minima nicht mehr verwendbar, weil der Abstand zum Schirm bei den verschiedenen Maxima nicht konstant ist.
+  Wird der Spalt hingegen so gedreht, dass er parallel zum Schirm bleibt, dann dreht sich nur das bekannte Interferenzmuster mit ihm.
+</p>
+</div>
+
 <h4 id="sec:stehende_wellen">Stehende Wellen</h4>
+
 <p>Überlagern sich unterschiedliche Wellen, addieren sich ihre jeweiligen Auslenkungen und es ergibt sich aus der Überlagerung eine neue Welle, wobei es zu Interferenz kommen kann. Ein besonderer Fall von Interferenz – eine sogenannte <strong>stehende Welle</strong> – ergibt sich, wenn eine Welle mit sich selbst überlagert wird. Dies tritt auf, wenn die Welle am Rand des schwingenden Mediums reflektiert wird und die reflektierte Welle die ursprüngliche Welle überlagert. So sind z.B. die Enden einer Gitarrensaite unbeweglich, so dass sich die Schwingungen auf der Saite dort nicht weiter ausbreiten können und in die entgegengesetzte Richtung reflektiert werden bzw. zurücklaufen.</p>
 <h5 id="sec:stehende_wellen_resultierende_wellenfunktion">Resultierende Wellenfunktionen</h5>
 <p>Bei der Reflexion am Ende des Mediums werden zwei Fälle unterschieden; in beiden Fällen ergibt sich die resultierende Wellenfunktion aus der Addition der beiden Wellengleichungen:</p>
@@ -727,7 +784,15 @@ a(t) &amp;= -A_x\cdot\omega^2\cdot \sin{(\omega\cdot t)} &amp; A_a &amp;= A_x\cd
 <img src="stehende_wellen.png" id="fig:stehende_wellen" alt="Beispiele für stehende Wellen: Bei a) sind die Enden des Mediums beide offen, bei b) geschlossen und offen und bei c) sind beide geschlossen. In der jeweils obersten Grafik gilt n=0, in der mittleren n=1 und in der unteren n=2." /><figcaption aria-hidden="true">Beispiele für stehende Wellen: Bei a) sind die Enden des Mediums beide offen, bei b) geschlossen und offen und bei c) sind beide geschlossen. In der jeweils obersten Grafik gilt <span class="math inline">\(n=0\)</span>, in der mittleren <span class="math inline">\(n=1\)</span> und in der unteren <span class="math inline">\(n=2\)</span>.</figcaption>
 </figure>
 <p>In <a href="#fig:stehende_wellen" data-reference-type="ref+page" data-reference="fig:stehende_wellen">[fig:stehende_wellen]</a> sind Beispiele für stehende Wellen abgebildet.</p>
+
+<div class="exercise">
+<p><strong>Anwendung</strong>.
+  Stehende Wellen findet man sowohl bei Saiten - z.B. dem <strong>Monochord</strong> - als auch bei Blasinstrumenten - z.B. der Flöte.
+</p>
+</div>
+
 <h4 id="sec:doppler-effekt">Doppler-Effekt</h4>
+
 <p>Der <strong>Doppler-Effekt</strong> beschreibt die auftretenden Effekte der Fälle, bei denen Sender oder Empfänger sich im Medium der Welle bewegen. Dazu werden drei Fälle unterschieden; für die beim Empfänger wahrnehmbare Frequenz <span class="math inline">\(f_B\)</span> gilt jeweils (für die ausführliche Herleitung siehe <a href="#sec:herleitung_doppler-effekt_fb" data-reference-type="ref+page" data-reference="sec:herleitung_doppler-effekt_fb">[sec:herleitung_doppler-effekt_fb]</a>):</p>
 <ul>
 <li><p><strong>Der Sender bewegt sich in Richtung der Wellenausbreitung:</strong> <span class="math display">\[f_B = \frac{f_Q}{1 - \frac{v_Q}{c}}\]</span></p></li>
@@ -735,8 +800,9 @@ a(t) &amp;= -A_x\cdot\omega^2\cdot \sin{(\omega\cdot t)} &amp; A_a &amp;= A_x\cd
 <li><p><strong>Empfänger und Quelle bewegen sich im Medium aufeinander zu:</strong> <span class="math display">\[f_B = f_Q \cdot \frac{1+\frac{v_B}{c}}{1-\frac{v_B}{c}} = f_Q \cdot \frac{c+v_B}{c-v_Q}\]</span></p></li>
 </ul>
 <div class="exercise">
-<p><strong>Anwendung 4</strong>.  Bewegt sich ein Sender (z.B. ein Krankenwagen) mit konstanter Geschwindigkeit an einem Empfänger vorbei und sind die Frequenzen, die der Empfänger beim Nähern sowie bei Entfernen des Senders empfängt, gegeben, so gilt zum Einen <span class="math display">\[f_B^\textrm{hin} = \frac{f_Q}{1 - \frac{v_Q}{c}}\]</span> und zum Anderen <span class="math display">\[f_B^\textrm{weg} = \frac{f_Q}{1 + \frac{v_Q}{c}} ,\]</span> weil die Geschwindigkeit beim Entfernen negativ ist. Die beiden Gleichungen bilden ein Gleichungssystem, in dem <span class="math inline">\(f_Q\)</span> und <span class="math inline">\(v_Q\)</span> die Unbekannten sind. Wird die Geschwindigkeit des Senders gesucht, kombiniert man die beiden Gleichungen, indem sie über <span class="math inline">\(f_Q\)</span> gleichgesetzt werden. Als Ergebnis erhält man nach weiteren Umformungen <span class="math display">\[v_Q = c\cdot \frac{f_B^\textrm{hin} - f_B^\textrm{weg}}{f_B^\textrm{hin} - f_B^\textrm{weg}} .\]</span></p>
+<p><strong>Anwendung</strong>.  Bewegt sich ein Sender (z.B. ein Krankenwagen) mit konstanter Geschwindigkeit an einem Empfänger vorbei und sind die Frequenzen, die der Empfänger beim Nähern sowie bei Entfernen des Senders empfängt, gegeben, so gilt zum Einen <span class="math display">\[f_B^\textrm{hin} = \frac{f_Q}{1 - \frac{v_Q}{c}}\]</span> und zum Anderen <span class="math display">\[f_B^\textrm{weg} = \frac{f_Q}{1 + \frac{v_Q}{c}} ,\]</span> weil die Geschwindigkeit beim Entfernen negativ ist. Die beiden Gleichungen bilden ein Gleichungssystem, in dem <span class="math inline">\(f_Q\)</span> und <span class="math inline">\(v_Q\)</span> die Unbekannten sind. Wird die Geschwindigkeit des Senders gesucht, kombiniert man die beiden Gleichungen, indem sie über <span class="math inline">\(f_Q\)</span> gleichgesetzt werden. Als Ergebnis erhält man nach weiteren Umformungen <span class="math display">\[v_Q = c\cdot \frac{f_B^\textrm{hin} - f_B^\textrm{weg}}{f_B^\textrm{hin} - f_B^\textrm{weg}} .\]</span></p>
 </div>
+
 <h4 id="brechung-von-wellen-an-grenzflächen-von-medien">Brechung von Wellen an Grenzflächen von Medien</h4>
 <p>Treffen Wellen auf die Grenzfläche zwischen zwei Medien, regen die Schwingungen in Medium 1 Schwingungen in Medium 2 an, sodass die Energie der Welle auf Medium 2 übertragen wird und die Welle sich vom Medium 1 in Medium 2 ausbreitet. Wegen der unmittelbaren Kopplung der Schwingungen in den beiden Medien treten in beiden Wellen Schwingungen derselben Frequenz auf; die Frequenz <span class="math inline">\(f\)</span> einer Welle bleibt also bei einem Übergang in ein anderes Medium erhalten.</p>
 <p>Da aber für Wellen grundsätzlich der Zusammenhang <span class="math inline">\(v = \lambda \cdot f\)</span> gilt und die Ausbreitungsgeschwindigkeit einer Welle vom Medium abhängig ist, folgt daraus, dass sich die Wellenlänge eines Mediums von <span class="math inline">\(\lambda_1\)</span> zu <span class="math display">\[\lambda_2 = \frac{v_2}{v_1}\cdot\lambda_1\]</span> ändert. Sind <span class="math inline">\(\alpha_1\)</span> bzw. <span class="math inline">\(\alpha_2\)</span> die Winkel, in denen die Welle auf die Grenzfläche trifft bzw. aus ihr austritt, dann gilt jeweils <span class="math display">\[\sin{\alpha} = \frac{2\lambda}{b}\]</span> und durch Gleichsetzen über die Breite <span class="math inline">\(b\)</span> ergibt sich <span class="math display">\[\sin{\alpha_2} = \frac{\lambda_2}{\lambda_1} \cdot \sin{\alpha_1} = \frac{f\cdot v_2}{f\cdot v_1} \cdot \sin{\alpha_1} = \frac{v_2}{v_1} \cdot \sin{\alpha_1} .\]</span></p>
@@ -888,15 +954,15 @@ a(t) &amp;= -A_x\cdot\omega^2\cdot \sin{(\omega\cdot t)} &amp; A_a &amp;= A_x\cd
 <img src="gluehelektrischer_effekt.jpg" id="fig:gluehelektrischer_effekt-versuch" style="width:55.0%" alt="Aufbau zum Nachweis des glühelektrischen Effekts" /><figcaption aria-hidden="true">Aufbau zum Nachweis des glühelektrischen Effekts</figcaption>
 </figure>
 <div class="sexecute">
-<p><strong>Aufbau/Durchführung 3</strong>.  In einer evakuierten (fast luftleeren) Röhre ist eine Elektrode als Spirale, die andere als gegenüberstehende Platte ausgebildet. An die beiden Elektroden wird eine Spannung angelegt.</p>
+<p><strong>Aufbau/Durchführung</strong>.  In einer evakuierten (fast luftleeren) Röhre ist eine Elektrode als Spirale, die andere als gegenüberstehende Platte ausgebildet. An die beiden Elektroden wird eine Spannung angelegt.</p>
 <p>In einem zweiten Experiment lässt man zusätzlich einen Heizstrom durch die Wendel fließen und bringt sie so zum Glühen (siehe <a href="#fig:gluehelektrischer_effekt-versuch" data-reference-type="ref+page" data-reference="fig:gluehelektrischer_effekt-versuch">[fig:gluehelektrischer_effekt-versuch]</a>).</p>
 </div>
 <div class="observe">
-<p><strong>Beobachtung 4</strong>.  Zwischen Spirale und Platte fließt kein messbarer Strom, auch nicht nach dem Umpolen der Spannungsquelle. Der (fast) luftleere Raum zwischen den Elektroden enthält keine Ladungsträger.</p>
+<p><strong>Beobachtung</strong>.  Zwischen Spirale und Platte fließt kein messbarer Strom, auch nicht nach dem Umpolen der Spannungsquelle. Der (fast) luftleere Raum zwischen den Elektroden enthält keine Ladungsträger.</p>
 <p>Wird hingegen die glühende Wendel als Kathode geschaltet, d.h. an den Minuspol der elektrischen Quelle angeschlossen, so zeigt sich ein Strom im Stromkreis, dessen stärke von der Temperatur der Wendel abhängig ist. Bei umgekehrter Polung, d.h. bei Anschluss des Pluspols an der Wendel, fließt allerdings kein Strom.</p>
 </div>
 <div class="explane">
-<p><strong>Deutung 4</strong>.  Aus kalten Metalloberflächen treten (bei kleinen Feldstärken) keine Elektronen aus. Aus dem glühendem Draht der Wendel hingegen treten negative Ladungsträger aus.</p>
+<p><strong>Deutung</strong>.  Aus kalten Metalloberflächen treten (bei kleinen Feldstärken) keine Elektronen aus. Aus dem glühendem Draht der Wendel hingegen treten negative Ladungsträger aus.</p>
 </div>
 <p>Diese Erscheinung bezeichnet man als <strong>glühelektrischen Effekt</strong>. Er wurde im Jahr 1883 von Thomas Alva Edison entdeckt.</p>
 <p>Das Austreten der Elektronen aus einer heißen Metalloberfläche zueigt Ähnichkeiten mit dem Austreten von Wassermolekülen aus einer Wasseroberfläche: Um die Kohäsionskräfte zu überwinden, muss das Wassermolekül eine bestimmte kinetische Energie besitzen, die bei normaler Temperatur nur wenige Moleküle haben. Die Verdunstung findet nur langsam statt; bei jeder Temperatur stellt sich über der Flüssigkeitsoberfläche ein dynamischer Gleichgewichtszustand zwischen austretenden und wieder eintretenden Molekülen ein.</p>
@@ -2000,7 +2066,11 @@ Widerstand &amp; <span class="math inline">\(R\)</span> &amp; Ω &amp; Ohm &amp;
 </div>
 <p><span id="sec:basiseinheiten_si" label="sec:basiseinheiten_si">[sec:basiseinheiten_si]</span></p>
 </div>
-<p><span class="math display">\[\text{$1$ Lichtjahr} = \SI{1}{\lightyear} = c\cdot\SI{1}{\year}\]</span></p>
+<h5>Übersicht über Größen und Einheiten</h5>
+<p>Eine Übersicht über Größen und ihre Einheiten ist in <!--\vref{fig:uebersicht_groessen_einheiten}--> zu sehen (Quelle: neuere Formelsammlung).</p>
+<figure>
+<embed src="uebersicht_groessen_einheiten.pdf" id="fig:uebersicht_groessen_einheiten" /><figcaption aria-hidden="true">Übersicht über die Bewegungsformen</figcaption>
+</figure>
 <h3 id="klausuren">Klausuren</h3>
 <h4 id="vorgehen-bei-der-bearbeitung">Vorgehen bei der Bearbeitung</h4>
 <p>Zunächst sollten die beiden Aufgaben durchgelesen werden. Denn die Teilaufgaben an sich sollen zwar unabhängig voneinander lösbar sein, es können aber in späteren Aufgabenstellungen Tipps für die Bearbeitung einer anderen Aufgabe gegeben sein. Die einzelnen Arbeitsanweisungen sind häufig aufeinander aufbauend.</p>
