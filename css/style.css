@@ -1,6 +1,7 @@
 body {
     background-image: url("images/Website-Background-Images.jpg");
     background-color: lightgreen;
+    background-size: cover;
 }
 
 h1, h2 {
@@ -51,8 +52,21 @@ input[type=button], input[type=submit] {
     border-radius: 4px;
 }
 
-table, td, th {
+/* article table */
+table.articleTable {
     border: 1px solid rgba(255, 191, 54, 0.397);
+
+    width: 25%;
+    border-collapse: collapse;
+}
+table.articleTable td {
+    height: 25px;
+    padding: 15px;
+    text-align: left;
+}
+
+table, td, th {
+    border: none;
 }
 
 table {
