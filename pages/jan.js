@@ -21,7 +21,9 @@ module.exports = async function(coolness) {
 		ort: "Kiel",
 		fach: "Informatik",
 		dino: "Longisquama",
-		coolnessindex : coolness
+		coolnessindex : coolness,
+		name: {name},
+		alter2: {alter}
 	});
 	return await html.parse();
 }
