@@ -89,8 +89,13 @@ module.exports = async function(method,path,query,cookies) {
 				build = require('./pages/Jan.js')
 				html = await build(path[0])
 			}
-			if (path.length>1) {
-				// GET "/jan/zu/viele/parameter"
+			if (path.length==2) {
+				// GET "/jan2/{name}/{alter}"
+				build = require('./pages/Jan.js')
+				html = await build(0)
+			}
+			if (path.length>2) {
+				// GET "/jan"
 				build = require('./pages/Jan.js')
 				html = await build(0)
 			}
