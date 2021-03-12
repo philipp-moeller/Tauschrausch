@@ -225,6 +225,12 @@
 <p>
   Wichtige Informationen oder Inhalte, die häufig vergessen werden könnten, sind <span style="color: red">rot</span> geschrieben.
 </p>
+  
+<h1>Test Bilder</h1>
+
+<figure>
+<img src="../files/figures_formulary_maths/beispiel_polynomdivision.jpg" id="fig:polynomdivision" style="width:50.0%" alt="Beispiel für Polynomdivision" /><figcaption aria-hidden="true">Beispiel für Polynomdivision</figcaption>
+</figure>
 
 <h1 id="analysis">Analysis</h1>
 
@@ -1956,7 +1962,6 @@
 <p>Die <strong>(theoretische) Standardabweichung <span class="math inline">\(\sigma\)</span></strong> beschreibt die Streuung der Wahrscheinlichkeitsverteilung um den Erwartungswert <span class="math inline">\(\mu\)</span> und stellt somit eine Prognose für die empirische Standardabweichung <span class="math inline">\(s\)</span> dar. Sie lässt sich berechnen durch die Formel <span class="math display">\[\sigma = \sqrt{(x_1-\mu)^2\cdot P(X=x_1)+\dots+(x_n-\mu)^2\cdot P(X=x_n)}=\sqrt{\sum_{i=1}^n (x_i-\mu)^2\cdot P(X=x_i)}.\]</span></p>
 <p>Das Quadrat von <span class="math inline">\(\sigma\)</span> wird als <strong>Varianz</strong> <span class="math display">\[V(X)=\sigma^2\]</span> bezeichnet.</p>
  
-<!-- NEU -->
 <h3 id="sec:kombinatorik">Kombinatorik</h3>
 
 <p>
@@ -1981,31 +1986,36 @@
 <p><a href="#tab:kombinatorik_stichprobe" data-reference-type="ref+page" data-reference="tab:kombinatorik_stichprobe">[tab:kombinatorik_stichprobe]</a> bietet eine Übersicht über die vier Formeln, mit deren Hilfe man die Anzahl der Möglichkeiten, von einer Grundmenge eine Teilmenge auszuwählen, bestimmen kann.</p>
 <div id="tab:kombinatorik_stichprobe">
 <table>
-<caption>Kombinatorische Formeln für die Auswahl einer Stichprobe</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: left;"><p><strong>Variation</strong></p>
-<p>(mit Reihenfolge,</p>
-<p>geordnet)</p></th>
-<th style="text-align: left;"><p><strong>Kombination</strong></p>
-<p>(ohne Reihenfolge,</p>
-<p>ungeordnet)</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><p>mit Wiederholung</p>
-<p>(mit Zurücklegen)</p></td>
-<td style="text-align: left;"><span><span class="math inline">\(\displaystyle n^k\)</span></span></td>
-<td style="text-align: left;"><span><span class="math inline">\(\displaystyle \binom{n+k-1}{k} = \frac{(n+k-1)!}{(n-1)!\cdot k!}\)</span></span></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">ohne Wiederholung (ohne Zurücklegen)</td>
-<td style="text-align: left;"><span><span class="math inline">\(\displaystyle \frac{n!}{(n-k)!} = n\cdot\ldots\cdot(n-k+1)\)</span></span></td>
-<td style="text-align: left;"><span><span class="math inline">\(\displaystyle \frac{n!}{(n-k)!\cdot n!} = \binom{n}{k}\)</span></span></td>
-</tr>
-</tbody>
+  <caption>Kombinatorische Formeln für die Auswahl einer Stichprobe</caption>
+  <thead>
+    <tr class="header">
+      <th style="text-align: left;"></th>
+      <th style="text-align: left;">
+        <p><strong>Variation</strong></p>
+        <p>(mit Reihenfolge,</p>
+        <p>geordnet)</p>
+      </th>
+      <th style="text-align: left;"><p><strong>Kombination</strong></p>
+        <p>(ohne Reihenfolge,</p>
+        <p>ungeordnet)</p>
+     </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td style="text-align: left;">
+        <p>mit Wiederholung</p>
+        <p>(mit Zurücklegen)</p>
+      </td>
+      <td style="text-align: left;"><span><span class="math inline">\(\displaystyle n^k\)</span></span></td>
+      <td style="text-align: left;"><span><span class="math inline">\(\displaystyle \binom{n+k-1}{k} = \frac{(n+k-1)!}{(n-1)!\cdot k!}\)</span></span></td>
+    </tr>
+    <tr class="even">
+      <td style="text-align: left;">ohne Wiederholung (ohne Zurücklegen)</td>
+      <td style="text-align: left;"><span><span class="math inline">\(\displaystyle \frac{n!}{(n-k)!} = n\cdot\ldots\cdot(n-k+1)\)</span></span></td>
+      <td style="text-align: left;"><span><span class="math inline">\(\displaystyle \frac{n!}{(n-k)!\cdot n!} = \binom{n}{k}\)</span></span></td>
+    </tr>
+  </tbody>
 </table>
 </div>
 <p><span id="tab:kombinatorik_stichprobe" label="tab:kombinatorik_stichprobe">[tab:kombinatorik_stichprobe]</span></p>
@@ -2027,7 +2037,6 @@
   Von <span class="math inline">\(n\)</span> Objekten gibt es nur <span class="math inline">\(k\)</span> verschiedene, d.h. von Objekt 1 gibt es <span class="math inline">\(n_1\)</span> (gleiche) Exemplare, von Objekt <span class="math inline">\(2\)</span> <span class="math inline">\(n_2\)</span>(gleiche) Exemplare, …, von Objekt <span class="math inline">\(k\)</span> gibt es <span class="math inline">\(n_k\)</span> gleiche Exemplare.
   Es gibt <span class="math inline">\(\frac{n!}{n_1! \cdot n_2! \cdot \ldots \cdot n_k!}\)</span> Möglichkeiten, die <span class="math inline">\(n=n_1+n_2+\dots+n_k\)</span> Objekte anzuordnen.
 </p>
-<!-- NEU ENDE -->
 
 <p>Es bezeichnet <span class="math display">\[\binom{n}{k} = \frac{n!}{(n-k)! \cdot k!}\]</span> der <strong>Binomialkoeffizient</strong>.</p>
 
