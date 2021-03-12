@@ -12,8 +12,6 @@ module.exports = async function(coolness) {
 	// Beispiel:
 	// var user = new User(1);
 	// await user.init();
-
-	coolness= coolness*2;
 	
 	var html = new Template('./html/Jan.html',{
 		// Hier können Daten an das HTML-Dokument übergeben werden.
@@ -21,7 +19,9 @@ module.exports = async function(coolness) {
 		ort: "Kiel",
 		fach: "Informatik",
 		dino: "Longisquama",
-		coolnessindex : coolness
+		coolnessindex : coolness,
+		name: name,
+		alter2: alter2
 	});
 	return await html.parse();
 }

@@ -7,7 +7,7 @@ const util = require('util');
 var pool = mysql.createPool({
 	connectionLimit : 10,
   host: 'localhost', // ip-Adress of the server
-  user: 'root',
+  user: 'tschrsch',
   password: 'eWDPQFwAgpLkykgn',
   database: 'tauschrausch' // name of the database
 });
