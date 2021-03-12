@@ -1,20 +1,32 @@
 const Template = require('../template.js');
 
-// Hier können Module geladen werden.
+// Hier kï¿½nnen Module geladen werden.
 //
 // Beispiel:
 // const User = require('../db/user.js');
 
-module.exports = async function (/* Hier können Daten eingelesen werden. */) {
+module.exports = async function (number) {
 
-	// Hier können Daten aus der Datenbank gelesen und / oder verarbeitet werden.
+	// Hier kï¿½nnen Daten aus der Datenbank gelesen und / oder verarbeitet werden.
 	//
 	// Beispiel:
 	// var user = new User(1);
 	// await user.init();
 
+	number = number*3;
+	antinumber = 60-number;
+	realnumber = number*5
+
 	var html = new Template('./html/Kristin.html', {
-		// Hier können Daten an das HTML-Dokument übergeben werden.
+		// Hier kï¿½nnen Daten an das HTML-Dokument ï¿½bergeben werden.
+		zeit: number,
+		restzeit: antinumber,
+		wirklichkeit: realnumber,
+		jahre: 36,
+		jahrzehnt: 1960,
+		disziplin: oktopus-wrestling
+		aktivitÃ¤t: musikhÃ¶ren
+	
 	});
 	return await html.parse();
 }

@@ -20,14 +20,48 @@ module.exports = async function(method,path,query,cookies) {
 			if (path.length==0) {
 				// GET "/login"
 				build = require('./pages/login.js')
-				html = await build()
+				html = await build(query)
+			}
+			break;
+		case 'menu':
+			if (path.length==0) {
+				// GET "/menu"
+				build = require('./pages/menu.js')
+				html = await build(query.username) // watch menu.js!
+			}
+			break;
+		case 'articles':
+			if (path.length==0) {
+				// GET "/articles"
+				build = require('./pages/articles.js')
+				html = await build(100)
+			}
+			if (path.length==1) {
+				// GET "/articles/{article01}|{article02}|{...}}"
+				build = require('./pages/articles.js')
+				html = await build(path[0])
+			}
+			if (path.length==2) {
+				// GET "/articles/{?}"
+				build = require('./pages/articles.js')
+				html = await build(0)
 			}
 			break;
 		case 'christian':
 			if (path.length==0) {
 				// GET "/christian"
 				build = require('./pages/christian.js')
-				html = await build()
+				html = await build(100)
+			}
+			if (path.length==1) {
+				// GET "/christian/{{irgendeineZahl}|{mathe}|{physik}}"
+				build = require('./pages/christian.js')
+				html = await build(path[0])
+			}
+			if (path.length>1) {
+				// GET "/christian/zu/viele/parameter"
+				build = require('./pages/christian.js')
+				html = await build(0)
 			}
 			break;
 		case 'frechheit':
@@ -61,20 +95,29 @@ module.exports = async function(method,path,query,cookies) {
 				html = await build(0)
 			}
 			break;
-		case 'menu':
+		case 'kristin':
+			if (path.length==1) {
+				build = require('./pages/kristin.js')
+				html = await build(path[0])
+			}
 			if (path.length==0) {
-				// GET "/menu"
-				build = require('./pages/menu.js')
-				html = await build(query.username, query.password) // watch menu.js!
+				// GET "/kristin"
+				build = require('./pages/kristin.js')
+				html = await build(20)
 			}
 			break;
-		case 'articles':
-			if (path.length==0) {
-				// GET "/articles"
-				build = require('./pages/articles.js')
-				html = await build() // pass through db-table/rows
-			}
-			break;
+			case 'maja':
+				if (path.length==1) {
+					// GET "/maja/{pinguine}"
+					build = require('./pages/maja.js')
+					html = await build(path[0])
+				}
+				if (path.length==0) {
+					// GET "/maja"
+					build = require('./pages/maja.js')
+					html = await build(18)
+				}
+				break;
 		default:
 			html = 'Fehler 404'
 			status = 404;
