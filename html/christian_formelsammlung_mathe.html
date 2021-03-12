@@ -1918,34 +1918,53 @@
 <h3 id="grundlagen-2">Grundlagen</h3>
 
 <h4 id="definitionen">Definitionen</h4>
+
+<p>
+  Bei zufälligen Ereignissen kann man keine exakte Voraussagen treffen.
+  Es stellt sich in der Mathematik jedoch der Wunsch ein, zumindest ein Maß für die Sicherheit (oder Unsicherheit) anzugeben, die mit einer Aussage verbunden ist.
+  Ein solches Maß ist die <strong>Wahrscheinlichkeit</strong>.
+  Die dem Ereignis <span class="math inline">\(E\)</span> zugeschriebene Wahrscheinlichkeit (engl.: probability) wird mit <span class="math inline">\(P(E)\)</span> bezeichnet.
+</p>
 <p>
   Ein <strong>Experiment</strong> nennt man <strong>Zufallsexperiment</strong>, wenn der tatsächliche Ausgang vom Zufall abhängig ist, wobei vorausgesetzt wird, dass es mindestens zwei mögliche Ausgänge gibt.
   Alle möglichen <strong>Ergebnisse <span class="math inline">\(e\)</span></strong> des Experiments bilden die <strong>Ergebnismenge <span class="math inline">\(\Omega = \{e_i,e_2,e_3,\dots,e_n\}\)</span></strong>.
   Eine Teilmenge der Ergebnismenge nennt man <strong>Ereignis</strong> (Ereignisse werden mit Großbuchstaben dargestellt, z.B. <span class="math inline">\(E\)</span> oder <span class="math inline">\(A\)</span>).<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>
   Dabei wird die leere Menge <span class="math inline">\(\{\} = \emptyset\)</span> als das <strong>unmögliche Ereignis</strong> und die Ergebnismenge <span class="math inline">\(\Omega\)</span> als das <strong>sichere Ereignis</strong> bezeichnet (es gilt also <span class="math inline">\(P(\Omega)=1\)</span> und <span class="math inline">\(P(\emptyset)=0\)</span>).
-  Die <strong>Wahrscheinlichkeiten <span class="math inline">\(P(E)\)</span></strong> der Ereignisse werden dabei durch die <strong>Wahrscheinlichkeitsverteilung</strong> festgelegt.
+  Die Wahrscheinlichkeiten <span class="math inline">\(P(E)\)</span> der Ereignisse werden dabei durch die <strong>Wahrscheinlichkeitsverteilung</strong> festgelegt und entsprechen in etwa der relativen Häufigkeit eines Ereignisses in einer großen Anzahl von Versuchen.
   Es gilt dabei immer:
 </p>
 <ul>
-<li><p><span class="math inline">\(P(E)\geq 0\)</span></p></li>
+<li><p><span class="math inline">\(0\leq P(E) \leq 1\)</span></p></li>
 <li><p><span class="math inline">\(P(A)+P(B)+\dots = 1 = 100\%\)</span></p></li>
 </ul>
 <p>Das <strong>Gegenereignis <span class="math inline">\(\overline{E}\)</span></strong> (sprich: E quer) besteht aus allen Ereignissen, die nicht das gefragte Ereignis bilden. Daher gilt <span class="math display">\[P(\overline{E}) = 1 - P(E).\]</span></p>
 <p>Besteht ein zufälliger Vorgang aus mehreren, nacheinander ablaufenden Teilvorgängen, so spricht man von einem <strong>mehrstufigen Zufallsexperiment</strong>, bei <span class="math inline">\(k\)</span> Teilvorgängen (<span class="math inline">\(k\in\mathbb{N}\setminus \{0\}\)</span>) von einem <strong><span class="math inline">\(k\)</span>-stufigen Zufallsexperiment</strong>.</p>
 <h4 id="empirisches-gesetz-der-großen-zahlen">Empirisches Gesetz der großen Zahlen</h4>
 <p>Wenn man ein Zufallsexperiment sehr oft durchführt, stabilisieren sich die <strong>relative Häufigkeiten</strong> für die Ergebnisse. Aufgrund relativer Häufigkeiten bei langen Versuchsreihen können <strong>Wahrscheinlichkeitsverteilungen</strong> festgelegt werden. Darauf achtet man auf mögliche Symmetrien (z.B. beim Wurf eines Quaders auf jeweils zwei ähnlich große Wahrscheinlichkeiten) und darauf, dass die Summe aller Wahrscheinlichkeiten <span class="math inline">\(100\%\)</span> ergibt.</p>
-<h4 id="summenregel">Summenregel</h4>
-<p>Die Wahrscheinlichkeit eines Ereignisses erhält man, indem man die Wahrscheinlichkeiten der enthaltenen Ergebnisse addiert.</p>
-<h4 id="pfadregel">Pfadregel</h4>
-<p>Die Wahrscheinlichkeit für ein mehrstufiges Ereignis erhält man, indem man die die Wahrscheinlichkeiten des dazugehörigen Pfades multipliziert.</p>
+<h4 id="summenregel">Summenregel (Additionssatz)</h4>
+<p>
+  Die Wahrscheinlichkeit eines Ereignisses erhält man, indem man die Wahrscheinlichkeiten der enthaltenen Ergebnisse addiert (unter der Voraussetzung, dass die enthaltenen Ereignisse kein gemeinsames Ergebnis beinhalten).
+  Formel bedeutet dies, dass für zwei Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> mit <span class="math inline">\(A\cap B=\{\}\)</span> <span class="math display">\[P(A\cup B) = P(A) + P(B)\]</span> gilt.
+  Für zwei beliebige Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> gilt stattdessen <span class="math display">\[P(A\cup B) = P(A)+P(B) - P(A\cap B) .\]</span>
+</p>
+<h4 id="pfadregel">Pfadregel (Multiplikationssatz)</h4>
+<p>
+  Die Wahrscheinlichkeit für ein mehrstufiges Ereignis erhält man, indem man die die Wahrscheinlichkeiten des dazugehörigen Pfades multipliziert.
+  Für zwei (unabhängige, siehe <!--\seeref{sec:bedingte_wahrscheinlichkeit}-->) Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> gilt <span class="math display">\[ P(A\cap B) = P(A)\cdot P(B) .\]</span>
+</p>
 <h4 id="baumdiagramme">Baumdiagramme</h4>
 <p>Mit einem <strong>Baumdiagramm</strong> (siehe <a href="#fig:baumdiagramm" data-reference-type="ref+page" data-reference="fig:baumdiagramm">[fig:baumdiagramm]</a>) lassen sich mehrstufige Zufallsexperimente darstellen.</p>
 <p>Die Summe aller Wahrscheinlichkeiten an den Ästen, die von demselben Verzweigungspunkt ausgehen ist stets 1.</p>
 <figure>
 <embed src="../img/formulary_maths/baumdiagramm.pdf" id="fig:baumdiagramm" /><figcaption aria-hidden="true">Baumdiagramm eines zweistufigen Zufallsexperiments (mit zwei abhängigen Ereignisse <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span>)</figcaption>
 </figure>
+
 <h3 id="zufallsgrößen">Zufallsgrößen</h3>
-<p>Eine <strong>Zufallsgröße</strong> nimmt unter gleichen Bedingungen verschiedene Werte an; das Ergebnis ist vom Zufall abhängig. Um anzugeben, dass die Zufallsgröße <span class="math inline">\(X\)</span> mit der Wahrscheinlichkeit <span class="math inline">\(p\)</span> den Wert <span class="math inline">\(k\)</span> annimmt, schreibt man <span class="math display">\[P(X=k)=p.\]</span></p>
+
+<p>
+  Eine <strong>Zufallsgröße</strong> (auch <strong>Zufallsvariable</strong>) nimmt unter gleichen Bedingungen verschiedene Werte an; das Ergebnis ist vom Zufall abhängig.
+  Um anzugeben, dass die Zufallsgröße <span class="math inline">\(X\)</span> mit der Wahrscheinlichkeit <span class="math inline">\(p\)</span> den Wert <span class="math inline">\(k\)</span> annimmt, schreibt man <span class="math display">\[P(X=k)=p.\]</span>
+</p>
 <p>Zufallsgrößen müssen stets vor der Verwendung eingeführt werden (z.B.: Die Zufallsgröße <span class="math inline">\(X\)</span> beschreibt die Anzahl… und/oder Die Zufallsgröße <span class="math inline">\(X\)</span> kann als binomialverteilt mit den Paramtern <span class="math inline">\(n\)</span> und <span class="math inline">\(p\)</span> angenommen werden, weil…).</p>
 <h4 id="diskrete-zufallsgrößen">Diskrete Zufallsgrößen</h4>
 <p>Für eine <strong>diskrete Zufallsgröße <span class="math inline">\(X\)</span></strong> mit den Werten <span class="math inline">\(x_1, x_2, x_3,\dots ,x_n\)</span> definiert man folgende theoretische Kenngrößen:</p>
@@ -1955,7 +1974,9 @@
 <h5 id="standardabweichung">Standardabweichung</h5>
 <p>Die <strong>(theoretische) Standardabweichung <span class="math inline">\(\sigma\)</span></strong> beschreibt die Streuung der Wahrscheinlichkeitsverteilung um den Erwartungswert <span class="math inline">\(\mu\)</span> und stellt somit eine Prognose für die empirische Standardabweichung <span class="math inline">\(s\)</span> dar. Sie lässt sich berechnen durch die Formel <span class="math display">\[\sigma = \sqrt{(x_1-\mu)^2\cdot P(X=x_1)+\dots+(x_n-\mu)^2\cdot P(X=x_n)}=\sqrt{\sum_{i=1}^n (x_i-\mu)^2\cdot P(X=x_i)}.\]</span></p>
 <p>Das Quadrat von <span class="math inline">\(\sigma\)</span> wird als <strong>Varianz</strong> <span class="math display">\[V(X)=\sigma^2\]</span> bezeichnet.</p>
- 
+<h4 id="stetige-zufallsgrößen">Stetige Zufallsgrößen</h4>
+<p>Eine Zufallsgröße heißt <strong>stetig</strong>, wenn sie jeden beliebigen Wert in einem Intervall annehmen kann.</p>
+
 <h3 id="sec:kombinatorik">Kombinatorik</h3>
 
 <p>
@@ -1969,7 +1990,7 @@
 </figure>
 
 <p>
-  Häufig kann das <strong>fundamentale Zählprinzip</strong> angewendet werden:
+  Häufig kann das <strong>fundamentale (allgemeine) Zählprinzip</strong> angewendet werden:
   Hat man eine Folge von <span class="math inline">\(r\)</span> Entscheidungen zu treffen, bei denen es für die <span class="math inline">\(i\)</span>-te Entscheidung <span class="math inline">\(n_i\)</span> Möglichkeiten gibt (mit <span class="math inline">\(i=1,\dots,r\)</span>), dann ist die Gesamtzahl aller möglichen Entscheidungsfolgen <span class="math display">\[N = n_1 \cdot n_2 \cdot \ldots \cdot n_r .\]</span>
   Gibt es z.B. also für eine Stichprobe <span class="math inline">\(4\)</span> und für eine andere Stichprobe <span class="math inline">\(3\)</span> Möglichkeiten, dann gibt es insgesamt <span class="math inline">\(3\cdot 4=12\)</span> Auswahlmöglichkeiten.
 </p>
@@ -2112,7 +2133,7 @@
 <p>Der Erwartungswert<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> der binomialverteilten Zufallsgröße <span class="math inline">\(X\)</span> beträgt <span class="math display">\[\mu = n\cdot p\]</span> und die Standardabweichung beträgt <span class="math display">\[\sigma = \sqrt{n\cdot p\cdot (1-p)} .\]</span></p>
 <p>Bei der <strong>kumulierten Binomialverteilung</strong> betrachtet man alle Werte der Zufallsgröße <span class="math inline">\(X\)</span>, für die <span class="math inline">\(X\leq k\)</span> gilt. Sie lässt sich berechnen mit <span class="math display">\[P(X\leq k) = \sum_{i=0}^k B(n,p,i) ,\]</span> was für große <span class="math inline">\(n\)</span> sehr aufwändig sein kann. Daher ist eine Funktion gesucht, welche die Binomialverteilung hinreichend genau annähert; durch Integration kann dann (theoretisch) der Flächeninhalt bestimmt werden.</p>
 <p>Diese Kurve ist die <strong>Glockenkurve</strong> <span class="math display">\[f_{\sigma,\mu} (x) = \frac{1}{\sqrt{2\pi\sigma^2}} \cdot \textrm{e}^{-\frac{(x-\mu)^2}{2\sigma^2}}\]</span> von Carl Friedrich Gauss (siehe <a href="#fig:glockenkurve" data-reference-type="ref+page" data-reference="fig:glockenkurve">[fig:glockenkurve]</a>). Ihr Extrempunkt<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> liegt bei <span class="math inline">\(x_{\text{max}}=\mu\)</span>, die Wendestellen<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> liegen bei <span class="math inline">\(x_W=\mu\pm\sigma\)</span>. Wichtig ist, dass die gesamte Fläche unter der Kurve gleich 1 ist (gleich der Wahrscheinlichkeit des sicheren Ereignisses).</p>
-<p>Mit wachsendem <span class="math inline">\(n\)</span> werden die Graphen einer Binomialverteilung immer breiter und zunehmend symmetrischer um den Erwartungswert <span class="math inline">\(ßmu\)</span>. Die Histogramme werden mit zunehmender Verbreiterung der Histogramme flacher, d.h. die Einzelwahrscheinlichkeiten werden kleiner (siehe <a href="#fig:schaubilder_binomialverteilung_n" data-reference-type="ref+page" data-reference="fig:schaubilder_binomialverteilung_n">[fig:schaubilder_binomialverteilung_n]</a>). Für <span class="math inline">\(p\to 0\)</span> und <span class="math inline">\(p \to 1\)</span> werden die Graphen immer höher und schmaler. Für <span class="math inline">\(p=0,5\)</span> sind die Graphen symmetrisch, für <span class="math inline">\(p\to 0\)</span> und <span class="math inline">\(p \to 1\)</span> ergibt sich eine leicht anwachsende Asymmetrie.</p>
+<p>Mit wachsendem <span class="math inline">\(n\)</span> werden die Graphen einer Binomialverteilung immer breiter und zunehmend symmetrischer um den Erwartungswert <span class="math inline">\(\mu\)</span>. Die Histogramme werden mit zunehmender Verbreiterung der Histogramme flacher, d.h. die Einzelwahrscheinlichkeiten werden kleiner (siehe <a href="#fig:schaubilder_binomialverteilung_n" data-reference-type="ref+page" data-reference="fig:schaubilder_binomialverteilung_n">[fig:schaubilder_binomialverteilung_n]</a>). Für <span class="math inline">\(p\to 0\)</span> und <span class="math inline">\(p \to 1\)</span> werden die Graphen immer höher und schmaler. Für <span class="math inline">\(p=0,5\)</span> sind die Graphen symmetrisch, für <span class="math inline">\(p\to 0\)</span> und <span class="math inline">\(p \to 1\)</span> ergibt sich eine leicht anwachsende Asymmetrie.</p>
 <figure>
 <img src="../img/formulary_maths/schaubilder_binomialverteilung_n.png" id="fig:schaubilder_binomialverteilung_n" alt="Schaubilder einer binomialverteilten Zufallsgröße für verschiedene n" /><figcaption aria-hidden="true">Schaubilder einer binomialverteilten Zufallsgröße für verschiedene <span class="math inline">\(n\)</span></figcaption>
 </figure>
@@ -2120,6 +2141,12 @@
 <p>Die Wahrscheinlichkeit, dass sich <span class="math inline">\(k\)</span> im Intervall <span class="math inline">\([a;b]\)</span> befindet, wird als <span class="math inline">\(P([a;b])\)</span> notiert.</p>
 <p>Je größer <span class="math inline">\(n\)</span> ist und je näher <span class="math inline">\(p\)</span> bei <span class="math inline">\(0{,}5\)</span> liegt, desto besser wird im Allgemeinen die Näherung. Nach einer Faustregel ist die Näherung brauchbar, wenn <span class="math inline">\(\sigma &gt; 3\)</span> gilt (<strong>Laplace-Bedingung</strong>).</p>
 <h5 id="problemlösen-mit-der-binomialverteilung">Problemlösen mit der Binomialverteilung</h5>
+<p>Typische Anwendungssituationen der Binomialverteilung sind:</p>
+<ul>
+<li><p><span class="math inline">\(n\)</span> unabhängige Wiederholungen eines Zufallsexperimentes (z.B. <span class="math inline">\(n\)</span>-maliges Würfeln eines Würfels mit <span class="math inline">\(X=\)</span> Anzahl der Einsen)</p></li>
+<li><p><span class="math inline">\(n\)</span>-maliges Ziehen mit Zurücklegen aus einer endlichen Grundgesamtheit (z.B. <span class="math inline">\(n\)</span>-maliges Ziehen von Kugeln mit <span class="math inline">\(X=\)</span> Anzahl der gezogenen schwarzen Kugeln)</p></li>
+<li><p>als Näherung der hypergeometrischen Verteilung beim <span class="math inline">\(n\)</span>-maligen Ziehen ohne Zurücklegen aus einer sehr großen Grundgesamtheit bei kleinem Stichprobenumfang (etwas wenn <span class="math inline">\(\frac{n}{N}\leq 0,05\)</span> gilt, für die hypergeometrische Verteilung <!--\seeref{sec:hypergeometrische_verteilung}-->)</p></li>
+</ul>
 <p>Es gibt folgende Möglichkeiten, eine Wahrscheinlichkeit einer Binomialverteilung zu ermitteln:</p>
 <ul>
 <li><p>Formel für <span class="math inline">\(P(X=k)\)</span> bzw. <span class="math inline">\(P(X\leq k)\)</span></p></li>
@@ -2153,11 +2180,17 @@
 <img src="../img/formulary_maths/sigmaregeln.jpg" id="fig:sigmaregeln" style="width:80.0%" alt="Veranschaulichung der Sigmaregeln" /><figcaption aria-hidden="true">Veranschaulichung der Sigmaregeln</figcaption>
 </figure>
 <p>Je größer <span class="math inline">\(n\)</span> ist und je näher <span class="math inline">\(p\)</span> bei <span class="math inline">\(0,5\)</span> liegt, desto besser wird im Allgemeinen die Näherung. Nach einer Faustregel ist die Näherung brauchbar, wenn <span class="math inline">\(\sigma &lt; 3\)</span> gilt (<strong>Laplace-Bedingung</strong>).</p>
+
 <h4 id="hypergeometrische-verteilung">Hypergeometrische Verteilung</h4>
+
 <p>Die <strong>hypergeometrische Verteilung</strong> wird angewendet, wenn mit einem Griff (also ohne Zurücklegen) gezogen wird, wobei es nur zwei interessante Ergebnisse gibt (z.B. kaputt/nicht kaputt oder gelb/nicht gelb).</p>
 <p>Bezeichnet <span class="math inline">\(N\)</span> die Anzahl der Elemente der Grundgesamtheit, <span class="math inline">\(M\)</span> die Anzahl der Elemente mit der gewünschten Eigenschaft, <span class="math inline">\(n\)</span> die Größe der Stichprobe und <span class="math inline">\(k\)</span> die Anzahl der Elemente mit der gewünschten Eigenschaft, lässt sich die Wahrscheinlichkeit, dass <span class="math inline">\(k\)</span> Elemente der Stichprobe die gewünschte Eigenschaft aufweisen, mit <span class="math display">\[P(X=k) = h(k\mid N,M,n) = \frac{\binom{M}{k}\cdot\binom{N-M}{n-k}}{\binom{N}{n}}\]</span> berechnen.</p>
-<p>Der Erwartungswert einer hypergeometrischen Zufallsgröße <span class="math inline">\(X\)</span> beträgt <span class="math display">\[\mu = n\cdot\frac{M}{N} .\]</span></p>
+<p>
+  Der Erwartungswert einer hypergeometrischen Zufallsgröße <span class="math inline">\(X\)</span> beträgt <span class="math display">\[\mu = n\cdot\frac{M}{N} ,\]</span> wenn man <span class="math inline">\(p=\frac{M}{N}\)</span> als den Anteil der Objekte mit der spezifischen Eigenschaft in der Grundgesamtheit definiert.
+  Die Standardabweichung kann durch <span class="math display">\[ \sigma = \sqrt{n\cdot\frac{M}{N}\cdot\left(1-\frac{M}{N}\right)\cdot\frac{N-n}{N-1}} = \sqrt{n\cdot p\cdot(1-p)\cdot\frac{N-n}{N-1}} \]</span> berechnet werden.
+</p>
 <p>Das bekannteste Beispiel für eine Anwendung der hypergeometrischen Verteilung ist das Lotto-Spiel.</p>
+
 <h3 id="testen-von-hypothesen">Testen von Hypothesen</h3>
 <p>Wenn bei einem Bernoulli-Versuch die Wahrscheinlichkeit <span class="math inline">\(p\)</span> unbekannt ist, kann man meistens eine <strong>Hypothese</strong> (Vermutung) aufstellen. Dabei gibt es beim Testen von Hypothesen grundsätzlich eine <strong>Nullhypothese <span class="math inline">\(H_0\)</span></strong> (mit der angenommenen Wahrscheinlichkeit <span class="math inline">\(p_0\)</span>) und eine <strong>Alternativhypothese <span class="math inline">\(H_1\)</span></strong> (mit der angenommenen Wahrscheinlichkeit <span class="math inline">\(p_1\)</span>), gegen welche die Hypothese getestet wird. Normalerweise sollte die Nullhypothese so gewählt sein, dass das Ziel ist, sie zu verwerfen und damit seine Vermutung zu bestätigen.</p>
 <p>Ob die Hypothese haltbar ist, kann mithilfe einer <strong>Stichprobe</strong> getestet werden. Festgelegt wird vorher daher der <strong>Stichprobenumfang <span class="math inline">\(n\)</span></strong> und eine <strong>Entscheidungsregel</strong> für oder gegen die Nullhypothese <span class="math inline">\(H_0\)</span>. Die Entscheidungsregel beantwortet die folgende Frage: Wann entscheide ich mich dafür, die Nullhypothese zu verwerfen bzw. anzunehmen?</p>
