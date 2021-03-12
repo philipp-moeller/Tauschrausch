@@ -1955,16 +1955,22 @@
 <h5 id="standardabweichung">Standardabweichung</h5>
 <p>Die <strong>(theoretische) Standardabweichung <span class="math inline">\(\sigma\)</span></strong> beschreibt die Streuung der Wahrscheinlichkeitsverteilung um den Erwartungswert <span class="math inline">\(\mu\)</span> und stellt somit eine Prognose für die empirische Standardabweichung <span class="math inline">\(s\)</span> dar. Sie lässt sich berechnen durch die Formel <span class="math display">\[\sigma = \sqrt{(x_1-\mu)^2\cdot P(X=x_1)+\dots+(x_n-\mu)^2\cdot P(X=x_n)}=\sqrt{\sum_{i=1}^n (x_i-\mu)^2\cdot P(X=x_i)}.\]</span></p>
 <p>Das Quadrat von <span class="math inline">\(\sigma\)</span> wird als <strong>Varianz</strong> <span class="math display">\[V(X)=\sigma^2\]</span> bezeichnet.</p>
+
 <h3 id="sec:kombinatorik">Kombinatorik</h3>
-<p>Die <strong>Kombinatorik</strong> behandelt das Abzählen von Kombinationen (siehe <a href="#fig:kombinatorik_tabelle" data-reference-type="ref+page" data-reference="fig:kombinatorik_tabelle">[fig:kombinatorik_tabelle]</a> bzw. siehe <a href="#fig:kombinatorik_entscheidungsbaum" data-reference-type="ref+page" data-reference="fig:kombinatorik_entscheidungsbaum">[fig:kombinatorik_entscheidungsbaum]</a>).</p>
+
+<p>Die <strong>Kombinatorik</strong> (die <strong>Lehre des Abzählens</strong>) behandelt das Abzählen von Kombinationen (siehe <a href="#fig:kombinatorik_tabelle" data-reference-type="ref+page" data-reference="fig:kombinatorik_tabelle">[fig:kombinatorik_tabelle]</a> bzw. siehe <a href="#fig:kombinatorik_entscheidungsbaum" data-reference-type="ref+page" data-reference="fig:kombinatorik_entscheidungsbaum">[fig:kombinatorik_entscheidungsbaum]</a>).</p>
+
 <figure>
 <img src="kombinatorik_tabelle.png" id="fig:kombinatorik_tabelle" style="width:75.0%" alt="Die wichtigsten Formeln der Kombinatorik" /><figcaption aria-hidden="true">Die wichtigsten Formeln der Kombinatorik</figcaption>
 </figure>
 <figure>
 <img src="kombinatorik_entscheidungsbaum.png" id="fig:kombinatorik_entscheidungsbaum" style="width:95.0%" alt="Welche Formel ist die richtige?" /><figcaption aria-hidden="true">Welche Formel ist die richtige?</figcaption>
 </figure>
-<p>Es bezeichnet <span class="math inline">\(\binom{n}{k} = \frac{n!}{(n-k)! \cdot k!}\)</span> der <strong>Binomialkoeffizient</strong>.</p>
+
+<p>Es bezeichnet <span class="math display">\[\binom{n}{k} = \frac{n!}{(n-k)! \cdot k!}\]</span> der <strong>Binomialkoeffizient</strong>.</p>
+
 <h3 id="bedingte-wahrscheinlichkeit-und-abhängige-ereignisse">Bedingte Wahrscheinlichkeit und abhängige Ereignisse</h3>
+
 <h4 id="abhängige-ereignisse">Abhängige Ereignisse</h4>
 <p>Zwei Ereignisse sind <strong>unabhängig</strong>, wenn <span class="math display">\[P_E(F)=P(F)\]</span> oder daraus folgend <span class="math display">\[P(E\cap F)=P(E)\cdot P(F)\]</span> gilt. Andernfalls sind sie <strong>abhängig</strong>.</p>
 <p>Die Schreibweise <span class="math inline">\(P_E(F)\)</span> meint die Wahrscheinlichkeit dafür, dass – unter der Bedingung, dass das Ereignis <span class="math inline">\(E\)</span> zutrifft, – auch das Ereignis <span class="math inline">\(F\)</span> zutrifft.</p>
