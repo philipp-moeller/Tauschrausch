@@ -12,10 +12,28 @@
 	</head>
 	<body>
 		<header>
-			<h1>✦Tauschrausch✦ (header)</h1>
+			<!-- <input type=button onClick="location.href='../'" value='Home'> -->
+
+			<!-- navigation bar -->
+			<nav>
+				<div class="logo">
+					✦Tauschrausch✦ (header)
+				</div>
+				<input type="checkbox" id="click">
+				<label for="click" class="menu-btn">
+					<i class="fas fa-bars"></i>
+				</label>
+				<ul>
+					<li><a class="active" href="/">Home</a></li>
+					<li><a href="../articles">Articles</a></li>
+					<li><a href="../login">Login</a></li>
+				</ul>
+			</nav>
 			<br>
 		</header>
+
 		<main>{{content}}</main>
+		
 		<footer>
 			Diese Informationen stehen im Footer.
 		</footer>
