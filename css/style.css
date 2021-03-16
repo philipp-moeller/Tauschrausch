@@ -266,12 +266,20 @@ input{
 
 .close{
   position: absolute;
-  top: -15px;
-  right: -15px;
-  background: #fff;
-  height: 20px;
-  width: 20px;
+  top: -12px;
+  right: -30px;
+  background: none;
+  height: 64px;
+  width: 64px;
   border-radius: 50%;
   box-shadow: 6px 6px 29px -4px (0, 0, 0, 0.75);
   cursor: pointer;
+}
+
+.userIcon{
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  height: 80px;
+  width: 80px;
 }
