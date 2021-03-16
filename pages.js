@@ -20,7 +20,7 @@ module.exports = async function(method,path,query,cookies) {
 			if (path.length==0) {
 				// GET "/login"
 				build = require('./pages/login.js')
-				html = await build(query)
+				html = await build(query, query.username)
 			}
 			break;
 		case 'menu':
