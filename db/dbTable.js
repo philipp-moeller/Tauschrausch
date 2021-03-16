@@ -14,7 +14,7 @@ module.exports = async function(userName) {
             console.log("YEEEEE!!");
             // break;
         } else {
-            console.log(element);
+            // console.log(element);
         }
     });
 }

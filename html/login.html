@@ -1,27 +1,19 @@
-<!-- does is work with post? -->
-<!-- <form action="/menu" method="POST"> 
-	<a>first Name:</a>
-	<input type="text" name="username" />
-	<br><br>
-	<a>Password:</a>
-	<input type="password" name="password" />
-	<br>
-	<input type="submit" value="submit" /> -->
-<!-- </form>	 -->
-
-<div class="container">
-	<h1>POPUP LOGIN</h1>
-	<!-- <button type="button" class="button" id="popupButton">Login</button> -->
-	<a href="#" class="button" id="popupButton">Login</a>
-</div>
-
-<div class="popup">
-	<div class="popup-content">
-		<img src="" alt="Close" class="close" id="close">
-		<img src="" alt="UserIcon">
-		<!-- type="text" is not centered -->
-		<input type="text" placeholder="Username">
-		<input type="password" placeholder="Password">
-		<a href="/articles" class="button">Login</a>
+<!-- method have to be changes to "POST" when fixed (from moeller?) -->
+<form action="/menu" method="GET"> 
+	<div class="container">
+		<h1>POPUP LOGIN</h1>
+		<button type="button" class="button" id="popupButton">Login</button>
+		<!-- <a href="#" class="button" id="popupButton">Login</a> -->
 	</div>
-</div>
+
+	<div class="popup">
+		<div class="popup-content">
+			<img src="" alt="Close" class="close" id="close">
+			<img src="" alt="UserIcon">
+			<input type="text" name="username" placeholder="Username">
+			<input type="password" name="password" placeholder="Password">
+			<input type="submit" value="submit" />
+			<!-- <a href="/articles" class="button">Login</a> -->
+		</div>
+	</div>
+</form> -->

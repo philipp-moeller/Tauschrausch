@@ -27,7 +27,7 @@ module.exports = async function(method,path,query,cookies) {
 			if (path.length==0) {
 				// GET "/menu"
 				build = require('./pages/menu.js')
-				html = await build(query.username) // watch menu.js!
+				html = await build(query, query.username) // watch menu.js!
 			}
 			break;
 		case 'articles':

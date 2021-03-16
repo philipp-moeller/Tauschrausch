@@ -18,6 +18,7 @@ module.exports = async function(path1) {
 			description: "Faust buch/Heft Lektüre mit Notizen am Rand"
 		});
 		return await html.parse();
+
 	} else if (path1=="article02") {
 		articleContent = "blaue Handschuhe";
 
@@ -27,8 +28,8 @@ module.exports = async function(path1) {
 			description: "Blaue Handschuhe der Größe 42"
 		});
 		return await html.parse();
-	} else {
 
+	} else {
 		// get user from db table
 		let tableContent = await db.query("SELECT * FROM users");
 		console.table(tableContent); // tableContent[index].id -> [index] from object table
