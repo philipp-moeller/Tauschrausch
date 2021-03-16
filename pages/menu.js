@@ -7,7 +7,7 @@ module.exports = async function(query, username) {
 	console.log(username);
 	console.log(query);
 
-	// check if username is sth. , then create new User
+	// check if username is not empti, then create new User (useless, because util.js does not allow empty)
 	if (username.length === 0){
 		console.log("Username.length === 0");
 	} else if (username.length > 0) {
