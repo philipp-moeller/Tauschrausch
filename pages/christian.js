@@ -36,7 +36,7 @@ module.exports = async function(path1) {
   		iq1: iqwert,
   		iq2: path1,
   		iqresultcomb: iqresultcombine,
-  		iqresult: iqresultadd
+  		iqresult: iqresultadd,
 	    	username: user.name
   	});
   	return await html.parse();
