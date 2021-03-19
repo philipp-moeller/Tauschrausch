@@ -21,13 +21,13 @@ Starten Sie den **MySQL Installer** erneut und klicken Sie in der Zeile **MySQL-
 Öffnen Sie die **MySQL-Shell** und verbinden Sie sich mit dem Server über den Befehl `\connect root@localhost`. Um den Datenbankbenutzer und die Datenbank zu erzeugen, geben Sie folgende Befehle ein:
 
 - `\sql CREATE DATABASE tauschrausch;`
-- `\sql CREATE USER tschrsch IDENTIFIED WITH mysql_native_password BY 'eWDPQFwAgpLkykgn';`
+- `\sql CREATE USER tschrsch@localhost IDENTIFIED WITH mysql_native_password BY 'eWDPQFwAgpLkykgn';`
 - `\sql GRANT ALL PRIVILEGES ON tauschrausch.* TO tschrsch;`
 
 Erschaffen Sie die nötigen Datenbankstrukturen Ihres Systems durch Eingabe der folgenden Befehle in der **MySQL-Shell**.
 
 *Hier kommen Ihre Befehle zum Erstellen der Datenbank hin:*
-
+- `\sql USE tauschrausch;`
 - z. B.: `\sql CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL DEFAULT '');`
 - z. B.: `\sql INSERT INTO users (name) VALUES ("Max"),("Martina");`
 
