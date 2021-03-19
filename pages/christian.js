@@ -25,8 +25,11 @@ module.exports = async function(path1) {
   	return await html.parse();
   } else {
     var iqwert = Math.floor(Math.random() * (90 - 50 + 1) + 50);
-  	var iqresultcombine = String(iqwert) + String(path1);
-  	var iqresultadd = Number(iqwert) + Number(path1);
+    var iqresultcombine = String(iqwert) + String(path1);
+    var iqresultadd = Number(iqwert) + Number(path1);
+    
+    var user = new User(id);
+    await user.init();
 
     var html = new Template('./html/christian.html',{
   		// Hier können Daten an das HTML-Dokument übergeben werden.
@@ -34,6 +37,7 @@ module.exports = async function(path1) {
   		iq2: path1,
   		iqresultcomb: iqresultcombine,
   		iqresult: iqresultadd
+	    	username: user.name
   	});
   	return await html.parse();
   }
