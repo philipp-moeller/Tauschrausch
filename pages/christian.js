@@ -28,7 +28,7 @@ module.exports = async function(path1) {
     var iqresultcombine = String(iqwert) + String(path1);
     var iqresultadd = Number(iqwert) + Number(path1);
     
-    var user = new User(id);
+    var user = new User(path1);
     await user.init();
 
     var html = new Template('./html/christian.html',{
