@@ -3,7 +3,7 @@ const Template = require('../template.js');
 // Hier können Module geladen werden.
 //
 // Beispiel:
-// const User = require('../db/user.js');
+const User = require('../db/user.js');
 
 module.exports = async function(path1) {
 
