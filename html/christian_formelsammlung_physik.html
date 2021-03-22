@@ -1117,7 +1117,37 @@ v_\perp &amp;= v \cdot \sin{(\alpha)}\end{aligned}\]</span></p>
 </p>
 
 <h4 id="sec:massenspektrometer">Anwendung: Massenspektrometer</h4>
-<p><span style="color: red">(kann als Anwendung in einer vorkommen)</span></p>
+<p><span style="color: red">(kann als Anwendung in einer Aufgabe vorkommen)</span></p>
+
+<p>
+  Ein <strong>Massenspektrometer</strong> ist ein Gerät (bzw. eine Versuchsanordnung), mit dessen Hilfe die Massen (genauer: die <strong>spezifischen Massen <span class="math inline">\(\frac{q}{m}\)</span></strong>, ist bei konstanter Ladung <span class="math inline">\(q\)</span> nicht relevant) von Ladungsträgern bestimmt werden können. Es besteht aus zwei Abschnitten:
+</p>
+<ol>
+  <li><p>Mithilfe eines Wien’schen Geschwindigkeitsfilters (siehe <a href="#sec:wienscher_geschwindigkeitsfilter" data-reference-type="ref+page" data-reference="sec:wienscher_geschwindigkeitsfilter">[sec:wienscher_geschwindigkeitsfilter]</a>) werden beschleunigte Ladungsträger mit einer bestimmten Geschwindigkeit aus einem Strahl von Ladungsträgern herausgefiltert.</p></li>
+  <li><p>Anschließend gelangen diese Ladungsträger in ein homogenes Magnetfeld, wo sie durch die Lorentzkraft auf eine Kreisbewegung gezwungen werden, wobei ihr Radius von der Masse der Ladungsträger abhängt. So gelangen Teilchen mit verschiedenen (spezifischen) Massen an verschiedenen Stellen auf einen Detektor. Dieser Teil der Anordnung wird als <strong>Analysator</strong> bezeichnet.</p></li>
+</ol>
+<p>Diese Methode wird <strong>Massenspektrometrie</strong> genannt.</p>
+<p>Für die Realisierung des Massenspektrometers gibt es verschiedene Möglichkeiten.</p>
+
+<h5 id="sec:bainbridge_massenspektrometer">Bainbridge-Massenspektrometer</h5>
+<p><span style="color: red">(kann als Anwendung in einer Aufgabe vorkommen)</span></p>
+
+<p>Das <strong>Bainbridge-Massenspektrometer</strong> ist eine relativ einfache Ausführung eines Massenspektrometers.</p>
+<figure>
+<img src="massenspektrometer_bainbridge.png" id="fig:massenspektrometer_bainbridge" style="width:50.0%" alt="Aufbau des Bainbridge-Massenspektrometers" /><figcaption aria-hidden="true">Aufbau des Bainbridge-Massenspektrometers</figcaption>
+</figure>
+<p>
+  Der Aufbau des Bainbridge-Massenspektrometers ist auch in <a href="#fig:massenspektrometer_bainbridge" data-reference-type="ref+page" data-reference="fig:massenspektrometer_bainbridge">[fig:massenspektrometer_bainbridge]</a> zu sehen: Nach dem Verlassen des Geschwindigkeitsfilters (mit der elektrischen Feldstärke <span class="math inline">\(E_F\)</span> und der magnetischen Flussdichte <span class="math inline">\(B_F\)</span>) gelangen die geladenen Teilchen in ein homogenes Magnetfeld (mit der Flussdichte <span class="math inline">\(B_A\)</span>), das senkrecht zu ihrer Bewegungsrichtung steht.
+  In diesem bewegen sie sich auf Halbkreisbahnen mit unterschiedlichem Radius, der von der spezifischen Ladung <span class="math inline">\(\frac{q}{m}\)</span> der Teilchen abhängt. So können die Teilchen nach ihrer spezifischen Ladung getrennt werden; auf einer Detektorplatte werden die Abstände der Ausschläge zur Lochblende des Geschwindigkeitsfilters registriert.
+</p>
+<p>
+  Besitzen die gleichen Teilchen die gleiche Ladung, so ist mit der Anordnung eine Trennung nach den Massen der Teilchen möglich.
+</p>
+<p>
+  Für den Radius der Halbkreisbahnen der Ladungsträger gilt <span class="math display">\[r = \frac{m \cdot E_F}{B_A \cdot q\cdot B_F}\]</span> (für die ausführliche Herleitung siehe <a href="#sec:bainbridge-massenspektrometer_r" data-reference-type="ref+page" data-reference="sec:bainbridge-massenspektrometer_r">[sec:bainbridge-massenspektrometer_r]</a>).
+  Häufig wird für Geschwindigkeitsfilter und Analysator das identische Magnetfeld verwendet; dann vereinfacht sich die Formel zu <span class="math display">\[r = \frac{m \cdot E_F}{B^2 \cdot q} .\]</span>
+  Daraus lässt sich durch Umformen nach <span class="math inline">\(\frac{q}{m}\)</span> bzw. <span class="math inline">\(m\)</span> die spezifische Masse bzw. Masse der geladenen Teilchen bestimmen.
+</p>
 
 <h4 id="sec:induktion"><span style="color: violet">Induktion</span></h4>
 <p>Wird ein Leiter in einem Magnetfeld senkrecht zu diesem (quasi die Feldlinien schneidend) bewegt, wirkt eine Lorentzkraft auf die Ladungsträger: Dadurch werden die Ladungsträger senkrecht zum Magnetfeld und senkrecht zur Bewegungsrichtung des Leiters abgelenkt, sodass auf der einen Seite des Leiters ein Überschuss an Elektronen entsteht und die andere Seite positiv geladen ist. Die Ladungstrennung bewirkt das Auftreten einer elektrischen Kraft, die entgegengesetzt zur Lorentzkraft wirkt. Bei Bewegung des Leiters mit konstanter Geschwindigkeit halten sich die Lorentzkraft und die elektrische Kraft auf eine Ladung in Waage. Diese Ladungsträgertrennung erzeugt die <strong>Induktionsspannung</strong> <span class="math display">\[U_\text{ind} = -d\cdot v \cdot B\]</span> (<span class="math inline">\(d\)</span> ist die Länge des Leiters, für die ausführliche Herleitung siehe <a href="#sec:herleitung_induktion_uind" data-reference-type="ref+page" data-reference="sec:herleitung_induktion_uind">[sec:herleitung_induktion_uind]</a>).</p>
@@ -3083,6 +3113,18 @@ h &amp;= v_\parallel \cdot T &amp;&amp; |\; T=\frac{2\pi\cdot m}{B\cdot q} \\
   B \cdot q \cdot v &amp;= E\cdot q &amp;&amp; |:q \\
   B \cdot v &amp;= E &amp;&amp; |:B \\
   v &amp;= \frac{E}{B}\end{aligned}\]
+  </span>
+</p>
+
+<h5 id="sec:bainbridge-massenspektrometer_r">Bainbridge-Massenspektrometer: Radius der Halbkreisbahnen <span class="math inline">\(r\)</span></h5>
+<p>Auf den Halbkreisbahnen im Analysator eines Bainbridge-Massenspektrometers (siehe <a href="#sec:bainbridge_massenspektrometer" data-reference-type="ref+page" data-reference="sec:bainbridge_massenspektrometer">[sec:bainbridge_massenspektrometer]</a>) entspricht die Lorentzkraft <span class="math inline">\(F_L = B_A \cdot v\cdot q\)</span> der Zentripetalkraft <span class="math inline">\(F_Z = m \cdot\frac{v^2}{r}\)</span>:</p>
+<p>
+  Daher gilt:
+  <span class="math display">\[\begin{aligned}
+    F_L &amp;= F_Z &amp;&amp; |\,\text{(einsetzen)} \\
+    B_A \cdot v\cdot q &amp;= m \cdot\frac{v^2}{r} &amp;&amp; |\cdot\frac{r}{B_A \cdot v\cdot q} \\
+    r &amp;= \frac{m \cdot v}{B_A \cdot q} &amp;&amp; |\, v=\frac{E_F}{B_F} \\
+     &amp;= \frac{m \cdot E_F}{B_A \cdot q\cdot B_F}\end{aligned}\]
   </span>
 </p>
 
