@@ -1255,7 +1255,7 @@
 <p>Die Grundebenen können wie in <a href="#tab:grundebenen" data-reference-type="ref+page" data-reference="tab:grundebenen">[tab:grundebenen]</a> angegeben beschrieben werden.</p>
 <div id="tab:grundebenen">
 <table>
-<caption>Darstellung der Grundebenen</caption>
+<caption>Darstellungsmöglichkeiten der Grundebenen</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Grundebene</th>
@@ -1993,45 +1993,55 @@
 <p>
   Häufig kann das <strong>fundamentale (allgemeine) Zählprinzip</strong> angewendet werden:
   Hat man eine Folge von <span class="math inline">\(r\)</span> Entscheidungen zu treffen, bei denen es für die <span class="math inline">\(i\)</span>-te Entscheidung <span class="math inline">\(n_i\)</span> Möglichkeiten gibt (mit <span class="math inline">\(i=1,\dots,r\)</span>), dann ist die Gesamtzahl aller möglichen Entscheidungsfolgen <span class="math display">\[N = n_1 \cdot n_2 \cdot \ldots \cdot n_r .\]</span>
-  Gibt es z.B. also für eine Stichprobe <span class="math inline">\(4\)</span> und für eine andere Stichprobe <span class="math inline">\(3\)</span> Möglichkeiten, dann gibt es insgesamt <span class="math inline">\(3\cdot 4=12\)</span> Auswahlmöglichkeiten.
+  Gibt es bspw. drei Hosen und vier T-Shirts im Kleiderschrank, dann gibt es insgesamt <span class="math inline">\(3\cdot 4=12\)</span> mögliche Kombinationen von Hosen und T-Shirts.
 </p>
 
 <h4 id="auswahl-einer-stichprobe-variation-und-kombination">Auswahl einer Stichprobe: Variation und Kombination</h4>
 
-<p>Eine Stichprobe heißt dabei <strong>geordnet</strong>, wenn die Reihenfolge der Elemente nach dem Ziehen beachtet wird (häufig wenn die Elemente <strong>unterscheidbar</strong> sind); ist die Reihenfolge unwichtig, heißt sie <strong>ungeordnet</strong>. Bei einer Ziehung <strong>ohne Wiederholung</strong> (ohne Zurücklegen) können Elemente aus einer Grundmenge, nachdem sie gezogen wurden, nicht nochmal gezogen werden; kann dasselbe Element mehrmals gezogen werden, wird <strong>mit Wiederholung</strong> (mit Zurücklegen) gezogen.</p>
-<p><a href="#tab:kombinatorik_stichprobe" data-reference-type="ref+page" data-reference="tab:kombinatorik_stichprobe">[tab:kombinatorik_stichprobe]</a> bietet eine Übersicht über die vier Formeln, mit deren Hilfe man die Anzahl der Möglichkeiten, von einer Grundmenge eine Teilmenge auszuwählen, bestimmen kann.</p>
+<p>
+  Eine Stichprobe heißt dabei <strong>geordnet</strong>, wenn die Reihenfolge der Elemente nach dem Ziehen beachtet wird (häufig wenn die Elemente <strong>unterscheidbar</strong> sind); ist die Reihenfolge unwichtig, heißt sie <strong>ungeordnet</strong>.
+  Bei einer Ziehung <strong>ohne Wiederholung</strong> (ohne Zurücklegen) können Elemente aus einer Grundmenge, nachdem sie gezogen wurden, nicht nochmal gezogen werden; kann dasselbe Element mehrmals gezogen werden, wird <strong>mit Wiederholung</strong> (mit Zurücklegen) gezogen.
+</p>
+<p>
+  Typische Anwendungen für die vier möglichen Fälle sind in <a href="#tab:kombinatorik_stichprobe" data-reference-type="ref+page" data-reference="tab:kombinatorik_stichprobe">[tab:kombinatorik_stichprobe]</a> dargestellt.
+  Ein allgemeines Beispiel, um die Ziehungen bzw. Auswahl zu verdeutlichen, ist das <strong>Urnenmodell</strong>, bei dem aus einer mit (verschiedenen) Kugeln gefüllten Urne (einem Behälter) eine bestimmte Anzahl der Kugeln gezogen wird.
+  <a href="#tab:kombinatorik_stichprobe" data-reference-type="ref+page" data-reference="tab:kombinatorik_stichprobe">[tab:kombinatorik_stichprobe]</a> bietet auch eine Übersicht über die vier Formeln, mit deren Hilfe man die Anzahl der Möglichkeiten, von einer Grundmenge eine Teilmenge auszuwählen, bestimmen kann.
+</p>
+
 <div id="tab:kombinatorik_stichprobe">
 <table>
-  <caption>Kombinatorische Formeln für die Auswahl einer Stichprobe</caption>
-  <thead>
-    <tr class="header">
-      <th style="text-align: left;"></th>
-      <th style="text-align: left;">
-        <p><strong>Variation</strong></p>
-        <p>(mit Reihenfolge,</p>
-        <p>geordnet)</p>
-      </th>
-      <th style="text-align: left;"><p><strong>Kombination</strong></p>
-        <p>(ohne Reihenfolge,</p>
-        <p>ungeordnet)</p>
-     </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td style="text-align: left;">
-        <p>mit Wiederholung</p>
-        <p>(mit Zurücklegen)</p>
-      </td>
-      <td style="text-align: left;"><span><span class="math inline">\(\displaystyle n^k\)</span></span></td>
-      <td style="text-align: left;"><span><span class="math inline">\(\displaystyle \binom{n+k-1}{k} = \frac{(n+k-1)!}{(n-1)!\cdot k!}\)</span></span></td>
-    </tr>
-    <tr class="even">
-      <td style="text-align: left;">ohne Wiederholung (ohne Zurücklegen)</td>
-      <td style="text-align: left;"><span><span class="math inline">\(\displaystyle \frac{n!}{(n-k)!} = n\cdot\ldots\cdot(n-k+1)\)</span></span></td>
-      <td style="text-align: left;"><span><span class="math inline">\(\displaystyle \frac{n!}{(n-k)!\cdot n!} = \binom{n}{k}\)</span></span></td>
-    </tr>
-  </tbody>
+<caption>Kombinatorische Formeln für die Auswahl einer Stichprobe mit typischen Anwendungsbeispielen</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;"><p><strong>Variation</strong></p>
+<p>(mit Reihenfolge,</p>
+<p>geordnet)</p></th>
+<th style="text-align: left;"><p><strong>Kombination</strong></p>
+<p>(ohne Reihenfolge,</p>
+<p>ungeordnet)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;" rowspan="2">mit Wiederholung (mit Zurücklegen)</td>
+<td style="text-align: left;"><span><span class="math inline">\(\displaystyle n^k\)</span></span></td>
+<td style="text-align: left;"><span class="math inline">\(\displaystyle \binom{n+k-1}{k} = \frac{(n+k-1)!}{(n-1)!\cdot k!}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Urnenmodell</td>
+<td style="text-align: left;">(wird in Schule kaum benötigt)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;" rowspan="2">ohne Wiederholung (ohne Zurücklegen)</td>
+<td style="text-align: left;"><span><span class="math inline">\(\displaystyle \frac{n!}{(n-k)!} = n\cdot\ldots\cdot(n-k+1)\)</span></span></td>
+<td style="text-align: left;"><span class="math inline">\(\displaystyle \frac{n!}{(n-k)!\cdot k!} = \binom{n}{k}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Möglichkeiten, <span class="math inline">\(k\)</span> Objekte auf <span class="math inline">\(n\)</span> Plätze zu verteilen</td>
+<td style="text-align: left;">Lottoziehung</td>
+</tr>
+</tbody>
 </table>
 </div>
 <p><span id="tab:kombinatorik_stichprobe" label="tab:kombinatorik_stichprobe">[tab:kombinatorik_stichprobe]</span></p>
@@ -2046,11 +2056,11 @@
 <p>Der Begriff <strong>Permutation</strong> meint die Anzahl der möglichen Anordnungen oder Vertauschungen.</p>
 <p>
   Die Permutation ohne Wiederholung ist ein Spezialfall der Variation ohne Wiederholung (mit <span class="math inline">\(k=n\)</span>):
-  Es gibt <span class="math inline">\(n!\)</span> Möglichkeiten, verschiedene Objekte anzuordnen.
+  Es gibt <span class="math inline">\(n!\)</span> Möglichkeiten, <span class="math inline">\(n\)</span> verschiedene Objekte anzuordnen.
 </p>
 <p>
   Bei der Permutation mit Wiederholung gibt es gleiche Objekte:
-  Von <span class="math inline">\(n\)</span> Objekten gibt es nur <span class="math inline">\(k\)</span> verschiedene, d.h. von Objekt 1 gibt es <span class="math inline">\(n_1\)</span> (gleiche) Exemplare, von Objekt <span class="math inline">\(2\)</span> <span class="math inline">\(n_2\)</span>(gleiche) Exemplare, …, von Objekt <span class="math inline">\(k\)</span> gibt es <span class="math inline">\(n_k\)</span> gleiche Exemplare.
+  Von <span class="math inline">\(n\)</span> Objekten gibt es nur <span class="math inline">\(k\)</span> verschiedene, d.h. von Objekt 1 gibt es <span class="math inline">\(n_1\)</span> (gleiche) Exemplare, von Objekt <span class="math inline">\(2\)</span> <span class="math inline">\(n_2\)</span> (gleiche) Exemplare, …, von Objekt <span class="math inline">\(k\)</span> gibt es <span class="math inline">\(n_k\)</span> gleiche Exemplare.
   Es gibt <span class="math inline">\(\frac{n!}{n_1! \cdot n_2! \cdot \ldots \cdot n_k!}\)</span> Möglichkeiten, die <span class="math inline">\(n=n_1+n_2+\dots+n_k\)</span> Objekte anzuordnen.
 </p>
 
@@ -2059,16 +2069,34 @@
 <h3 id="bedingte-wahrscheinlichkeit-und-abhängige-ereignisse">Bedingte Wahrscheinlichkeit und abhängige Ereignisse</h3>
 
 <h4 id="abhängige-ereignisse">Abhängige Ereignisse</h4>
-<p>Zwei Ereignisse sind <strong>unabhängig</strong>, wenn <span class="math display">\[P_E(F)=P(F)\]</span> oder daraus folgend <span class="math display">\[P(E\cap F)=P(E)\cdot P(F)\]</span> gilt. Andernfalls sind sie <strong>abhängig</strong>.</p>
-<p>Die Schreibweise <span class="math inline">\(P_E(F)\)</span> meint die Wahrscheinlichkeit dafür, dass – unter der Bedingung, dass das Ereignis <span class="math inline">\(E\)</span> zutrifft, – auch das Ereignis <span class="math inline">\(F\)</span> zutrifft.</p>
+
+<p>
+  Zwei Ereignisse sind <strong>(stochastisch) unabhängig</strong>, wenn <span class="math display">\[P_E(F)=P(F)\]</span> oder daraus folgend <span class="math display">\[P(E\cap F)=P(E)\cdot P(F)\]</span> gilt.
+  Andernfalls sind sie <strong>(stochastisch) abhängig</strong>.
+</p>
+<p>
+  Die Schreibweise <span class="math inline">\(P_E(F)\)</span> meint die Wahrscheinlichkeit dafür, dass – unter der Bedingung, dass das Ereignis <span class="math inline">\(E\)</span> zutrifft, – auch das Ereignis <span class="math inline">\(F\)</span> zutrifft.
+</p>
+<p>
+  Ereignisse von wiederholten Zufallsexperimenten mit Wiederholung (Zurücklegen) sind meistens stochastisch unabhängig, da sich die einzelnen Wahrscheinlichkeiten nach einem Ziehen nicht verändern.
+  Wird ohne Wiederholung (Zurücklegen) gezogen, dann sind die Ereignisse meist stochastisch abhängig, da sich die Anzahlen der noch verfügbaren Objekte ändert.
+</p>
+
 <h4 id="baumdiagramm">Baumdiagramm</h4>
+  
 <p>Auch bedingte Ereignisse lassen sich mit Hilfe eines Baumdiagrammes darstellen (siehe <a href="#fig:baumdiagramm" data-reference-type="ref+page" data-reference="fig:baumdiagramm">[fig:baumdiagramm]</a>).</p>
 <p>Es gilt wegen der Pfadregel <span class="math display">\[P(E\cap F) = P(E)\cdot P_E(F) .\]</span></p>
+
 <h4 id="vierfeldertafel">Vierfeldertafel</h4>
-<p>Mithilfe der <strong>Vierfeldertafel</strong> (siehe <a href="#tab:abhaengig_vierfeldertafel" data-reference-type="ref+page" data-reference="tab:abhaengig_vierfeldertafel">[tab:abhaengig_vierfeldertafel]</a>) lassen sich relative (Wahrscheinlichkeiten) und absolute (Anzahlen) Häufigkeiten abhängiger Ereignisse darstellen.</p>
+  
+<p>
+  Mithilfe der <strong>Vierfeldertafel</strong> (siehe <a href="#tab:abhaengig_vierfeldertafel" data-reference-type="ref+page" data-reference="tab:abhaengig_vierfeldertafel">[tab:abhaengig_vierfeldertafel]</a>) lassen sich relative (Wahrscheinlichkeiten) und absolute (Anzahlen) Häufigkeiten abhängiger Ereignisse darstellen.
+</p>
+
+<div class="subtable">
 <div id="tab:abhaengig_vierfeldertafel">
 <table>
-<caption>Vierfeldertafel mit relativen Häufigkeiten zweier abhängigen Ereignissen</caption>
+<caption>Allgemeine Vierfeldertafeln zweier abhängigen Ereignissen</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"></th>
@@ -2094,13 +2122,54 @@
 <td style="text-align: left;"><span class="math inline">\(\Sigma\)</span></td>
 <td style="text-align: left;"><span class="math inline">\(P(F)\)</span></td>
 <td style="text-align: left;"><span class="math inline">\(P(\overline{F})\)</span></td>
-<td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1 = 100 \percent\)</span></td>
 </tr>
 </tbody>
 </table>
 </div>
+</div>
+<div class="subtable">
+<div id="tab:abhaengig_vierfeldertafel">
+<table>
+<caption>Allgemeine Vierfeldertafeln zweier abhängigen Ereignissen</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;"><span class="math inline">\(F\)</span></th>
+<th style="text-align: left;"><span class="math inline">\(\overline{F}\)</span></th>
+<th style="text-align: left;"><span class="math inline">\(\Sigma\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(E\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\vert E\cap F\vert\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\vert E\cap\overline{F} \vert\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\vert E\vert\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\overline{E}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\vert \overline{E}\cap F \vert\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\vert \overline{E}\cap\overline{F} \vert\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\vert\overline{E}\vert\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\Sigma\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\vert F\vert\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\vert\overline{F}\vert\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\vert\Omega\vert\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p><span id="tab:abhaengig_vierfeldertafel" label="tab:abhaengig_vierfeldertafel">[tab:abhaengig_vierfeldertafel]</span></p>
-<p>Es gilt <span class="math display">\[P(F)=P(E\cap F)+P(\overline{E}\cap F) .\]</span></p>
+
+<p>
+  Es gilt bspw. <span class="math display">\[P(F)=P(E\cap F)+P(\overline{E}\cap F) .\]</span>
+  In den Feldern in der rechten Spalte bzw. unteren Reihe stehen jeweils die Summen der beiden links daneben liegenden bzw. darüber liegenden Feldern.
+</p>
+
 <h4 id="satz-von-bayes">Satz von Bayes</h4>
 <p>Für zwei Ereignisse <span class="math inline">\(E\)</span> und <span class="math inline">\(F\)</span> gilt <span class="math display">\[P_E(F) = \frac{P(E\cap F)}{P(E)} .\]</span></p>
 
