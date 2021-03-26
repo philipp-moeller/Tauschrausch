@@ -1,6 +1,8 @@
 const Template = require('../template.js');
-const User = require('../db/user.js');
 const dbTable = require('../db/dbTable.js');
+
+// NOTWENDIG FÜR DATENBANKANBINDUNG!
+const User = require('../db/user.js');
 
 module.exports = async function(query, username) {
 
@@ -19,23 +21,17 @@ module.exports = async function(query, username) {
 		} else {
 			console.log(dbTable(username));
 
-			// create new User
-			var user = new User();  // erzeugt Nutzer mit `id=0`
-
-			await user.init();   // lädt die Daten aus Datenbank
-		
-			user.name = username;  // setzt eine Eigenschaft des Nutzers
-			await user.save();   // speichert den Nutzer in Datenbank
-		
+			// NOTWENDIG FÜR DATENBANKZUGRIFF
+			var user = new User(3);  // erzeugt Nutzer mit `id=0`
 			await user.init();   // lädt die Daten aus Datenbank
 
-			console.log("new User created: " + user.name)
+			var name = user.firstname + " " + user.lastname
 		}
 	}
 
 
 	var html = new Template('./html/menu.html',{
-		username: username
+		username: name
 	});
 	return await html.parse();
 }
