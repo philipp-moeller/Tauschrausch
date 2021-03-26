@@ -35,7 +35,7 @@ module.exports = async function(path1) {
 		console.table(tableContent); // tableContent[index].id -> [index] from object table
 
 		// look for user in table with this name
-		dbTable("TestName 1");
+		// dbTable("TestName 1");
 		
 		var html = new Template('./html/articles.html',{
 			// pass through db-table/rows to html

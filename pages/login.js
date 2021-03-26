@@ -8,6 +8,8 @@ module.exports = async function(query, username) {
 	console.log(username);
 	console.log(query);
 
+	
+
 	// templating in html
 	var html = new Template('./html/login.html',{
 		

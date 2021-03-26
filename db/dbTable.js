@@ -12,9 +12,8 @@ module.exports = async function(userName) {
     tableContent.map(element => {
         if (element.name == userName) {
             console.log("YEEEEE!!");
+            return true; // does nor work yet :(
             // break;
-        } else {
-            // console.log(element);
         }
     });
 }
