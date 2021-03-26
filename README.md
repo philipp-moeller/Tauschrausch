@@ -28,8 +28,8 @@ Erschaffen Sie die nötigen Datenbankstrukturen Ihres Systems durch Eingabe der 
 
 *Hier kommen Ihre Befehle zum Erstellen der Datenbank hin:*
 - `\sql USE tauschrausch;`
-- z. B.: `\sql CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL DEFAULT '');`
-- z. B.: `\sql INSERT INTO users (name) VALUES ("Max"),("Martina");`
+- `\sql CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, firstname VARCHAR(255) NOT NULL DEFAULT '', lastname VARCHAR(255) NOT NULL DEFAULT 'Meier', age INT NOT NULL DEFAULT 0);`
+- `\sql INSERT INTO users (firstname,age) VALUES ("Max",15),("Martina",16);`
 
 ## Server starten
 
