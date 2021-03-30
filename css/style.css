@@ -289,3 +289,16 @@ input{
   height: 80px;
   width: 80px;
 }
+
+/* bouncing egg */
+
+#field {
+  height: 200px;
+  /* border-bottom: 3px black groove; */
+  position: relative;
+}
+
+#egg {
+  position: absolute;
+  cursor: pointer;
+}

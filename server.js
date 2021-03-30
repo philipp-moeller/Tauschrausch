@@ -81,7 +81,8 @@ http.createServer(async function (req, res) {
 						'png': 'image/png',
 						'jpg': 'image/jpeg',
 						'jpeg': 'image/jpeg',
-						'gif': 'image/gif'
+						'gif': 'image/gif',
+						'svg': 'image/svg'
 					};
 					httpHeaders['Content-Type'] = mimeTypes[fname[1]];
 					httpContent = file;
