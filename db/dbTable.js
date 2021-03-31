@@ -10,7 +10,7 @@ module.exports = async function(userName) {
 
     // compare each data of tableContent objects
     tableContent.map(element => {
-        if (element.name == userName) {
+        if ((element.firstname) + (element.lastname) == userName) {
             console.log("YEEEEE!!");
             return true; // does nor work yet :(
             // break;
