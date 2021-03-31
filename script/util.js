@@ -36,9 +36,9 @@ function makeEaseOut(timing) {
 	return Math.pow(timeFraction, 2);
   }
 
-  onclick = function() {
+  egg.onclick = function() {
 
-	let height = 400; // field is not defined: field.clientHeight - egg.clientHeight + 540;
+	let height = field.clientHeight - egg.clientHeight + 540; // field is not defined: field.clientHeight - egg.clientHeight + 540;
 	let width = 400;
 
 	animate({
