@@ -1,66 +1,66 @@
-// function animate(options) {
+function animate(options) {
 
-// 	var start = performance.now();
+	var start = performance.now();
   
-// 	requestAnimationFrame(function animate(time) {
-// 	  // timeFraction
-// 	  var timeFraction = (time - start) / options.duration;
-// 	  if (timeFraction > 1) timeFraction = 1;
+	requestAnimationFrame(function animate(time) {
+	  // timeFraction
+	  var timeFraction = (time - start) / options.duration;
+	  if (timeFraction > 1) timeFraction = 1;
   
-// 	  var progress = options.timing(timeFraction)
+	  var progress = options.timing(timeFraction)
 	  
-// 	  options.draw(progress);
+	  options.draw(progress);
   
-// 	  if (timeFraction < 1) {
-// 		requestAnimationFrame(animate);
-// 	  }
+	  if (timeFraction < 1) {
+		requestAnimationFrame(animate);
+	  }
   
-// 	});
-//   }
+	});
+  }
 
-// function makeEaseOut(timing) {
-// 	return function(timeFraction) {
-// 	  return 1 - timing(1 - timeFraction);
-// 	}
-//   }
+function makeEaseOut(timing) {
+	return function(timeFraction) {
+	  return 1 - timing(1 - timeFraction);
+	}
+  }
 
-//   function bounce(timeFraction) {
-// 	for (let a = 0, b = 1, result; 1; a += b, b /= 2) {
-// 	  if (timeFraction >= (7 - 4 * a) / 11) {
-// 		return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
-// 	  }
-// 	}
-//   }
+  function bounce(timeFraction) {
+	for (let a = 0, b = 1, result; 1; a += b, b /= 2) {
+	  if (timeFraction >= (7 - 4 * a) / 11) {
+		return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+	  }
+	}
+  }
 
-//   function quad(timeFraction) {
-// 	return Math.pow(timeFraction, 2);
-//   }
+  function quad(timeFraction) {
+	return Math.pow(timeFraction, 2);
+  }
 
-//   egg.onclick = function() {
+  onclick = function() {
 
-// 	let height = field.clientHeight - egg.clientHeight + 540;
-// 	let width = 400;
+	let height = 400; // field is not defined: field.clientHeight - egg.clientHeight + 540;
+	let width = 400;
 
-// 	animate({
-// 	  duration: 2000,
-// 	  timing: makeEaseOut(bounce),
-// 	  draw: function(progress) {
-// 		egg.style.top = height * progress + 'px' 
-// 	  }
-// 	});
+	animate({
+	  duration: 2000,
+	  timing: makeEaseOut(bounce),
+	  draw: function(progress) {
+		egg.style.top = height * progress + 'px' // ReferenceError: egg is not defined
+	  }
+	});
 
-// 	animate({
-// 	  duration: 2000,
-// 	  timing: makeEaseOut(quad),
-// 	  draw: function(progress) {
-// 		egg.style.left = width * progress + "px"
-// 	  }
-// 	});
-//   }
+	animate({
+	  duration: 2000,
+	  timing: makeEaseOut(quad),
+	  draw: function(progress) {
+		egg.style.left = width * progress + "px" // ReferenceError: egg is not defined
+	  }
+	});
+  }
 
 
 // open/close popup window
-document.getElementById("popupButton").addEventListener("click", function(){
+document.getElementById("popupButton").addEventListener("click", function(){ // TypeError: Cannot read property 'addEventListener' of null
 	// make popup window visible
 	document.querySelector(".popup").style.display = "flex";
 	console.log("pressed on popup-button");
